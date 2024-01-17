@@ -1,0 +1,42 @@
+
+node -v
+v16.17.0
+
+npm -v
+8.18.0
+
+npx -v
+8.18.0
+
+gulp 主なメソッド
+1.require() インストールしたプラグインを読み込む
+2.pipr() 複数の処理を繋げる
+3.src() 対象ファイルを取得する
+4.dest() 保存先ファイルを指定する
+
+npm init -y
+
+npm install --save-dev gulp gulp-imagemin@7.1.0 imagemin-mozjpeg imagemin-pngquant
+
+
+npx gulp
+
+16 packages are looking for funding
+  run `npm fund` for details
+
+6 high severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+
+npm i gulp-imagemin@7.1.0 -D
+npm i gulp-imagemin -D
+npm i imagemin-mozjpeg -D
+npm i imagemin-pngquant -D
+
+
+Error [ERR_REQUIRE_ESM]: require() of ES Module 
+/node_modules/imagemin-mozjpeg/index.js 
+gulpfile.js not supported.
+Instead change the require of index.js in gulpfile.js to a dynamic import() which is available in all CommonJS modules.
