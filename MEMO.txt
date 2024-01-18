@@ -20,7 +20,13 @@ npm install --save-dev gulp gulp-imagemin@7.1.0 imagemin-mozjpeg imagemin-pngqua
 
 npm install gulp-ejs --save-dev
 
-npm install --save-dev gulp-sass
+npm install --save-dev gulp-sass sass
+
+npm install --save-dev gulp-rename
+
+npm install --save-dev gulp-connect
+
+
 
 https://ejs.co/
 

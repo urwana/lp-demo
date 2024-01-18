@@ -5,9 +5,14 @@ import imagemin from "gulp-imagemin";
 import imageminMozjpeg from "imagemin-mozjpeg";
 import imageminPngquant from "imagemin-pngquant";
 import ejs from "gulp-ejs";
+import dartSass from "sass";
+import gulpSass from "gulp-sass";
+const sass = gulpSass(dartSass);
+import rename from "gulp-rename";
+import connect from "gulp-connect";
 
 const imageCompress = () => {
-  return src("./src/image/*")
+  return src("./src/img/*")
     .pipe(
       imagemin(
         [
@@ -20,14 +25,37 @@ const imageCompress = () => {
         }
       )
     )
-    .pipe(dest("./dist/image/"));
+    .pipe(dest("./dist/img/"));
 };
 
 const compileEjs = () => {
   return src("./src/templates/*.ejs")
     .pipe(ejs())
-    .pipe(dest("./dist/"));
+    .pipe(rename({ extname: ".html" }))
+    .pipe(dest("./dist/"))
+    .pipe(connect.reload());
 };
 
-export default series(imageCompress, compileEjs);
+const compileSass = () => {
+  return src("src/scss/**/*.scss")
+    .pipe(sass().on("error", sass.logError))
+    .pipe(dest("./dist/css"))
+    .pipe(connect.reload());
+};
+
+const startServer = () => {
+  connect.server({
+    root: "dist",
+    livereload: true,
+    port: 8080,
+  });
+};
+
+export default series(
+  compileEjs,
+  compileSass,
+  imageCompress,
+  startServer,
+  watch
+);
 // parallel() 同時に処理を行う
