@@ -1,0 +1,128 @@
+.factor {
+  margin: auto;
+  padding: 100px 80px;
+  text-align: center;
+  width: 1124px;
+}
+
+.factor .imgBox {
+  margin-top: 72px;
+}
+
+@media only screen and (max-width: 480px) {
+  .factor .imgBox {
+    margin-top: 38px;
+  }
+}
+
+.factor .anotherFactor {
+  background: url(../img/base/bottom-arrow.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  font-size: 24px;
+  height: 74px;
+  margin: 58px auto 0;
+  width: 240px;
+}
+
+@media only screen and (max-width: 480px) {
+  .factor .anotherFactor {
+    background-size: 100%;
+    font-size: 12px;
+    height: 37px;
+    margin-top: 26px;
+    width: 120px;
+  }
+}
+
+.factor .listsBox {
+  margin: 48px auto 0;
+  text-align: left;
+  width: 660px;
+}
+
+@media only screen and (max-width: 480px) {
+  .factor .listsBox {
+    margin-top: 32px;
+    width: 100%;
+  }
+}
+
+.factor .checkList {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.factor .checkList > li {
+  font-size: 22px;
+  line-height: 30px;
+  margin: 0 0 23px 54px;
+  position: relative;
+}
+
+.factor .checkList > li > span {
+  font-size: 12px;
+}
+
+.factor .checkList > li :before {
+  background: url(../img/checkbox.svg) no-repeat 50%;
+  background-size: 30px;
+  content: "";
+  display: block;
+  height: 30px;
+  left: -54px;
+  position: absolute;
+  top: 0;
+  width: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+  .factor .checkList > li :before {
+    background-position: center 4px;
+    background-size: 15px;
+    left: 0;
+    margin-left: -28px;
+  }
+
+  .factor .checkList > li {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 8px 0;
+  }
+
+  .factor .checkList {
+    margin: auto;
+    max-width: 314px;
+    padding-left: 20px;
+    width: 95.5%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .factor {
+    margin: auto;
+    padding: 45px 0;
+    width: 88%;
+  }
+}
+
+.icBase-lp .doubleDeck {
+  display: inline-block;
+  text-align: left;
+}
+
+.icBase-lp .doubleDeck > span {
+  display: block;
+}
+
+.icBase-lp .comment {
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+@media only screen and (max-width: 480px) {
+  .icBase-lp .comment {
+    margin-bottom: 2px;
+  }
+}

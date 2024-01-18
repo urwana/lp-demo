@@ -1,0 +1,63 @@
+// factor
+
+.factor {
+  margin: auto;
+  padding: 100px 80px;
+  text-align: center;
+  max-width: 1124px;
+
+  .imgBox {
+    margin-top: 72px;
+  }
+
+  .anotherFactor {
+    background: url(../img/service/bottom-arrow.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    font-size: 24px;
+    height: 74px;
+    margin: 58px auto 0;
+    width: 240px;
+  }
+
+  .listsBox {
+    margin: 48px auto 0;
+    text-align: left;
+    width: 660px;
+  }
+
+  .checkList {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .factor {
+    .imgBox {
+      margin-top: 38px;
+    }
+
+    .anotherFactor {
+      background-size: 100%;
+      font-size: 12px;
+      height: 37px;
+      margin-top: 26px;
+      width: 120px;
+    }
+
+    .listsBox {
+      margin-top: 32px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .factor {
+    margin: auto;
+    padding: 45px 0;
+    width: 88%;
+  }
+}

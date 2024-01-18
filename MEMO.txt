@@ -18,6 +18,11 @@ npm init -y
 
 npm install --save-dev gulp gulp-imagemin@7.1.0 imagemin-mozjpeg imagemin-pngquant
 
+npm install gulp-ejs --save-dev
+
+npm install --save-dev gulp-sass
+
+https://ejs.co/
 
 npx gulp
 

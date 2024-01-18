@@ -1,0 +1,27 @@
+// flow
+.flow {
+  padding: 100px 0;
+  text-align: center;
+
+  .flow-inner {
+    margin: 72px auto 0;
+    width: 920px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .flow {
+    padding: 45px 0;
+
+    .flow-inner {
+      margin-top: 36px;
+      width: 100%;
+    }
+
+    .imgBox {
+      height: auto;
+      margin: 0 auto;
+      width: 92%;
+    }
+  }
+}

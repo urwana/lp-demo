@@ -1,0 +1,152 @@
+.icBase-lp {
+  .hero {
+    overflow: hidden;
+    width: 100%;
+    background: url(../img/hero-lp.jpg) bottom no-repeat;
+    background-size: cover;
+  }
+
+  .heroInner {
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 25px;
+    position: relative;
+    width: 980px;
+  }
+
+  .logo {
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 160px;
+  }
+
+  .eyecatches {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .titleBox {
+    font-size: 60px;
+    margin-top: 135px;
+    margin-bottom: 40px;
+
+    .title-h1 {
+      font-size: 24px;
+      line-height: 1.7;
+      font-weight: 600;
+    }
+  }
+
+  .copyMain {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 48px;
+  }
+
+  .copySub {
+    font-size: 68px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 24px;
+  }
+
+  .copy3rd {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 40px;
+
+    .numberOrPrice {
+      font-size: 120px;
+      font-weight: 700;
+
+      > span {
+        font-size: 60px;
+      }
+    }
+  }
+
+  .tax {
+    font-size: 20px;
+  }
+
+  .asterisk {
+    font-size: 14px;
+    text-align: right;
+    padding-right: 14px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .icBase-lp {
+    .hero {
+      height: auto;
+      width: 100%;
+      background: url(../img/hero-lp-sp.jpg) bottom no-repeat;
+      background-size: cover;
+    }
+
+    .heroInner {
+      width: 88%;
+      margin: auto;
+      padding-bottom: 32px;
+    }
+
+    .logo {
+      width: 79px;
+      height: 22px;
+      top: 20px;
+    }
+
+    .eyecatches {
+      width: 154.5px;
+      height: 96.6px;
+      right: 0;
+
+      > img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .titleBox {
+      font-size: 32px;
+      margin-top: 72px;
+      margin-bottom: 32px;
+
+      .title-h1 {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    }
+
+    .copyMain {
+      font-size: 20px;
+      margin: 0 0 24px;
+    }
+
+    .copySub {
+      font-size: 34px;
+      margin-bottom: 24px;
+    }
+
+    .copy3rd {
+      font-size: 34px;
+
+      .numberOrPrice {
+        font-size: 60px;
+      }
+    }
+
+    .tax {
+      font-size: 12px;
+    }
+
+    .asterisk {
+      font-size: 12px;
+    }
+  }
+}

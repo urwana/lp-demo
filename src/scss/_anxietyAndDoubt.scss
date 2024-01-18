@@ -1,0 +1,210 @@
+// anxietyAndDoubt
+
+.anxietyAndDoubt {
+  background: #f5f5f5 url(../img/service/anxiety-and-doubt.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 734px;
+  padding: 80px 0;
+  text-align: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  screen and (-webkit-min-device-pixel-ratio: 2) {
+  .anxietyAndDoubt {
+    background-image: url(../img/service/anxiety-and-doubt@2x.png);
+    background-size: 734px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .anxietyAndDoubt {
+    background: #f5f5f5 url(../img/service/anxiety-and-doubt-mobile.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 316px;
+    padding: 40px 0 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 3),
+  only screen and (max-width: 480px) and (min-resolution: 3dppx) {
+  .anxietyAndDoubt {
+    background-image: url(../img/service/anxiety-and-doubt-mobile@3x.png);
+    background-size: 316px;
+  }
+}
+
+// speechBalloons
+
+.speechBalloons {
+  height: 300px;
+  margin: 50px auto 0;
+  position: relative;
+  max-width: 1124px;
+
+  > div {
+    background: #00a0e8;
+    border-radius: 20px;
+    color: #fff;
+    display: table;
+    font-size: 22px;
+    height: 138px;
+    line-height: 1.6;
+    position: absolute;
+    text-align: center;
+    width: 297px;
+
+    > div {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 22px;
+    }
+
+    span {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+
+  > div:first-of-type {
+    bottom: 0;
+    left: 0;
+  }
+
+  > div:first-of-type:after {
+    background: url(../img/service/triangle.png) 50% no-repeat;
+    bottom: 50%;
+    content: "";
+    height: 26px;
+    position: absolute;
+    right: -8px;
+    width: 26px;
+  }
+
+  > div:nth-of-type(2) {
+    left: 248px;
+    top: 0;
+  }
+
+  > div:nth-of-type(2):after {
+    background: url(../img/service/triangle.png) 50% no-repeat;
+    bottom: -4px;
+    content: "";
+    height: 26px;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 26px;
+  }
+
+  > div:nth-of-type(3) {
+    right: 248px;
+    top: 0;
+  }
+
+  > div:nth-of-type(3):after {
+    background: url(../img/service/triangle.png) 50% no-repeat;
+    bottom: -7px;
+    content: "";
+    height: 26px;
+    position: absolute;
+    right: 50%;
+    -webkit-transform: rotate(-141deg);
+    transform: rotate(-141deg);
+    width: 26px;
+  }
+
+  > div:nth-of-type(4) {
+    bottom: 0;
+    right: 10px;
+  }
+
+  > div:nth-of-type(4):after {
+    background: url(../img/service/triangle.png) 50% no-repeat;
+    bottom: 50%;
+    content: "";
+    height: 26px;
+    left: -9px;
+    position: absolute;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    width: 26px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .speechBalloons {
+    height: 308px;
+    margin: 35px auto auto;
+    width: 93%;
+
+    > div {
+      border-radius: 10px;
+      // font-size: 13px;
+      height: 75px;
+      width: 150px;
+
+      > div {
+        font-size: 12px;
+      }
+
+      span {
+        font-size: 12px;
+        margin-bottom: 6px;
+      }
+    }
+
+    > div:first-of-type {
+      left: 5px;
+      top: 110px;
+    }
+
+    > div:first-of-type:after {
+      background-size: 15px;
+      bottom: -12px;
+      left: 50%;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    > div:nth-of-type(2) {
+      left: 16px;
+      top: 0;
+    }
+
+    > div:nth-of-type(2):after {
+      background-size: 15px;
+      bottom: -12px;
+      left: 50%;
+    }
+
+    > div:nth-of-type(3) {
+      right: 16px;
+      top: 0;
+    }
+
+    > div:nth-of-type(3):after {
+      background-size: 15px;
+      bottom: -14px;
+      left: 40%;
+    }
+
+    > div:nth-of-type(4) {
+      right: 5px;
+      top: 110px;
+    }
+
+    > div:nth-of-type(4):after {
+      background-size: 15px;
+      bottom: -14px;
+      left: 40%;
+      -webkit-transform: rotate(-137deg);
+      transform: rotate(-137deg);
+    }
+  }
+}

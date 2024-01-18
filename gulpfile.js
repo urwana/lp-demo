@@ -1,16 +1,12 @@
-// gulpfile.js
-
-// const gulp = require("gulp");
-// const imagemin = require("gulp-imagemin");
-// const mozjpeg = require("imagemin-mozjpeg");
-// const pngquant = require("imagemin-pngquant");
+//@ts-nocheck
 import pkg from "gulp";
 const { src, dest, series, parallel, watch } = pkg;
 import imagemin from "gulp-imagemin";
 import imageminMozjpeg from "imagemin-mozjpeg";
 import imageminPngquant from "imagemin-pngquant";
+import ejs from "gulp-ejs";
 
-function imageCompress() {
+const imageCompress = () => {
   return src("./src/image/*")
     .pipe(
       imagemin(
@@ -25,7 +21,13 @@ function imageCompress() {
       )
     )
     .pipe(dest("./dist/image/"));
-}
+};
 
-export default series(imageCompress);
+const compileEjs = () => {
+  return src("./src/templates/*.ejs")
+    .pipe(ejs())
+    .pipe(dest("./dist/"));
+};
+
+export default series(imageCompress, compileEjs);
 // parallel() 同時に処理を行う
