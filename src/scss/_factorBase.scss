@@ -1,0 +1,112 @@
+.factor {
+  margin: auto;
+  padding: 100px 80px;
+  text-align: center;
+  width: 1124px;
+}
+
+.factor-title {
+  @include title-h2;
+}
+
+@media only screen and (max-width: 480px) {
+  .factor {
+    margin: auto;
+    padding: 45px 0;
+    width: 88%;
+  }
+}
+
+.factor__img {
+  margin-top: 72px;
+}
+
+@media only screen and (max-width: 480px) {
+  .factor__img {
+    margin-top: 38px;
+  }
+}
+
+.factor__downArrow {
+  background: url(../img/base/bottom-arrow.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  font-size: 24px;
+  height: 74px;
+  margin: 58px auto 0;
+  width: 240px;
+}
+
+@media only screen and (max-width: 480px) {
+  .factor__downArrow {
+    background-size: 100%;
+    font-size: 12px;
+    height: 37px;
+    margin-top: 26px;
+    width: 120px;
+  }
+}
+
+.factor__listWrapper {
+  margin: 48px auto 0;
+  text-align: left;
+  width: 660px;
+}
+
+@media only screen and (max-width: 480px) {
+  .factor__listWrapper {
+    margin-top: 32px;
+    width: 100%;
+  }
+}
+
+.factor__lists {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.factor__lists > li {
+  font-size: 22px;
+  line-height: 30px;
+  margin: 0 0 23px 54px;
+  position: relative;
+}
+
+.factor__lists > li > span {
+  font-size: 12px;
+}
+
+.factor__lists > li :before {
+  background: url(../img/checkbox.svg) no-repeat 50%;
+  background-size: 30px;
+  content: "";
+  display: block;
+  height: 30px;
+  left: -54px;
+  position: absolute;
+  top: 0;
+  width: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+  .factor__lists {
+    margin: auto;
+    max-width: 314px;
+    padding-left: 20px;
+    width: 95.5%;
+  }
+
+  .factor__lists > li :before {
+    background-position: center 4px;
+    background-size: 15px;
+    left: 0;
+    margin-left: -28px;
+  }
+
+  .factor__lists > li {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 8px 0;
+  }
+}

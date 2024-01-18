@@ -1,0 +1,37 @@
+.factor {
+  margin: auto;
+  padding: 100px 80px;
+  text-align: center;
+  max-width: 1124px;
+}
+
+.factor__title {
+  @include title-h2;
+}
+
+.factor__img {
+  margin-top: 72px;
+}
+
+.factor__lists {
+  margin: 48px auto 0;
+  text-align: left;
+  width: 660px;
+}
+
+@media only screen and (max-width: 480px) {
+  .factor {
+    margin: auto;
+    padding: 45px 0;
+    width: 88%;
+  }
+
+  .factor__img {
+    margin-top: 38px;
+  }
+
+  .factor__lists {
+    margin-top: 32px;
+    width: 100%;
+  }
+}

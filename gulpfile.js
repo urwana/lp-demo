@@ -1,17 +1,33 @@
-// gulpfile.js
-
-// const gulp = require("gulp");
-// const imagemin = require("gulp-imagemin");
-// const mozjpeg = require("imagemin-mozjpeg");
-// const pngquant = require("imagemin-pngquant");
+//@ts-nocheck
 import pkg from "gulp";
 const { src, dest, series, parallel, watch } = pkg;
 import imagemin from "gulp-imagemin";
 import imageminMozjpeg from "imagemin-mozjpeg";
 import imageminPngquant from "imagemin-pngquant";
+import ejs from "gulp-ejs";
+import dartSass from "sass";
+import gulpSass from "gulp-sass";
+const sass = gulpSass(dartSass);
+import rename from "gulp-rename";
+import connect from "gulp-connect";
 
-function imageCompress() {
-  return src("./src/image/*")
+const compileEjs = () => {
+  return src("./src/templates/**/*.ejs")
+    .pipe(ejs())
+    .pipe(rename({ extname: ".html" }))
+    .pipe(dest("./dist/"))
+    .pipe(connect.reload());
+};
+
+const compileSass = () => {
+  return src("src/scss/**/*.scss")
+    .pipe(sass().on("error", sass.logError))
+    .pipe(dest("./dist/css"))
+    .pipe(connect.reload());
+};
+
+const imageCompress = () => {
+  return src("./src/img/**/*")
     .pipe(
       imagemin(
         [
@@ -24,8 +40,28 @@ function imageCompress() {
         }
       )
     )
-    .pipe(dest("./dist/image/"));
-}
+    .pipe(dest("./dist/img/"));
+};
 
-export default series(imageCompress);
+const watchFile = () => {
+  watch("src/scss/**/*.scss", compileSass);
+  watch("src/templates/**/*.ejs", compileEjs);
+  watch("src/img/**/*", imageCompress);
+};
+
+const startServer = () => {
+  connect.server({
+    root: "dist",
+    livereload: true,
+    port: 8080,
+  });
+};
+
+export default series(
+  compileEjs,
+  compileSass,
+  imageCompress,
+  parallel(startServer, watchFile)
+);
+
 // parallel() 同時に処理を行う

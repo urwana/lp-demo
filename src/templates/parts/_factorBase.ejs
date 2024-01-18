@@ -1,0 +1,43 @@
+<section class="factor">
+  <h2 class="factor__title">
+    <span>テクノールが</span>法人のお客様に選ばれているワケ
+  </h2>
+  <div class="factor__img">
+    <picture>
+      <source media="(max-width: 480px)" srcset="./img/factor-sp.svg?202308241719" />
+      <source media="(min-width: 481px)" srcset="./img/factor.svg?202308241719" />
+      <img alt="テクノールが法人のお客様に選ばれているワケ" height="314" src="./img/factor.svg?202308241719" />
+    </picture>
+  </div>
+  <div class="factor__downArrow">
+    他にも
+  </div>
+  <%
+    checkLists =
+      [
+        `<strong>つながりやすいカスタマーサポート</strong><br class="display-mobile" />で印刷発注をお手伝い`,
+        `低予算でもOK、<strong>小ロットの都度印刷に対応</strong>`,
+        `<strong>売掛・請求書払いにも対応</strong>した選べる支払<br class="display-mobile" />い方法`,
+        `<strong>100%の満足保証</strong><span>※</span><br class="display-mobile" />（テクノール負担で即再印刷 or 返金）`,
+      ]
+  %>
+  <div class="factor__listWrapper">
+    <ul class="factor__lists">
+      <% checkLists.forEach(data => { %>
+      <li><%- data %></li>
+      <% }); %>
+    </ul>
+    <% annotationLists = [
+      "お客様からのお申し出内容によっては、100%満足度保証プログラムの適応対象外とさせていただく場合がございます。",
+      " 1 ICチップ・フライヤー印刷、A4、片面カラー、コート90kg、7営業日出荷、29,000部の場合。",
+      " 2 19:29までに注文を完了、19:49までに入稿を完了、19:59までに受付日確定したご注文が対象です。<br />お届け先・分納先が1都3県内のみ(一部対象外あり)。",
+    ]; %>
+    <ul class="annotationLists">
+      <% annotationLists.forEach(data => { %>
+      <li>
+        <%- data %>
+      </li>
+      <% }); %>
+    </ul>
+  </div>
+</section>

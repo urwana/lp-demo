@@ -1,0 +1,448 @@
+// button
+%buttonBase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-image: url(../img/right-arrow.svg);
+  background-position: center right 30px;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  width: 428px;
+  height: 96px;
+  line-height: 1.4;
+  margin: 24px 16px 0;
+
+  > span {
+    font-size: 24px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  @media only screen and (max-width: 480px) {
+    width: 92%;
+    max-width: 345px;
+    height: 60px;
+    margin: 8px auto 0;
+    background-position: center right 20px;
+    background-size: 8px;
+
+    > span {
+      font-size: 14px;
+    }
+
+    &:nth-of-type(2) {
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.button {
+  @extend %buttonBase;
+  background-color: #000000;
+  color: #e6cd92;
+}
+
+.button-register {
+  @extend %buttonBase;
+  background-color: #e6cd92;
+  color: #000;
+}
+
+.button-dark {
+  background-color: #f5f5f5 !important;
+}
+
+@media only screen and (max-width: 480px) {
+  .buttonContainer {
+    display: block;
+    margin: 24px auto 0;
+  }
+
+  .buttonBox {
+    margin-top: 24px;
+  }
+}
+
+.order .button {
+  margin: 32px auto 0;
+  width: 640px;
+}
+
+@media only screen and (max-width: 480px) {
+  .order .button {
+    height: 60px;
+    margin-top: 38px;
+    max-width: 345px;
+    width: 92%;
+  }
+}
+
+.button-otherProducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff url(../img/arrow-black.svg) 50% no-repeat;
+  background-position: center right 20px;
+  border-radius: 25px;
+  color: #333;
+  font-weight: 600;
+  height: 42px;
+  width: 306px;
+  margin-top: 64px;
+
+  > span {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .button-otherProducts {
+    height: 40px;
+    margin: 24px auto 0;
+    width: 291px;
+
+    > span {
+      font-size: 13px;
+    }
+  }
+}
+
+// service buttons
+.checkAndRegister {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.checkAndRegister__inner {
+  margin: auto;
+  width: 960px;
+}
+
+.checkAndRegister__lead {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+@media only screen and (max-width: 480px) {
+  .checkAndRegister {
+    padding: 38px 0;
+  }
+
+  .checkAndRegister__inner {
+    width: 100%;
+  }
+
+  .checkAndRegister__lead {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.buttonBox__copyBox {
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.4;
+  position: relative;
+}
+
+.priceOff {
+  font-size: 28px;
+
+  > span {
+    font-size: 24px;
+  }
+
+  .comma {
+    font-size: 26px;
+  }
+}
+
+.termsOfUse {
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  right: 30px;
+  top: -14px;
+}
+
+@media only screen and (max-width: 480px) {
+  .buttonBox__copyBox {
+    font-size: 14px;
+
+    .priceOff {
+      font-size: 14px;
+
+      > span {
+        font-size: 12px;
+      }
+
+      .comma {
+        font-size: 13px;
+      }
+    }
+
+    .termsOfUse {
+      font-size: 12px;
+      right: 0;
+      top: -8px;
+    }
+  }
+}
+
+.order {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.order__inner {
+  margin: auto;
+  width: 1124px;
+}
+
+.order__catch {
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 36px;
+  font-size: 40px;
+}
+
+.order__lead {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.order__lead2nd {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 44px;
+
+  > div {
+    display: inline-block;
+    position: relative;
+  }
+
+  > span {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .order {
+    padding: 38px 0;
+  }
+
+  .order__inner {
+    width: 100%;
+  }
+
+  .order__catch {
+    font-size: 23px;
+    margin-top: 25px;
+  }
+
+  .order__lead {
+    font-size: 14px;
+  }
+
+  .order__lead2nd {
+    font-size: 12px;
+    margin-top: 25px;
+
+    > span {
+      font-size: 13px;
+    }
+  }
+}
+
+// slash
+%slashStyle {
+  border-bottom: 1px solid #000;
+  display: inline-block;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+
+  @media only screen and (max-width: 480px) {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.slash-l {
+  @extend %slashStyle;
+  bottom: 6px;
+  left: -14px;
+  transform: rotate(-300deg);
+
+  @media only screen and (max-width: 480px) {
+    bottom: 4px;
+    transform: rotate(60deg);
+  }
+}
+
+.slash-r {
+  @extend %slashStyle;
+  bottom: 6px;
+  right: -14px;
+  -webkit-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+
+  @media only screen and (max-width: 480px) {
+    bottom: 4px;
+    -webkit-transform: rotate(-63deg);
+    transform: rotate(-63deg);
+  }
+}
+
+.checkAndRegister .slash-l,
+.checkAndRegister .slash-r {
+  height: 55px;
+  width: 55px;
+}
+
+@media only screen and (max-width: 480px) {
+  .checkAndRegister .slash-r {
+    bottom: 6px;
+  }
+
+  .checkAndRegister .slash-l,
+  .checkAndRegister .slash-r {
+    height: 31px;
+    width: 31px;
+  }
+
+  .button-register .slash-l {
+    transform: rotate(75deg);
+  }
+
+  .button-register .slash-r {
+    transform: rotate(-75deg);
+  }
+}
+
+.floatingButtonContainer {
+  position: fixed;
+  right: 0;
+  bottom: 100px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 40px 8px 8px 8px;
+  text-align: center;
+  z-index: 10;
+  border-radius: 8px;
+}
+
+.floatingButton {
+  @extend %buttonBase;
+  width: 372px;
+  height: 80px;
+  background-color: #000000;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  margin-top: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.floatingButton__lead {
+  color: #333;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+  left: 50px;
+  position: absolute;
+  text-align: center;
+  top: -37px;
+}
+
+.floatingButton__priceCircle {
+  background-color: #fff;
+  border-radius: 36px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  width: 72px;
+  height: 72px;
+  line-height: 1;
+  padding-top: 4px;
+  text-align: center;
+  margin-left: 4px;
+
+  > span {
+    font-size: 18px;
+  }
+
+  .numberOrPrice {
+    font-size: 22px;
+  }
+}
+
+.floatingButton__label {
+  font-size: 20px;
+  color: #e6cd92;
+  margin-left: 16px;
+
+  > span {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .floatingButtonContainer {
+    bottom: 15px;
+    left: 0;
+    padding-top: 5px;
+  }
+
+  .floatingButton__lead {
+    color: #fff;
+    font-size: 12px;
+    left: 0;
+    position: relative;
+    top: 0;
+  }
+
+  .floatingButton__label {
+    display: inline-block;
+    font-size: 14px;
+    padding-left: 20px;
+    text-align: left;
+
+    > span {
+      font-size: 14px;
+    }
+  }
+
+  .floatingButton__priceCircle {
+    border-radius: 25px;
+    font-size: 12px;
+    height: 50px;
+    left: 5px;
+    top: 5px;
+    width: 50px;
+  }
+
+  .numberOrPrice {
+    font-size: 17px;
+  }
+}
+
+.floatingButtonContainer .slash span {
+  height: 28px;
+  width: 28px;
+}

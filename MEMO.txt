@@ -1,4 +1,11 @@
 
+git remote add origin https://github.com/urwana
+
+git remote set-url origin https://github.com/urwana/lp-demo
+
+git push -u origin main
+
+
 node -v
 v16.17.0
 
@@ -18,6 +25,17 @@ npm init -y
 
 npm install --save-dev gulp gulp-imagemin@7.1.0 imagemin-mozjpeg imagemin-pngquant
 
+npm install gulp-ejs --save-dev
+
+npm install --save-dev gulp-sass sass
+
+npm install --save-dev gulp-rename
+
+npm install --save-dev gulp-connect
+
+
+
+https://ejs.co/
 
 npx gulp
 
@@ -36,7 +54,7 @@ npm i imagemin-mozjpeg -D
 npm i imagemin-pngquant -D
 
 
-Error [ERR_REQUIRE_ESM]: require() of ES Module 
-/node_modules/imagemin-mozjpeg/index.js 
+Error [ERR_REQUIRE_ESM]: require() of ES Module
+/node_modules/imagemin-mozjpeg/index.js
 gulpfile.js not supported.
 Instead change the require of index.js in gulpfile.js to a dynamic import() which is available in all CommonJS modules.

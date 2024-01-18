@@ -1,0 +1,27 @@
+<div class="checkAndRegister <%- buttonData.colorDark ? "contents-dark" : "" %>">
+  <div class="checkAndRegister__inner">
+    <div class="checkAndRegister__lead">
+      <%- buttonData.lead %>
+    </div>
+    <div class="checkAndRegister__button">
+      <div class="buttonContainer">
+        <div class="buttonBox">
+          <div class="buttonBox__copyBox">
+            <span class="slash-l"></span><%- buttonData.leftButton.copy %><span class="slash-r"></span>
+          </div>
+          <a class="button" href="<%- buttonData.leftButton.link %>"><span><%- buttonData.leftButton.buttonLabel %></span></a>
+        </div>
+        <div class="buttonBox">
+          <div class="buttonBox__copyBox">
+            <span class="slash-l"></span><%- buttonData.rightButton.copy %>
+            <span class="slash-r"></span><sup class="termsOfUse"><%- buttonData.rightButton.termsOfUse %></sup>
+          </div>
+          <a class="button-register" href="<%- buttonData.rightButton.link %>"><span><%- buttonData.rightButton.buttonLabel %></span></a>
+        </div>
+        <div>
+          <a class="button-otherProducts <%- buttonData.colorDark ? "" : "button-dark" %>" href="<%- buttonData.otherProducts.link %>"><span><%- buttonData.otherProducts.buttonLabel %></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<% headData = { title : "基盤印刷の概要", css : "base" }; %>
+<%- include('./parts/_head', { title: 'My Website' }) %>
+
+<body class="icBase-lp">
+  <%- include('./parts/_heroBase', { title: 'My Website' }) %>
+  <%
+      copy = "24時間全国どこからでもOK";
+      copy2 = "３分で完了！カンタン注文";
+      buttonData = {
+        link : "https://technore.com/account/register/new",
+        buttonLabel : "ICチップの印刷商品・価格を今すぐチェック！",
+        termsOfUse : "（利用条件あり）"
+      };
+    %>
+  <%- include('./parts/_order', { lead : "ICチップの基盤・精密基盤印刷ならテクノール！", copy : copy, contentsDark : true, buttonData : buttonData }) %>
+  <%- include('./parts/_factorBase') %>
+  <%- include('./parts/_order', { lead : "豊富な用紙でICチップを印刷できるテクノール！", copy : copy, contentsDark : true, buttonData : buttonData }) %>
+  <%- include('./parts/_templates') %>
+  <%- include('./parts/_flow', { contentsDark : true }) %>
+  <%- include('./parts/_order', { lead : "最短明日到着で 仕上がり後も充実サポートのテクノール", copy : copy, contentsDark : false, buttonData : buttonData }) %>
+  <%- include('./parts/_floatingButton') %>
+  <%- include('./parts/_footer') %>
+</body>
+
+</html>

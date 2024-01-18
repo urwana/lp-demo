@@ -1,0 +1,23 @@
+<svg width="137" height="39" viewBox="0 0 137 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="47.2124" height="4.59359" transform="matrix(1 0 -0.44251 0.896764 52.3687 2)" fill="black"/>
+<rect width="47.2124" height="4.59359" transform="matrix(1 0 -0.44251 0.896764 85.936 33.6379)" fill="black"/>
+<rect width="23.9415" height="4.59359" transform="matrix(1 0 -0.44251 0.896764 112.799 25.7285)" fill="black"/>
+<rect width="46.1542" height="4.59359" transform="matrix(1 0 -0.44251 0.896764 50.0327 9.03067)" fill="black"/>
+<rect width="5.83976" height="19.7387" transform="matrix(1 0 -0.520322 0.85397 59.2341 12.546)" fill="black"/>
+<rect x="72.2239" y="16.0613" width="15.1834" height="4.39416" fill="black"/>
+<rect width="5.83976" height="15.7161" transform="matrix(1 0 -0.520322 0.85397 69.0149 16.0613)" fill="black"/>
+<rect width="5.83976" height="26.0064" transform="matrix(1 0 -0.520322 0.85397 85.3662 16.0613)" fill="black"/>
+<rect width="5.83976" height="32.5548" transform="matrix(1 0 -0.520322 0.85397 105.32 2)" fill="black"/>
+<rect width="5.83976" height="32.5548" transform="matrix(1 0 -0.520322 0.85397 116.026 2)" fill="black"/>
+<rect width="5.83976" height="32.5548" transform="matrix(1 0 -0.520322 0.85397 126.537 2)" fill="black"/>
+<circle cx="18" cy="18" r="18" fill="black"/>
+<circle cx="18" cy="18" r="16" fill="black"/>
+<mask id="mask0_23_78" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="32" height="32">
+<circle cx="18" cy="18" r="16" fill="black"/>
+</mask>
+<g mask="url(#mask0_23_78)">
+<path d="M18 1.05887C38.2354 -5.99995 18.5268 12.7553 23.7053 16.667C29.4586 21.0128 60.8235 25.0589 42.168 16.667C23.5126 8.27505 29.26 19.6724 27.2314 26.3133C25.3354 32.5199 32.9367 41.9214 32.9367 41.9214C32.9367 41.9214 16.5882 26.4706 18 32.275C19.4118 38.0795 3.06334 41.9214 3.06334 41.9214C3.06334 41.9214 -0.352937 25.0589 8.76864 26.3133C17.8902 27.5677 2.47055 8.11769 2.47055 8.11769C2.47055 8.11769 2.94113 31.1765 12.2947 16.667C21.6483 2.1574 -2.23535 8.1177 18 1.05887Z" fill="#00A0E8"/>
+<path d="M11.4121 5.95904C-4.58805 23.647 37.2948 5.48844 37.2948 5.48844V29.0179H13.7654C13.7654 29.0179 27.4123 -11.7289 11.4121 5.95904Z" fill="#E4007E"/>
+<path d="M6.5596 -7.41174C6.5596 -7.41174 9.55651 25.7187 19.8823 19.8824C30.7058 13.7647 -7.70435 17.2941 -7.70435 17.2941L6.5596 -7.41174Z" fill="#E6CE92"/>
+</g>
+</svg>

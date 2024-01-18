@@ -1,0 +1,100 @@
+<% const templatesData = [
+  {
+    link:"https://design.technore.com/products/baseChip?sample_design=4608",
+    imgName:"template1",
+    label:"GL90基盤",
+    templateName:"GENMA - Ea - ZX"
+  },
+  {
+    link:"https://design.technore.com/products/baseChip?bci=7&sample_design=8620",
+    imgName:"template2",
+    label:"SLX78TT",
+    templateName:"JENMA - 00T"
+  },
+  {
+    link:"https://design.technore.com/products/baseChip?bci=4&blank_icon_mode=4&page=2&paper_size=a4&records_per_page=40&sample_design=5294",
+    imgName:"template3",
+    label:"銅可変樹脂",
+    templateName:"HITACHI - V113"
+  },
+  {
+    link:"https://design.technore.com/products/baseChip?bci=2&blank_icon_mode=4&paper_size=a4&records_per_page=40&sample_design=5109",
+    imgName:"template4",
+    label:"シリカ-DS",
+    templateName:"Hauwl - 988"
+  },
+  {
+    link:"https://design.technore.com/products/baseChip?bci=2&blank_icon_mode=4&paper_size=a4&records_per_page=40&sample_design=5118",
+    imgName:"template5",
+    label:"シリコン樹脂 + ジニリウム",
+    templateName:"JENMA - V3"
+  },
+  {
+    link:"https://design.technore.com/products/baseChip?bci=18&blank_icon_mode=4&paper_size=a4&records_per_page=40&sample_design=8078",
+    imgName:"template6",
+    label:"プリント銀基盤",
+    templateName:"EVa 98 - NIGT"
+  },
+  {
+    link:"https://design.technore.com/products/baseChip?bci=9&blank_icon_mode=4&paper_size=a4&records_per_page=40&sample_design=4638",
+    imgName:"template7",
+    label:"次世代 VE",
+    templateName:"Beyond - 16000"
+  },
+  {
+    link:"https://design.technore.com/products/baseChip?bci=1&blank_icon_mode=4&paper_size=a4&records_per_page=40&sample_design=11033",
+    imgName:"template8",
+    label:"A4",
+    templateName:"GENMA - T91NT"
+  },
+];
+
+%>
+<section class="templates">
+  <div class="templates__inner">
+    <h2 class="templates__title">
+      <span>パソコンから作成可能</span>18万件のオープンソース設計書
+    </h2>
+    <div class="templates__lead">
+      GL90基盤、SLX78TT、銀可変樹脂など<br class="display-mobile" />
+      豊富な設計書、仕様書、約1万点からAiが自動作成。
+    </div>
+    <ul class="templates__lists">
+      <% templatesData.forEach(data => { %>
+      <li class="templates__item">
+        <a href="<%= data.link %>">
+          <div class="templates__imgBox">
+            <picture>
+              <source media="(max-width: 480px)" srcset="
+                    ./img/<%= data.imgName %>-mobile@3x.jpg,
+                    ./img/<%= data.imgName %>-mobile@3x.jpg 3x
+                  " />
+              <source media="(min-width: 481px)" srcset="
+                    ./img/<%= data.imgName %>.jpg,
+                    ./img/<%= data.imgName %>@2x.jpg 2x
+                  " />
+              <img width="126" height="177" src="./img/<%= data.imgName %>.jpg" alt="<%= data.templateName %>" />
+            </picture>
+          </div>
+          <div class="templates__label"><%= data.label %></div>
+          <div class="templates__name"><%= data.templateName %></div>
+        </a>
+      </li>
+      <% }); %>
+    </ul>
+    <div class="templates__tool">
+      <h3 class="templates__title-h3">基盤開発ソフトで製造した<br class="display-mobile" />設計の入稿もOK</h3>
+      <div class="templates__explanation">
+        CAD-M, MultiNAXほかデータソフトで作成された<br class="display-mobile" />設計データも入稿いただけます。
+      </div>
+      <dl class="templates__applications">
+        <dt>対応：</dt>
+        <dd>GENMA-Ea-ZX</dd>
+        <dd>JENMA-00T</dd>
+        <dd>HITACHI-V113</dd>
+        <dd>Hauwl-988</dd>
+        <dd>JENMA-V3</dd>
+      </dl>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+<% if (typeof lead === 'undefined') { lead = ""; } %>
+<section class="order <%- contentsDark ? "contents-dark" : "" %>">
+  <div class="order__inner">
+    <div class="order__lead">
+      <%- lead %>
+    </div>
+    <div class="order__lead2nd">
+      <div>
+        <span class="slash-l"></span> &nbsp;<%- copy %>&nbsp;
+        <span class="slash-r"></span>
+      </div>
+    </div>
+    <h2 class="order__catch"><%- copy2 %></h2>
+  </div>
+  <a class="button" href="<%- buttonData.link %>"><span><%- buttonData.buttonLabel %></span></a>
+</section>
