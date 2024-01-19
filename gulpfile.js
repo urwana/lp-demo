@@ -11,23 +11,6 @@ const sass = gulpSass(dartSass);
 import rename from "gulp-rename";
 import connect from "gulp-connect";
 
-const imageCompress = () => {
-  return src("./src/img/*")
-    .pipe(
-      imagemin(
-        [
-          imageminMozjpeg({ quality: 80 }),
-          imageminPngquant({ quality: [0.6, 0.7], speed: 1 }),
-          imagemin.svgo(),
-        ],
-        {
-          verbose: true,
-        }
-      )
-    )
-    .pipe(dest("./dist/img/"));
-};
-
 const compileEjs = () => {
   return src("./src/templates/*.ejs")
     .pipe(ejs())
@@ -43,6 +26,29 @@ const compileSass = () => {
     .pipe(connect.reload());
 };
 
+const imageCompress = () => {
+  return src("./src/img/**/*")
+    .pipe(
+      imagemin(
+        [
+          imageminMozjpeg({ quality: 80 }),
+          imageminPngquant({ quality: [0.6, 0.7], speed: 1 }),
+          imagemin.svgo(),
+        ],
+        {
+          verbose: true,
+        }
+      )
+    )
+    .pipe(dest("./dist/img/"));
+};
+
+const watchFile = () => {
+  watch("src/scss/**/*.scss", compileSass);
+  watch("src/templates/**/*.ejs", compileEjs);
+  watch("src/img/**/*", imageCompress);
+};
+
 const startServer = () => {
   connect.server({
     root: "dist",
@@ -55,7 +61,7 @@ export default series(
   compileEjs,
   compileSass,
   imageCompress,
-  startServer,
-  watch
+  parallel(startServer, watchFile)
 );
+
 // parallel() 同時に処理を行う
