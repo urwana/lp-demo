@@ -1,19 +1,19 @@
-    <section class="order contents-dark">
+    <section class="order <%- contentsDark ? "contents-dark" : "" %>">
       <div class="order-inner">
         <div class="lead">
-          ICチップの基盤・精密基盤印刷ならテクノール！
+          <%- lead %>
         </div>
         <div class="lead2nd">
           <div>
-            <span class="slash-l"></span> &nbsp;24時間全国どこからでもOK&nbsp;
+            <span class="slash-l"></span> &nbsp;<%- copy %>&nbsp;
             <span class="slash-r"></span>
           </div>
         </div>
-        <h2 class="catch">３分で完了！カンタン注文</h2>
+        <h2 class="catch"><%- copy2 %></h2>
       </div>
       <a
         class="button"
-        href="https://technore.com/print/semiconductor/prices?color=BOTH_SIDE_COLOR&amp;paper=COAT&amp;size=A4&amp;weight=90"
-        ><span>ICチップの印刷商品・価格を今すぐチェック！</span></a
+        href="<%- buttonData.link %>"
+        ><span><%- buttonData.buttonLabel %></span></a
       >
     </section>
