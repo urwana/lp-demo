@@ -12,7 +12,7 @@ import rename from "gulp-rename";
 import connect from "gulp-connect";
 
 const compileEjs = () => {
-  return src("./src/templates/*.ejs")
+  return src("./src/templates/**/*.ejs")
     .pipe(ejs())
     .pipe(rename({ extname: ".html" }))
     .pipe(dest("./dist/"))
