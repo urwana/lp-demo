@@ -37,8 +37,17 @@
 }
 
 .button-register {
+  @extend %buttonBase;
   background-color: #e6cd92;
   color: #000;
+
+  > span {
+    font-size: 24px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .button-dark {
@@ -74,13 +83,13 @@
   }
 }
 
-.icBase-lp .order .button {
+.order .button {
   margin: 32px auto 0;
   width: 640px;
 }
 
 @media only screen and (max-width: 480px) {
-  .icBase-lp .order .button {
+  .order .button {
     height: 60px;
     margin-top: 38px;
     max-width: 345px;
@@ -122,76 +131,76 @@
 .checkAndRegister {
   padding: 80px 0;
   text-align: center;
+}
 
-  .checkAndRegister-inner {
-    margin: auto;
-    width: 910px;
+.checkAndRegister__inner {
+  margin: auto;
+  width: 910px;
+}
 
-    .lead {
-      font-size: 28px;
-      font-weight: 600;
-      line-height: 1.7;
-    }
-  }
+.checkAndRegister__lead {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.7;
 }
 
 @media only screen and (max-width: 480px) {
   .checkAndRegister {
     padding: 38px 0;
+  }
 
-    .checkAndRegister-inner {
-      width: 100%;
+  .checkAndRegister__inner {
+    width: 100%;
+  }
 
-      .lead {
-        font-size: 14px;
-        line-height: 1.4;
-      }
-    }
+  .checkAndRegister__lead {
+    font-size: 14px;
+    line-height: 1.4;
   }
 }
 
-.copyBox {
+.buttonBox__copyBox {
   display: inline-block;
   font-size: 26px;
   font-weight: 600;
   line-height: 1.4;
   position: relative;
+}
 
-  .priceOff {
-    font-size: 28px;
-  }
+.priceOff {
+  font-size: 28px;
 
-  .priceOff > span {
+  > span {
     font-size: 24px;
   }
 
-  .priceOff .comma {
+  .comma {
     font-size: 26px;
-  }
-
-  .termsOfUse {
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    right: 30px;
-    top: -14px;
   }
 }
 
+.termsOfUse {
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  right: 30px;
+  top: -14px;
+}
+
 @media only screen and (max-width: 480px) {
-  .copyBox {
+  .buttonBox__copyBox {
     font-size: 14px;
 
     .priceOff {
       font-size: 14px;
-    }
 
-    > span {
-      font-size: 12px;
-    }
+      > span {
+        font-size: 12px;
+      }
 
-    .comma {
-      font-size: 13px;
+      .comma {
+        font-size: 13px;
+      }
     }
 
     .termsOfUse {
@@ -202,78 +211,69 @@
   }
 }
 
-.icBase-lp .order {
+.order {
   padding: 80px 0;
   text-align: center;
+}
 
-  .order-inner {
-    margin: auto;
-    width: 1124px;
+.order__inner {
+  margin: auto;
+  width: 1124px;
+}
+
+.order__catch {
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 36px;
+  font-size: 40px;
+}
+
+.order__lead {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.order__lead2nd {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 44px;
+
+  > div {
+    display: inline-block;
+    position: relative;
   }
 
-  .catch {
-    font-weight: 700;
-    line-height: 1;
-    margin-top: 36px;
-    font-size: 40px;
-  }
-
-  .imgBox {
-    margin: auto;
-    width: 600px;
-  }
-
-  .lead {
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 1;
-  }
-
-  .lead2nd {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1;
-    margin-top: 44px;
-
-    > div {
-      display: inline-block;
-      position: relative;
-    }
-
-    > span {
-      font-size: 26px;
-    }
+  > span {
+    font-size: 26px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .icBase-lp .order {
+  .order {
     padding: 38px 0;
+  }
 
-    .order-inner {
-      width: 100%;
-    }
+  .order__inner {
+    width: 100%;
+  }
 
-    .catch {
-      font-size: 23px;
-      margin-top: 25px;
-    }
+  .order__catch {
+    font-size: 23px;
+    margin-top: 25px;
+  }
 
-    .imgBox {
-      width: 80%;
-    }
+  .order__lead {
+    font-size: 14px;
+  }
 
-    .lead {
-      font-size: 14px;
-    }
+  .order__lead2nd {
+    font-size: 12px;
+    margin-top: 25px;
 
-    .lead2nd {
-      font-size: 12px;
-      margin-top: 25px;
-
-      > span {
-        font-size: 13px;
-      }
+    > span {
+      font-size: 13px;
     }
   }
 }
@@ -354,60 +354,60 @@
   text-align: center;
   z-index: 10;
   border-radius: 8px;
+}
 
-  .floatingButton {
-    @extend %buttonBase;
-    width: 372px;
-    height: 80px;
-    background-color: #000000;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-    margin-top: 0;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-  }
+.floatingButton {
+  @extend %buttonBase;
+  width: 372px;
+  height: 80px;
+  background-color: #000000;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  margin-top: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
 
-  .lead {
-    color: #333;
-    display: inline-block;
-    font-size: 24px;
-    font-weight: 600;
-    left: 50px;
-    position: absolute;
-    text-align: center;
-    top: -37px;
-  }
+.floatingButton__lead {
+  color: #333;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+  left: 50px;
+  position: absolute;
+  text-align: center;
+  top: -37px;
+}
 
-  .priceCircle {
-    background-color: #fff;
-    border-radius: 36px;
-    color: #333;
+.floatingButton__priceCircle {
+  background-color: #fff;
+  border-radius: 36px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  height: 72px;
+  line-height: 1;
+  padding-top: 4px;
+  text-align: center;
+  width: 72px;
+  margin-left: 4px;
+
+  > span {
     font-size: 18px;
-    font-weight: 600;
-    height: 72px;
-    line-height: 1;
-    padding-top: 4px;
-    text-align: center;
-    width: 72px;
-    margin-left: 4px;
-
-    > span {
-      font-size: 18px;
-    }
-
-    .numberOrPrice {
-      font-size: 22px;
-    }
   }
+}
 
-  .buttonText {
-    font-size: 20px;
-    color: #e6cd92;
-    margin-left: 16px;
+.numberOrPrice {
+  font-size: 22px;
+}
 
-    > span {
-      font-size: 26px;
-    }
+.floatingButton__label {
+  font-size: 20px;
+  color: #e6cd92;
+  margin-left: 16px;
+
+  > span {
+    font-size: 26px;
   }
 }
 
@@ -416,38 +416,38 @@
     bottom: 15px;
     left: 0;
     padding-top: 5px;
+  }
 
-    .lead {
-      color: #fff;
-      font-size: 12px;
-      left: 0;
-      position: relative;
-      top: 0;
-    }
+  .floatingButton__lead {
+    color: #fff;
+    font-size: 12px;
+    left: 0;
+    position: relative;
+    top: 0;
+  }
 
-    .buttonText {
-      display: inline-block;
+  .floatingButton__label {
+    display: inline-block;
+    font-size: 14px;
+    padding-left: 20px;
+    text-align: left;
+
+    > span {
       font-size: 14px;
-      padding-left: 20px;
-      text-align: left;
-
-      > span {
-        font-size: 14px;
-      }
     }
+  }
 
-    .priceCircle {
-      border-radius: 25px;
-      font-size: 12px;
-      height: 50px;
-      left: 5px;
-      top: 5px;
-      width: 50px;
+  .floatingButton__priceCircle {
+    border-radius: 25px;
+    font-size: 12px;
+    height: 50px;
+    left: 5px;
+    top: 5px;
+    width: 50px;
+  }
 
-      .numberOrPrice {
-        font-size: 17px;
-      }
-    }
+  .numberOrPrice {
+    font-size: 17px;
   }
 }
 

@@ -193,7 +193,7 @@ a {
     text-align: left;
   }
 }
-.floatingButtonContainer .floatingButton, .button {
+.floatingButton, .button-register, .button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,6 +231,12 @@ a {
   background-color: #e6cd92;
   color: #000;
 }
+.button-register > span {
+  font-size: 24px;
+}
+.button-register:hover {
+  opacity: 0.6;
+}
 
 .button-dark {
   background-color: #f5f5f5 !important;
@@ -260,13 +266,13 @@ a {
     margin-top: 40px;
   }
 }
-.icBase-lp .order .button {
+.order .button {
   margin: 32px auto 0;
   width: 640px;
 }
 
 @media only screen and (max-width: 480px) {
-  .icBase-lp .order .button {
+  .order .button {
     height: 60px;
     margin-top: 38px;
     max-width: 345px;
@@ -303,11 +309,13 @@ a {
   padding: 80px 0;
   text-align: center;
 }
-.checkAndRegister .checkAndRegister-inner {
+
+.checkAndRegister__inner {
   margin: auto;
   width: 910px;
 }
-.checkAndRegister .checkAndRegister-inner .lead {
+
+.checkAndRegister__lead {
   font-size: 28px;
   font-weight: 600;
   line-height: 1.7;
@@ -317,31 +325,33 @@ a {
   .checkAndRegister {
     padding: 38px 0;
   }
-  .checkAndRegister .checkAndRegister-inner {
+  .checkAndRegister__inner {
     width: 100%;
   }
-  .checkAndRegister .checkAndRegister-inner .lead {
+  .checkAndRegister__lead {
     font-size: 14px;
     line-height: 1.4;
   }
 }
-.copyBox {
+.buttonBox__copyBox {
   display: inline-block;
   font-size: 26px;
   font-weight: 600;
   line-height: 1.4;
   position: relative;
 }
-.copyBox .priceOff {
+
+.priceOff {
   font-size: 28px;
 }
-.copyBox .priceOff > span {
+.priceOff > span {
   font-size: 24px;
 }
-.copyBox .priceOff .comma {
+.priceOff .comma {
   font-size: 26px;
 }
-.copyBox .termsOfUse {
+
+.termsOfUse {
   font-size: 16px;
   font-weight: 400;
   position: absolute;
@@ -350,83 +360,80 @@ a {
 }
 
 @media only screen and (max-width: 480px) {
-  .copyBox {
+  .buttonBox__copyBox {
     font-size: 14px;
   }
-  .copyBox .priceOff {
+  .buttonBox__copyBox .priceOff {
     font-size: 14px;
   }
-  .copyBox > span {
+  .buttonBox__copyBox .priceOff > span {
     font-size: 12px;
   }
-  .copyBox .comma {
+  .buttonBox__copyBox .priceOff .comma {
     font-size: 13px;
   }
-  .copyBox .termsOfUse {
+  .buttonBox__copyBox .termsOfUse {
     font-size: 12px;
     right: 0;
     top: -14px;
   }
 }
-.icBase-lp .order {
+.order {
   padding: 80px 0;
   text-align: center;
 }
-.icBase-lp .order .order-inner {
+
+.order__inner {
   margin: auto;
   width: 1124px;
 }
-.icBase-lp .order .catch {
+
+.order__catch {
   font-weight: 700;
   line-height: 1;
   margin-top: 36px;
   font-size: 40px;
 }
-.icBase-lp .order .imgBox {
-  margin: auto;
-  width: 600px;
-}
-.icBase-lp .order .lead {
+
+.order__lead {
   font-size: 28px;
   font-weight: 600;
   line-height: 1;
 }
-.icBase-lp .order .lead2nd {
+
+.order__lead2nd {
   font-size: 24px;
   font-weight: 600;
   line-height: 1;
   margin-top: 44px;
 }
-.icBase-lp .order .lead2nd > div {
+.order__lead2nd > div {
   display: inline-block;
   position: relative;
 }
-.icBase-lp .order .lead2nd > span {
+.order__lead2nd > span {
   font-size: 26px;
 }
 
 @media only screen and (max-width: 480px) {
-  .icBase-lp .order {
+  .order {
     padding: 38px 0;
   }
-  .icBase-lp .order .order-inner {
+  .order__inner {
     width: 100%;
   }
-  .icBase-lp .order .catch {
+  .order__catch {
     font-size: 23px;
     margin-top: 25px;
   }
-  .icBase-lp .order .imgBox {
-    width: 80%;
-  }
-  .icBase-lp .order .lead {
+  .order__lead {
     font-size: 14px;
   }
-  .icBase-lp .order .lead2nd {
+  .order__lead2nd {
     font-size: 12px;
     margin-top: 25px;
   }
-  .icBase-lp .order .lead2nd > span {
+  .order__lead2nd > span {
     font-size: 13px;
   }
 }
@@ -502,7 +509,8 @@ a {
   z-index: 10;
   border-radius: 8px;
 }
-.floatingButtonContainer .floatingButton {
+
+.floatingButton {
   width: 372px;
   height: 80px;
   background-color: #000000;
@@ -512,7 +520,8 @@ a {
   justify-content: left;
   align-items: center;
 }
-.floatingButtonContainer .lead {
+
+.floatingButton__lead {
   color: #333;
   display: inline-block;
   font-size: 24px;
@@ -522,7 +531,8 @@ a {
   text-align: center;
   top: -37px;
 }
-.floatingButtonContainer .priceCircle {
+
+.floatingButton__priceCircle {
   background-color: #fff;
   border-radius: 36px;
   color: #333;
@@ -535,18 +545,20 @@ a {
   width: 72px;
   margin-left: 4px;
 }
-.floatingButtonContainer .priceCircle > span {
+.floatingButton__priceCircle > span {
   font-size: 18px;
 }
-.floatingButtonContainer .priceCircle .numberOrPrice {
+
+.numberOrPrice {
   font-size: 22px;
 }
-.floatingButtonContainer .buttonText {
+
+.floatingButton__label {
   font-size: 20px;
   color: #e6cd92;
   margin-left: 16px;
 }
-.floatingButtonContainer .buttonText > span {
+.floatingButton__label > span {
   font-size: 26px;
 }
 
@@ -556,23 +568,23 @@ a {
     left: 0;
     padding-top: 5px;
   }
-  .floatingButtonContainer .lead {
+  .floatingButton__lead {
     color: #fff;
     font-size: 12px;
     left: 0;
     position: relative;
     top: 0;
   }
-  .floatingButtonContainer .buttonText {
+  .floatingButton__label {
     display: inline-block;
     font-size: 14px;
     padding-left: 20px;
     text-align: left;
   }
-  .floatingButtonContainer .buttonText > span {
+  .floatingButton__label > span {
     font-size: 14px;
   }
-  .floatingButtonContainer .priceCircle {
+  .floatingButton__priceCircle {
     border-radius: 25px;
     font-size: 12px;
     height: 50px;
@@ -580,7 +592,7 @@ a {
     top: 5px;
     width: 50px;
   }
-  .floatingButtonContainer .priceCircle .numberOrPrice {
+  .numberOrPrice {
     font-size: 17px;
   }
 }
