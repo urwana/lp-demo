@@ -1,3 +1,9 @@
+.base__title-h1 {
+  font-size: 24px;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
 .hero {
   overflow: hidden;
   width: 100%;
@@ -5,7 +11,7 @@
   background-size: cover;
 }
 
-.heroInner {
+.hero__inner {
   margin: auto;
   overflow: hidden;
   padding-bottom: 25px;
@@ -13,58 +19,52 @@
   width: 980px;
 }
 
-.logo {
+.hero__logo {
   left: 0;
   position: absolute;
   top: 10px;
   width: 160px;
 }
 
-.eyecatches {
+.hero__eyecatche {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.titleBox {
+.hero__title {
   font-size: 60px;
   margin-top: 135px;
   margin-bottom: 40px;
-
-  .title-h1 {
-    font-size: 24px;
-    line-height: 1.7;
-    font-weight: 600;
-  }
 }
 
-.copyMain {
+.hero__title__main {
   font-size: 32px;
   font-weight: 600;
   line-height: 1;
   margin-bottom: 48px;
 }
 
-.copySub {
+.hero__title__sub {
   font-size: 68px;
   font-weight: 400;
   line-height: 1;
   margin-bottom: 24px;
 }
 
-.copy3rd {
+.hero__title__3rd {
   font-size: 48px;
   font-weight: 600;
   line-height: 1;
   margin-bottom: 40px;
+}
 
-  .numberOrPrice {
-    font-size: 120px;
-    font-weight: 700;
+.numberOrPrice {
+  font-size: 120px;
+  font-weight: 700;
 
-    > span {
-      font-size: 60px;
-    }
+  > span {
+    font-size: 60px;
   }
 }
 
@@ -79,6 +79,11 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .base__title-h1 {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
   .hero {
     height: auto;
     width: 100%;
@@ -86,19 +91,19 @@
     background-size: cover;
   }
 
-  .heroInner {
+  .hero__inner {
     width: 88%;
     margin: auto;
     padding-bottom: 32px;
   }
 
-  .logo {
+  .hero__logo {
     width: 79px;
     height: 22px;
     top: 20px;
   }
 
-  .eyecatches {
+  .hero__eyecatche {
     width: 154.5px;
     height: 96.6px;
     right: 0;
@@ -109,33 +114,28 @@
     }
   }
 
-  .titleBox {
+  .hero__title {
     font-size: 32px;
     margin-top: 72px;
     margin-bottom: 32px;
-
-    .title-h1 {
-      font-size: 14px;
-      line-height: 1.6;
-    }
   }
 
-  .copyMain {
+  .hero__title__main {
     font-size: 20px;
     margin: 0 0 24px;
   }
 
-  .copySub {
+  .hero__title__sub {
     font-size: 34px;
     margin-bottom: 24px;
   }
 
-  .copy3rd {
+  .hero__title__3rd {
     font-size: 34px;
+  }
 
-    .numberOrPrice {
-      font-size: 60px;
-    }
+  .numberOrPrice {
+    font-size: 60px;
   }
 
   .tax {
@@ -150,10 +150,10 @@
 .doubleDeck {
   display: inline-block;
   text-align: left;
-}
 
-.doubleDeck > span {
-  display: block;
+  > span {
+    display: block;
+  }
 }
 
 .comment {
