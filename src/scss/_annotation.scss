@@ -10,7 +10,7 @@
   @include annotation;
 }
 
-.flow .annotationLists {
+.flow .annotationList {
   margin-top: 12px;
 }
 
@@ -63,19 +63,6 @@
   > li {
     font-size: 12px;
     position: relative;
-  }
-}
-
-.flow .annotation {
-  color: #666;
-  font-size: 12px;
-  margin-top: 40px;
-  text-align: left;
-}
-
-@media only screen and (max-width: 480px) {
-  .flow .annotation {
-    margin-top: 15px;
   }
 }
 
