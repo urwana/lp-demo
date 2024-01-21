@@ -522,18 +522,17 @@ a {
   color: #333;
   font-size: 18px;
   font-weight: 600;
+  width: 72px;
   height: 72px;
   line-height: 1;
   padding-top: 4px;
   text-align: center;
-  width: 72px;
   margin-left: 4px;
 }
 .floatingButton__priceCircle > span {
   font-size: 18px;
 }
-
-.numberOrPrice {
+.floatingButton__priceCircle .numberOrPrice {
   font-size: 22px;
 }
 
@@ -1745,104 +1744,149 @@ a {
     margin-bottom: 4px;
   }
 }
-.regulation {
-  background: #f5f5f5;
-  padding: 100px 0;
-  text-align: center;
-  min-width: 1124px;
-}
-.regulation .regulation-inner {
-  margin: auto;
-  overflow: hidden;
-  text-align: center;
-  width: 920px;
-}
-.regulation .imgBox-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  margin: 72px auto 0;
-  width: 920px;
-}
-.regulation .imgBox-wrapper .title {
+.imgBoxRight__title, .imgBoxLeft__title {
   background: #000;
   color: #e6cd92;
   font-size: 28px;
   font-weight: 600;
   line-height: 60px;
 }
-.regulation .imgBox-wrapper .lead {
+@media only screen and (max-width: 480px) {
+  .imgBoxRight__title, .imgBoxLeft__title {
+    font-size: 14px;
+    line-height: 35px;
+  }
+}
+
+.imgBoxLeft__lead {
   font-size: 16px;
   line-height: 1.8;
   margin-top: 30px;
 }
-.regulation .imgBox-wrapper .imgBox-left {
+@media only screen and (max-width: 480px) {
+  .imgBoxLeft__lead {
+    font-size: 12px;
+    margin-top: 36px;
+  }
+}
+
+.regulation {
+  background: #f5f5f5;
+  padding: 100px 0;
+  text-align: center;
+  min-width: 1124px;
+}
+
+.regulation__title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+}
+.regulation__title > span {
+  display: block;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 480px) {
+  .regulation__title {
+    font-size: 22px;
+  }
+  .regulation__title > span {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+}
+
+.regulation__inner {
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  width: 920px;
+}
+
+.regulation__body {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 72px auto 0;
+  width: 920px;
+}
+
+.imgBoxLeft {
   background: #fff;
   height: 584px;
   width: 440px;
 }
-.regulation .imgBox-wrapper .imgBox-left .imgBox {
+
+.baseImage {
   display: inline-block;
-  height: 100px;
   vertical-align: top;
+  height: 100px;
   width: 136px;
 }
-.regulation .imgBox-wrapper .imgBox-left .text {
+
+.baseExplanation {
+  display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   line-height: 1.8;
-  margin-top: 10px;
+  margin-left: 18px;
 }
-.regulation .imgBox-wrapper .imgBox-left .label {
+
+.baseLabel {
   background: #e7f3f9;
   display: inline-block;
   font-size: 18px;
   padding: 1.5px 12px;
 }
-.regulation .imgBox-wrapper .imgBox-left > ul {
+
+.baseText {
+  margin-top: 8px;
+}
+
+.baseTypeLists {
   list-style-type: none;
   margin-top: 32px;
   padding: 0 0 40px 15px;
 }
-.regulation .imgBox-wrapper .imgBox-left > ul > li {
+.baseTypeLists > li {
   margin-top: 24px;
   text-align: left;
 }
-.regulation .imgBox-wrapper .imgBox-left > ul > li:first-of-type .imgBox {
+.baseTypeLists > li:first-of-type .baseImage {
   background-image: url(../img/regulation-l1.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 136px;
 }
-.regulation .imgBox-wrapper .imgBox-left > ul > li:nth-of-type(2) .imgBox {
+.baseTypeLists > li:nth-of-type(2) .baseImage {
   background-image: url(../img/regulation-l2.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 136px;
 }
-.regulation .imgBox-wrapper .imgBox-left > ul > li:nth-of-type(3) .imgBox {
+.baseTypeLists > li:nth-of-type(3) .baseImage {
   background-image: url(../img/regulation-l3.jpg);
   background-repeat: center center;
   background-repeat: no-repeat;
   background-size: 136px;
 }
-.regulation .imgBox-wrapper .imgBox-left > ul > li .textBox {
-  display: inline-block;
-  margin-left: 18px;
-  vertical-align: top;
-}
-.regulation .imgBox-wrapper .imgBox-right {
+
+.imgBoxRight {
   background: #fff url(../img/regulation-r.svg) center 70% no-repeat;
   background-size: 352px;
   height: 584px;
   width: 440px;
 }
-.regulation .explanation {
+
+.regulation__explanation {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.6;
   margin-top: 72px;
 }
-.regulation .explanation > span {
+.regulation__explanation > span {
   color: #00a0e8;
   display: inline-block;
   font-size: 32px;
@@ -1854,51 +1898,43 @@ a {
     padding: 40px 0;
     min-width: auto;
   }
-  .regulation .regulation-inner {
+  .regulation__inner {
     width: 100%;
   }
-  .regulation .imgBox-wrapper {
+  .regulation__body {
     display: block;
     margin: 36px auto 0;
     width: 100%;
   }
-  .regulation .imgBox-wrapper .title {
-    font-size: 14px;
-    line-height: 35px;
-  }
-  .regulation .imgBox-wrapper .lead {
-    font-size: 12px;
-    margin-top: 36px;
-  }
-  .regulation .imgBox-wrapper .imgBox-left {
+  .imgBoxLeft {
     height: auto;
     margin: auto;
     width: 92%;
   }
-  .regulation .imgBox-wrapper .imgBox-left .text {
+  .imgBoxLeft .baseExplanation {
     font-size: 12px;
   }
-  .regulation .imgBox-wrapper .imgBox-left .label {
+  .imgBoxLeft .baseLabel {
     font-size: 12px;
   }
-  .regulation .imgBox-wrapper .imgBox-left .textBox {
+  .imgBoxLeft .baseText {
     margin-left: 5px;
   }
-  .regulation .imgBox-wrapper .imgBox-left > ul {
+  .baseTypeLists {
     margin-top: 25px;
   }
-  .regulation .imgBox-wrapper .imgBox-left > ul > li {
+  .baseTypeLists > li {
     margin-top: 15px;
   }
-  .regulation .imgBox-wrapper .imgBox-left > ul > li .imgBox {
+  .baseTypeLists > li .baseImage {
     height: 85px;
     width: 95.5px;
   }
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:first-of-type .imgBox {
+  .baseTypeLists > li:first-of-type .baseImage {
     background-image: url(../img/regulation-l1-mobile.jpg);
     background-size: 95.5px;
   }
-  .regulation .imgBox-wrapper .imgBox-right {
+  .imgBoxRight {
     background: #fff url(../img/regulation-b-mobile.svg) center 60% no-repeat;
     background-size: 88%;
     height: auto;
@@ -1906,60 +1942,60 @@ a {
     padding-bottom: 108%;
     width: 92%;
   }
-  .regulation .explanation {
+  .regulation__explanation {
     font-size: 14px;
     margin-top: 30px;
   }
-  .regulation .explanation > span {
+  .regulation__explanation > span {
     font-size: 22px;
     margin-top: 10px;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), screen and (-webkit-min-device-pixel-ratio: 2) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:first-of-type .imgBox {
+  .regulation .regulation__body .imgBoxLeft > ul > li:first-of-type .baseImage {
     background-image: url(../img/regulation-l1@2x.jpg);
   }
 }
 @media only screen and (max-width: 480px) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:first-of-type .imgBox {
+  .regulation .regulation__body .imgBoxLeft > ul > li:first-of-type .baseImage {
     background-image: url(../img/regulation-l1-mobile.jpg);
     background-size: 95.5px;
   }
 }
 @media only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 3), only screen and (max-width: 480px) and (min-resolution: 3dppx) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:first-of-type .imgBox {
+  .regulation .regulation__body .imgBoxLeft > ul > li:first-of-type .baseImage {
     background-image: url(../img/regulation-l1-mobile@3x.jpg);
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), screen and (-webkit-min-device-pixel-ratio: 2) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:nth-of-type(2) .imgBox {
+  .regulation .regulation__body .imgBoxLeft > ul > li:nth-of-type(2) .baseImage {
     background-image: url(../img/regulation-l2@2x.jpg);
   }
 }
 @media only screen and (max-width: 480px) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:nth-of-type(2) .imgBox {
+  .regulation .regulation__body .imgBoxLeft > ul > li:nth-of-type(2) .baseImage {
     background-image: url(../img/regulation-l2-mobile.jpg);
     background-size: 95.5px;
   }
 }
 @media only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 3), only screen and (max-width: 480px) and (min-resolution: 3dppx) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:nth-of-type(2) .imgBox {
+  .regulation .regulation__body .imgBoxLeft > ul > li:nth-of-type(2) .baseImage {
     background-image: url(../img/regulation-l2-mobile@3x.jpg);
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), screen and (-webkit-min-device-pixel-ratio: 2) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:nth-of-type(3) .imgBox {
+  .regulation .regulation__body .imgBoxLeft > ul > li:nth-of-type(3) .baseImage {
     background-image: url(../img/regulation-l3@2x.jpg);
   }
 }
 @media only screen and (max-width: 480px) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:nth-of-type(3) .imgBox {
+  .regulation .regulation__body .imgBoxLeft > ul > li:nth-of-type(3) .baseImage {
     background-image: url(../img/regulation-l3-mobile.jpg);
     background-size: 95.5px;
   }
 }
 @media only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 3), only screen and (max-width: 480px) and (min-resolution: 3dppx) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:nth-of-type(3) .imgBox {
+  .regulation .regulation__body .imgBoxLeft > ul > li:nth-of-type(3) .baseImage {
     background-image: url(../img/regulation-l3-mobile@3x.jpg);
   }
 }

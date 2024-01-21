@@ -1,123 +1,143 @@
-// regulation
+%title {
+  background: #000;
+  color: #e6cd92;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 60px;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 14px;
+    line-height: 35px;
+  }
+}
+
+.imgBoxLeft__title {
+  @extend %title;
+}
+
+.imgBoxLeft__lead {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-top: 30px;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 12px;
+    margin-top: 36px;
+  }
+}
+
+.imgBoxRight__title {
+  @extend %title;
+}
 
 .regulation {
   background: #f5f5f5;
   padding: 100px 0;
   text-align: center;
   min-width: 1124px;
+}
 
-  .regulation-inner {
-    margin: auto;
-    overflow: hidden;
-    text-align: center;
-    width: 920px;
-  }
+.regulation__title {
+  @include title-h2;
+}
 
-  .imgBox-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: 72px auto 0;
-    width: 920px;
+.regulation__inner {
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  width: 920px;
+}
 
-    .title {
-      background: #000;
-      color: #e6cd92;
-      font-size: 28px;
-      font-weight: 600;
-      line-height: 60px;
+.regulation__body {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 72px auto 0;
+  width: 920px;
+}
+
+.imgBoxLeft {
+  background: #fff;
+  height: 584px;
+  width: 440px;
+}
+
+.baseImage {
+  display: inline-block;
+  vertical-align: top;
+  height: 100px;
+  width: 136px;
+}
+
+.baseExplanation {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-left: 18px;
+}
+
+.baseLabel {
+  background: #e7f3f9;
+  display: inline-block;
+  font-size: 18px;
+  padding: 1.5px 12px;
+}
+
+.baseText {
+  margin-top: 8px;
+}
+
+.baseTypeLists {
+  list-style-type: none;
+  margin-top: 32px;
+  padding: 0 0 40px 15px;
+
+  > li {
+    margin-top: 24px;
+    text-align: left;
+
+    &:first-of-type .baseImage {
+      background-image: url(../img/regulation-l1.jpg);
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: 136px;
     }
 
-    .lead {
-      font-size: 16px;
-      line-height: 1.8;
-      margin-top: 30px;
+    &:nth-of-type(2) .baseImage {
+      background-image: url(../img/regulation-l2.jpg);
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: 136px;
     }
 
-    .imgBox-left {
-      background: #fff;
-      height: 584px;
-      width: 440px;
-
-      .imgBox {
-        display: inline-block;
-        height: 100px;
-        vertical-align: top;
-        width: 136px;
-      }
-
-      .text {
-        font-size: 14px;
-        line-height: 1.8;
-        margin-top: 10px;
-      }
-
-      .label {
-        background: #e7f3f9;
-        display: inline-block;
-        font-size: 18px;
-        padding: 1.5px 12px;
-      }
-
-      > ul {
-        list-style-type: none;
-        margin-top: 32px;
-        padding: 0 0 40px 15px;
-
-        > li {
-          margin-top: 24px;
-          text-align: left;
-
-          &:first-of-type .imgBox {
-            background-image: url(../img/regulation-l1.jpg);
-            background-position: 50%;
-            background-repeat: no-repeat;
-            background-size: 136px;
-          }
-
-          &:nth-of-type(2) .imgBox {
-            background-image: url(../img/regulation-l2.jpg);
-            background-position: 50%;
-            background-repeat: no-repeat;
-            background-size: 136px;
-          }
-
-          &:nth-of-type(3) .imgBox {
-            background-image: url(../img/regulation-l3.jpg);
-            background-repeat: center center;
-            background-repeat: no-repeat;
-            background-size: 136px;
-          }
-
-          .textBox {
-            display: inline-block;
-            margin-left: 18px;
-            vertical-align: top;
-          }
-        }
-      }
-    }
-
-    .imgBox-right {
-      background: #fff url(../img/regulation-r.svg) center 70% no-repeat;
-      background-size: 352px;
-      height: 584px;
-      width: 440px;
+    &:nth-of-type(3) .baseImage {
+      background-image: url(../img/regulation-l3.jpg);
+      background-repeat: center center;
+      background-repeat: no-repeat;
+      background-size: 136px;
     }
   }
+}
 
-  .explanation {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.6;
-    margin-top: 72px;
+.imgBoxRight {
+  background: #fff url(../img/regulation-r.svg) center 70% no-repeat;
+  background-size: 352px;
+  height: 584px;
+  width: 440px;
+}
 
-    > span {
-      color: #00a0e8;
-      display: inline-block;
-      font-size: 32px;
-      margin-top: 15px;
-    }
+.regulation__explanation {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-top: 72px;
+
+  > span {
+    color: #00a0e8;
+    display: inline-block;
+    font-size: 32px;
+    margin-top: 15px;
   }
 }
 
@@ -125,81 +145,70 @@
   .regulation {
     padding: 40px 0;
     min-width: auto;
+  }
 
-    .regulation-inner {
-      width: 100%;
+  .regulation__inner {
+    width: 100%;
+  }
+
+  .regulation__body {
+    display: block;
+    margin: 36px auto 0;
+    width: 100%;
+  }
+
+  .imgBoxLeft {
+    height: auto;
+    margin: auto;
+    width: 92%;
+
+    .baseExplanation {
+      font-size: 12px;
     }
 
-    .imgBox-wrapper {
-      display: block;
-      margin: 36px auto 0;
-      width: 100%;
-
-      .title {
-        font-size: 14px;
-        line-height: 35px;
-      }
-
-      .lead {
-        font-size: 12px;
-        margin-top: 36px;
-      }
-
-      .imgBox-left {
-        height: auto;
-        margin: auto;
-        width: 92%;
-
-        .text {
-          font-size: 12px;
-        }
-
-        .label {
-          font-size: 12px;
-        }
-
-        .textBox {
-          margin-left: 5px;
-        }
-
-        > ul {
-          margin-top: 25px;
-
-          > li {
-            margin-top: 15px;
-
-            .imgBox {
-              height: 85px;
-              width: 95.5px;
-            }
-
-            &:first-of-type .imgBox {
-              background-image: url(../img/regulation-l1-mobile.jpg);
-              background-size: 95.5px;
-            }
-          }
-        }
-      }
-
-      .imgBox-right {
-        background: #fff url(../img/regulation-b-mobile.svg) center 60%
-          no-repeat;
-        background-size: 88%;
-        height: auto;
-        margin: 36px auto 0;
-        padding-bottom: 108%;
-        width: 92%;
-      }
+    .baseLabel {
+      font-size: 12px;
     }
 
-    .explanation {
-      font-size: 14px;
-      margin-top: 30px;
+    .baseText {
+      margin-left: 5px;
+    }
+  }
 
-      > span {
-        font-size: 22px;
-        margin-top: 10px;
+  .baseTypeLists {
+    margin-top: 25px;
+
+    > li {
+      margin-top: 15px;
+
+      .baseImage {
+        height: 85px;
+        width: 95.5px;
       }
+
+      &:first-of-type .baseImage {
+        background-image: url(../img/regulation-l1-mobile.jpg);
+        background-size: 95.5px;
+      }
+    }
+  }
+
+  .imgBoxRight {
+    background: #fff url(../img/regulation-b-mobile.svg) center 60% no-repeat;
+    background-size: 88%;
+    height: auto;
+    margin: 36px auto 0;
+    padding-bottom: 108%;
+    width: 92%;
+  }
+
+  .regulation__explanation {
+    font-size: 14px;
+    margin-top: 30px;
+
+    > span {
+      font-size: 22px;
+      margin-top: 10px;
     }
   }
 }
@@ -207,13 +216,13 @@
 @media (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   screen and (-webkit-min-device-pixel-ratio: 2) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:first-of-type .imgBox {
+  .regulation .regulation__body .imgBoxLeft > ul > li:first-of-type .baseImage {
     background-image: url(../img/regulation-l1@2x.jpg);
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:first-of-type .imgBox {
+  .regulation .regulation__body .imgBoxLeft > ul > li:first-of-type .baseImage {
     background-image: url(../img/regulation-l1-mobile.jpg);
     background-size: 95.5px;
   }
@@ -221,7 +230,7 @@
 
 @media only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 3),
   only screen and (max-width: 480px) and (min-resolution: 3dppx) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:first-of-type .imgBox {
+  .regulation .regulation__body .imgBoxLeft > ul > li:first-of-type .baseImage {
     background-image: url(../img/regulation-l1-mobile@3x.jpg);
   }
 }
@@ -229,13 +238,23 @@
 @media (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   screen and (-webkit-min-device-pixel-ratio: 2) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:nth-of-type(2) .imgBox {
+  .regulation
+    .regulation__body
+    .imgBoxLeft
+    > ul
+    > li:nth-of-type(2)
+    .baseImage {
     background-image: url(../img/regulation-l2@2x.jpg);
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:nth-of-type(2) .imgBox {
+  .regulation
+    .regulation__body
+    .imgBoxLeft
+    > ul
+    > li:nth-of-type(2)
+    .baseImage {
     background-image: url(../img/regulation-l2-mobile.jpg);
     background-size: 95.5px;
   }
@@ -243,7 +262,12 @@
 
 @media only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 3),
   only screen and (max-width: 480px) and (min-resolution: 3dppx) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:nth-of-type(2) .imgBox {
+  .regulation
+    .regulation__body
+    .imgBoxLeft
+    > ul
+    > li:nth-of-type(2)
+    .baseImage {
     background-image: url(../img/regulation-l2-mobile@3x.jpg);
   }
 }
@@ -251,13 +275,23 @@
 @media (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   screen and (-webkit-min-device-pixel-ratio: 2) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:nth-of-type(3) .imgBox {
+  .regulation
+    .regulation__body
+    .imgBoxLeft
+    > ul
+    > li:nth-of-type(3)
+    .baseImage {
     background-image: url(../img/regulation-l3@2x.jpg);
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:nth-of-type(3) .imgBox {
+  .regulation
+    .regulation__body
+    .imgBoxLeft
+    > ul
+    > li:nth-of-type(3)
+    .baseImage {
     background-image: url(../img/regulation-l3-mobile.jpg);
     background-size: 95.5px;
   }
@@ -265,7 +299,12 @@
 
 @media only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 3),
   only screen and (max-width: 480px) and (min-resolution: 3dppx) {
-  .regulation .imgBox-wrapper .imgBox-left > ul > li:nth-of-type(3) .imgBox {
+  .regulation
+    .regulation__body
+    .imgBoxLeft
+    > ul
+    > li:nth-of-type(3)
+    .baseImage {
     background-image: url(../img/regulation-l3-mobile@3x.jpg);
   }
 }

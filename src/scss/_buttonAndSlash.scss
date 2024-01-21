@@ -384,20 +384,20 @@
   color: #333;
   font-size: 18px;
   font-weight: 600;
+  width: 72px;
   height: 72px;
   line-height: 1;
   padding-top: 4px;
   text-align: center;
-  width: 72px;
   margin-left: 4px;
 
   > span {
     font-size: 18px;
   }
-}
 
-.numberOrPrice {
-  font-size: 22px;
+  .numberOrPrice {
+    font-size: 22px;
+  }
 }
 
 .floatingButton__label {
