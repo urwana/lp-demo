@@ -1,3 +1,9 @@
+.factor-annotationLists > li {
+  padding-left: 12px;
+  position: relative;
+  @include annotation;
+}
+
 .annotation-mark-list {
   list-style-type: none;
   margin-bottom: 0;

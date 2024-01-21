@@ -36,6 +36,23 @@ a {
   background: #f5f5f5;
 }
 
+.factor-annotationLists > li {
+  padding-left: 12px;
+  position: relative;
+  font-size: 12px;
+  margin-left: 12px;
+  position: relative;
+}
+.factor-annotationLists > li:before {
+  content: "※";
+  display: block;
+  height: 12px;
+  left: -12px;
+  position: absolute;
+  top: 0;
+  width: 12px;
+}
+
 .annotation-mark-list {
   list-style-type: none;
   margin-bottom: 0;
@@ -748,33 +765,16 @@ a {
   width: 660px;
 }
 
-.factor-annotationList > li {
-  padding-left: 12px;
-  position: relative;
-  font-size: 12px;
-  margin-left: 12px;
-  position: relative;
-}
-.factor-annotationList > li:before {
-  content: "※";
-  display: block;
-  height: 12px;
-  left: -12px;
-  position: absolute;
-  top: 0;
-  width: 12px;
-}
-
 @media only screen and (max-width: 480px) {
   .factor {
     margin: auto;
     padding: 45px 0;
     width: 88%;
   }
-  .factor .factor-img {
+  .factor-img {
     margin-top: 38px;
   }
-  .factor .factor-lists {
+  .factor-lists {
     margin-top: 32px;
     width: 100%;
   }
