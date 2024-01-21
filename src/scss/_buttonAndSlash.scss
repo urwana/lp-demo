@@ -12,14 +12,14 @@
   width: 428px;
   height: 96px;
   line-height: 1.4;
-  margin: 24px 12px;
+  margin: 24px 16px 0;
 }
 
 .buttonContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 32px;
+  margin-top: 48px;
 }
 
 .button {
@@ -97,7 +97,6 @@
   }
 }
 
-// button-otherProducts
 .button-otherProducts {
   display: flex;
   justify-content: center;
@@ -109,6 +108,7 @@
   font-weight: 600;
   height: 42px;
   width: 306px;
+  margin-top: 64px;
 
   > span {
     font-size: 20px;
@@ -135,7 +135,7 @@
 
 .checkAndRegister__inner {
   margin: auto;
-  width: 910px;
+  width: 960px;
 }
 
 .checkAndRegister__lead {
@@ -344,7 +344,6 @@
   }
 }
 
-// floatingButton
 .floatingButtonContainer {
   position: fixed;
   right: 0;

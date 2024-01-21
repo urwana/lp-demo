@@ -1,9 +1,12 @@
 .factor {
-  @include title-h2;
   margin: auto;
   padding: 100px 80px;
   text-align: center;
   width: 1124px;
+}
+
+.factor-title {
+  @include title-h2;
 }
 
 @media only screen and (max-width: 480px) {
@@ -14,17 +17,17 @@
   }
 }
 
-.factor-img {
+.factor__img {
   margin-top: 72px;
 }
 
 @media only screen and (max-width: 480px) {
-  .factor-img {
+  .factor__img {
     margin-top: 38px;
   }
 }
 
-.factor-downArrow {
+.factor__downArrow {
   background: url(../img/base/bottom-arrow.svg);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -35,7 +38,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .factor-downArrow {
+  .factor__downArrow {
     background-size: 100%;
     font-size: 12px;
     height: 37px;
@@ -44,37 +47,37 @@
   }
 }
 
-.factor-listWrapper {
+.factor__listWrapper {
   margin: 48px auto 0;
   text-align: left;
   width: 660px;
 }
 
 @media only screen and (max-width: 480px) {
-  .factor-listWrapper {
+  .factor__listWrapper {
     margin-top: 32px;
     width: 100%;
   }
 }
 
-.factor-lists {
+.factor__lists {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
 }
 
-.factor-lists > li {
+.factor__lists > li {
   font-size: 22px;
   line-height: 30px;
   margin: 0 0 23px 54px;
   position: relative;
 }
 
-.factor-lists > li > span {
+.factor__lists > li > span {
   font-size: 12px;
 }
 
-.factor-lists > li :before {
+.factor__lists > li :before {
   background: url(../img/checkbox.svg) no-repeat 50%;
   background-size: 30px;
   content: "";
@@ -87,21 +90,21 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .factor-lists {
+  .factor__lists {
     margin: auto;
     max-width: 314px;
     padding-left: 20px;
     width: 95.5%;
   }
 
-  .factor-lists > li :before {
+  .factor__lists > li :before {
     background-position: center 4px;
     background-size: 15px;
     left: 0;
     margin-left: -28px;
   }
 
-  .factor-lists > li {
+  .factor__lists > li {
     font-size: 14px;
     line-height: 1.4;
     margin: 8px 0;

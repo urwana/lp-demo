@@ -1,16 +1,19 @@
 .factor {
-  @include title-h2;
   margin: auto;
   padding: 100px 80px;
   text-align: center;
   max-width: 1124px;
 }
 
-.factor-img {
+.factor__title {
+  @include title-h2;
+}
+
+.factor__img {
   margin-top: 72px;
 }
 
-.factor-lists {
+.factor__lists {
   margin: 48px auto 0;
   text-align: left;
   width: 660px;
@@ -23,11 +26,11 @@
     width: 88%;
   }
 
-  .factor-img {
+  .factor__img {
     margin-top: 38px;
   }
 
-  .factor-lists {
+  .factor__lists {
     margin-top: 32px;
     width: 100%;
   }
