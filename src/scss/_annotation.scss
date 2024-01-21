@@ -1,6 +1,12 @@
-.annotationLists {
+.annotationList {
   padding-left: 12px;
   text-align: left;
+  @include annotation;
+}
+
+.annotationLists > li {
+  padding-left: 12px;
+  position: relative;
   @include annotation;
 }
 

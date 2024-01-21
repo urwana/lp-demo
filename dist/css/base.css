@@ -36,14 +36,31 @@ a {
   background: #f5f5f5;
 }
 
-.annotationLists {
+.annotationList {
   padding-left: 12px;
   text-align: left;
   font-size: 12px;
   margin-left: 12px;
   position: relative;
 }
-.annotationLists:before {
+.annotationList:before {
+  content: "※";
+  display: block;
+  height: 12px;
+  left: -12px;
+  position: absolute;
+  top: 0;
+  width: 12px;
+}
+
+.annotationLists > li {
+  padding-left: 12px;
+  position: relative;
+  font-size: 12px;
+  margin-left: 12px;
+  position: relative;
+}
+.annotationLists > li:before {
   content: "※";
   display: block;
   height: 12px;
