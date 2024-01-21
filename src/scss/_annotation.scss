@@ -1,7 +1,17 @@
+.annotationLists {
+  padding-left: 12px;
+  text-align: left;
+  @include annotation;
+}
+
 .factor-annotationLists > li {
   padding-left: 12px;
   position: relative;
   @include annotation;
+}
+
+.flow .annotationLists {
+  margin-top: 12px;
 }
 
 .annotation-mark-list {
