@@ -9,6 +9,10 @@
   text-align: center;
 }
 
+.anxietyAndDoubt__title {
+  @include title-h2;
+}
+
 @media (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -38,7 +42,6 @@
 }
 
 // speechBalloons
-
 .speechBalloons {
   height: 300px;
   margin: 50px auto 0;
@@ -145,7 +148,6 @@
 
     > div {
       border-radius: 10px;
-      // font-size: 13px;
       height: 75px;
       width: 150px;
 
