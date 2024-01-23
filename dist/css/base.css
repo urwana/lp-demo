@@ -179,6 +179,29 @@ a {
   line-height: 1.4;
   margin: 24px 16px 0;
 }
+.floatingButton > span, .button-register > span, .button > span {
+  font-size: 24px;
+}
+.floatingButton:hover, .button-register:hover, .button:hover {
+  opacity: 0.6;
+}
+@media only screen and (max-width: 480px) {
+  .floatingButton, .button-register, .button {
+    width: 92%;
+    max-width: 345px;
+    height: 60px;
+    margin: 8px auto 0;
+    background-position: center right 20px;
+    background-size: 8px;
+  }
+  .floatingButton > span, .button-register > span, .button > span {
+    font-size: 14px;
+  }
+  .floatingButton:nth-of-type(2), .button-register:nth-of-type(2), .button:nth-of-type(2) {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+}
 
 .buttonContainer {
   display: flex;
@@ -191,22 +214,10 @@ a {
   background-color: #000000;
   color: #e6cd92;
 }
-.button > span {
-  font-size: 24px;
-}
-.button:hover {
-  opacity: 0.6;
-}
 
 .button-register {
   background-color: #e6cd92;
   color: #000;
-}
-.button-register > span {
-  font-size: 24px;
-}
-.button-register:hover {
-  opacity: 0.6;
 }
 
 .button-dark {
@@ -220,21 +231,6 @@ a {
   }
   .buttonBox {
     margin-top: 24px;
-  }
-  .button {
-    width: 92%;
-    max-width: 345px;
-    height: 60px;
-    margin: 8px auto 0;
-    background-position: center right 20px;
-    background-size: 8px;
-  }
-  .button > span {
-    font-size: 14px;
-  }
-  .button:nth-of-type(2) {
-    margin-bottom: 40px;
-    margin-top: 40px;
   }
 }
 .order .button {
