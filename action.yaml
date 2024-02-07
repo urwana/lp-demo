@@ -1,0 +1,4 @@
+name: No operation action
+description: This action does nothing
+runs:
+  using: noop
