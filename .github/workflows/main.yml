@@ -1,0 +1,19 @@
+name: Deploy to x Server
+
+on:
+  push:
+    branches: main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install SSH Key for Deplo
+        uses: solosoprani/lp-main@1
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          host: ${{ secrets.HOST_NAME }}
+          username: ${{ secrets.SSH_USER }}
+          port: ${{ secrets.SSH_PORT }}
+          # git用ディレクトリからドキュメントルートにファイルをコピー
+          script: rsync -avz --delete lp-demo/dist/ /home/solosoprani/solosoprani2002.com/public_html/lp
