@@ -1,9 +1,15 @@
 @charset "UTF-8";
 * {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 12px;
   font-size: inherit;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", "Oswald", sans-serif;
 }
 
 img,
