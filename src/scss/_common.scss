@@ -29,7 +29,7 @@ video {
   display: none;
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .display-desktop {
     display: none;
   }
@@ -60,7 +60,7 @@ a {
 //   }
 // }
 
-// @media only screen and (max-width: 480px) {
+// @include sp {
 //   .title-h2 {
 //     font-size: 22px;
 //     > span {

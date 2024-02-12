@@ -1,3 +1,9 @@
+@mixin sp {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
 @mixin title-h2 {
   font-size: 40px;
   font-weight: 600;
@@ -10,7 +16,7 @@
     margin-bottom: 20px;
   }
 
-  @media only screen and (max-width: 480px) {
+  @include sp {
     font-size: 22px;
     > span {
       font-size: 16px;

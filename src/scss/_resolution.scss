@@ -67,7 +67,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .resolution {
     background: none;
     padding: 68px 0 40px;
@@ -113,7 +113,9 @@
       font-size: 13px;
 
       > span {
-        font-size: 22px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
       }
     }
   }
@@ -157,7 +159,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .contents-overview {
     margin: 30px auto 0;
     width: 92%;
@@ -223,7 +225,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .confirmImage {
     margin-top: 18px;
     padding: 22px 15px;
@@ -247,7 +249,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .confirmImage-inner {
     margin-top: 21px;
   }
@@ -265,7 +267,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .download {
     font-size: 12px;
     margin-top: 31px;
@@ -283,7 +285,7 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .explanation {
     font-size: 12px;
     margin-top: 12px;
@@ -299,7 +301,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .pointCheck > div {
     font-size: 12px;
   }
@@ -326,7 +328,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .pointCheck {
     margin-top: 35px;
 
@@ -369,14 +371,14 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .submissionAndCheckMethods .submissionAndCheckMethods_inner {
     display: block;
     margin: auto;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .submissionAndCheckMethods {
     margin-top: 50px;
 
@@ -401,7 +403,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .contentsWrap {
     border-radius: 0 0 5px 5px;
     border-width: 3px;
@@ -432,7 +434,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .operetorCheck,
   .speedCheck {
     margin: 25px auto 0;
@@ -472,7 +474,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .methodTitle {
     border-radius: 5px 5px 0 0;
     font-size: 15px;
@@ -490,7 +492,7 @@
   vertical-align: middle;
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .submissionMethod {
     float: left;
     font-size: 14px;
@@ -521,7 +523,7 @@
   float: none;
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .methodDetailList {
     border-width: 1px;
     font-size: 13px;
@@ -538,7 +540,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .dataCheck .contentsWrap {
     margin: auto;
     padding: 25.5px 5.5%;
@@ -557,7 +559,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .dataCheck .methodUpperBox .imgWrap {
     clear: left;
     display: inline-block;
@@ -574,7 +576,7 @@
   width: 219px;
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .dataCheck .methodUpperBox .submissionMethod {
     display: inline-block;
     margin-left: 24px;
@@ -592,7 +594,7 @@
   width: 655px;
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .dataCheck .methodUpperBox {
     margin-bottom: 0;
     margin-right: 0;
@@ -618,7 +620,7 @@
   width: 615px;
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .dataCheck {
     margin: 25px auto 0;
     width: 91.3%;
@@ -647,7 +649,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .payContents {
     > span:first-of-type {
       line-height: 2;
@@ -726,7 +728,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .orderToDelivery {
     .orderToDelivery-inner {
       flex-wrap: wrap;
@@ -756,7 +758,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .orderToDelivery .title {
     font-size: 15px;
     padding-bottom: 5px;
@@ -764,7 +766,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .orderToDelivery {
     margin: auto;
     width: 91.3%;
@@ -807,7 +809,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .separatorBelt {
     font-size: 22px;
     line-height: 1.6;

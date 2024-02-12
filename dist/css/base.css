@@ -26,7 +26,7 @@ video {
   display: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .display-desktop {
     display: none;
   }
@@ -131,7 +131,7 @@ a {
   position: relative;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .heroInner .annotation {
     font-size: 12px;
     line-height: 1.4;
@@ -151,7 +151,7 @@ a {
   width: 100%;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .payContents .resolveAnnotation {
     width: 92%;
   }
@@ -160,7 +160,7 @@ a {
   text-align: center;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .resolveAnnotation {
     font-size: 12px;
     margin: 10px auto 0;
@@ -191,7 +191,7 @@ a {
 .floatingButton:hover, .button-register:hover, .button:hover {
   opacity: 0.6;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .floatingButton, .button-register, .button {
     width: 92%;
     max-width: 345px;
@@ -230,7 +230,7 @@ a {
   background-color: #f5f5f5 !important;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .buttonContainer {
     display: block;
     margin: 24px auto 0;
@@ -244,7 +244,7 @@ a {
   width: 640px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .order .button {
     height: 60px;
     margin-top: 38px;
@@ -269,7 +269,7 @@ a {
   font-size: 20px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .button-otherProducts {
     height: 40px;
     margin: 24px auto 0;
@@ -295,7 +295,7 @@ a {
   line-height: 1.7;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .checkAndRegister {
     padding: 38px 0;
   }
@@ -333,7 +333,7 @@ a {
   top: -14px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .buttonBox__copyBox {
     font-size: 14px;
   }
@@ -389,7 +389,7 @@ a {
   font-size: 26px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .order {
     padding: 38px 0;
   }
@@ -418,7 +418,7 @@ a {
   width: 32px;
   height: 32px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .slash-r, .slash-l {
     height: 16px;
     width: 16px;
@@ -430,7 +430,7 @@ a {
   left: -14px;
   transform: rotate(-300deg);
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .slash-l {
     bottom: 4px;
     transform: rotate(60deg);
@@ -443,7 +443,7 @@ a {
   -webkit-transform: rotate(-60deg);
   transform: rotate(-60deg);
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .slash-r {
     bottom: 4px;
     -webkit-transform: rotate(-63deg);
@@ -457,7 +457,7 @@ a {
   width: 55px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .checkAndRegister .slash-r {
     bottom: 6px;
   }
@@ -539,7 +539,7 @@ a {
   font-size: 26px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .floatingButtonContainer {
     bottom: 15px;
     left: 0;
@@ -657,7 +657,7 @@ a {
   padding-right: 14px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .base__title-h1 {
     font-size: 14px;
     line-height: 1.6;
@@ -726,7 +726,7 @@ a {
   margin-bottom: 3px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .comment {
     margin-bottom: 2px;
   }
@@ -749,7 +749,7 @@ a {
   font-size: 32px;
   margin-bottom: 20px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .factor-title {
     font-size: 22px;
   }
@@ -759,7 +759,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .factor {
     margin: auto;
     padding: 45px 0;
@@ -770,7 +770,7 @@ a {
   margin-top: 72px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .factor__img {
     margin-top: 38px;
   }
@@ -785,7 +785,7 @@ a {
   width: 240px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .factor__downArrow {
     background-size: 100%;
     font-size: 12px;
@@ -800,7 +800,7 @@ a {
   width: 660px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .factor__listWrapper {
     margin-top: 32px;
     width: 100%;
@@ -835,7 +835,7 @@ a {
   width: 30px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .factor__lists {
     margin: auto;
     max-width: 314px;
@@ -861,7 +861,7 @@ a {
   font-weight: 600;
   line-height: 60px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .imgBoxRight__title, .imgBoxLeft__title {
     font-size: 14px;
     line-height: 35px;
@@ -873,7 +873,7 @@ a {
   line-height: 1.8;
   margin-top: 30px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .imgBoxLeft__lead {
     font-size: 12px;
     margin-top: 36px;
@@ -898,7 +898,7 @@ a {
   font-size: 32px;
   margin-bottom: 20px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .regulation__title {
     font-size: 22px;
   }
@@ -1003,7 +1003,7 @@ a {
   margin-top: 15px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .regulation {
     padding: 40px 0;
     min-width: auto;
@@ -1066,7 +1066,7 @@ a {
     background-image: url(../img/regulation-l1@2x.jpg);
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .regulation .regulation__body .imgBoxLeft > ul > li:first-of-type .baseImage {
     background-image: url(../img/regulation-l1-mobile.jpg);
     background-size: 95.5px;
@@ -1082,7 +1082,7 @@ a {
     background-image: url(../img/regulation-l2@2x.jpg);
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .regulation .regulation__body .imgBoxLeft > ul > li:nth-of-type(2) .baseImage {
     background-image: url(../img/regulation-l2-mobile.jpg);
     background-size: 95.5px;
@@ -1098,7 +1098,7 @@ a {
     background-image: url(../img/regulation-l3@2x.jpg);
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .regulation .regulation__body .imgBoxLeft > ul > li:nth-of-type(3) .baseImage {
     background-image: url(../img/regulation-l3-mobile.jpg);
     background-size: 95.5px;
@@ -1126,7 +1126,7 @@ a {
   font-size: 32px;
   margin-bottom: 20px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .templates__title {
     font-size: 22px;
   }
@@ -1193,7 +1193,7 @@ a {
   margin-top: 4px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .templates {
     padding: 45px 0;
   }
@@ -1275,7 +1275,7 @@ a {
   border-radius: 2px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .templates__tool {
     border-radius: 10px;
     margin: 20px auto 0;
@@ -1323,7 +1323,7 @@ a {
   font-size: 32px;
   margin-bottom: 20px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .flow-title {
     font-size: 22px;
   }
@@ -1333,7 +1333,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .flow {
     padding: 45px 0;
   }
@@ -1380,7 +1380,7 @@ a {
   margin-top: 55px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .footer {
     background: url(../img/footer-mobile.svg) top no-repeat;
     background-size: cover;

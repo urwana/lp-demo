@@ -19,7 +19,7 @@
   width: 660px;
 }
 
-@media only screen and (max-width: 480px) {
+@include sp {
   .factor {
     margin: auto;
     padding: 45px 0;
