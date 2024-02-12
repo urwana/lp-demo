@@ -368,19 +368,19 @@
   color: #333;
   display: inline-block;
   font-size: 24px;
-  font-weight: 600; color:#333333;
+  font-weight: 600;
   left: 50px;
   position: absolute;
   text-align: center;
   top: -37px;
 }
 
-.floatingButton__priceCircle {
+.floatingButton .floatingButton__priceCircle {
   background-color: #fff;
   border-radius: 36px;
   color: #333;
   font-size: 18px;
-  font-weight: 600; color:#333333;
+  font-weight: 600;
   width: 72px;
   height: 72px;
   line-height: 1;
