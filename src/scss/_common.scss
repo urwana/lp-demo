@@ -2,7 +2,7 @@
   // font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic",
   //   sans-serif;
   // font-family: "Noto Sans JP", sans-serif;
-  // font-size: 12px;
+  // font-size: 1.2rem;
   font-size: inherit;
   box-sizing: border-box;
 }
@@ -48,24 +48,24 @@ a {
 }
 
 // .title-h2 {
-//   font-size: 40px;
+//   font-size: 4rem;
 //   font-weight: 600; color:#333333;
 //   line-height: 1.3;
 //   margin: 0;
 
 //   > span {
 //     display: block;
-//     font-size: 32px;
-//     margin-bottom: 20px;
+//     font-size: 3.2rem;
+//     margin-bottom: 2rem;
 //   }
 // }
 
 // @include sp {
 //   .title-h2 {
-//     font-size: 22px;
+//     font-size: 2.2rem;
 //     > span {
-//       font-size: 16px;
-//       margin-bottom: 12px;
+//       font-size: 1.6rem;
+//       margin-bottom: 1.2rem;
 //     }
 //   }
 // }

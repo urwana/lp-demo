@@ -1,29 +1,29 @@
 .factor {
   margin: auto;
-  padding: 100px 80px;
+  padding: 10rem 8rem;
   text-align: center;
-  width: 1124px;
+  width: 112.4rem;
 }
 
-.factor-title {
+.factor__title {
   @include title-h2;
 }
 
 @include sp {
   .factor {
     margin: auto;
-    padding: 45px 0;
+    padding: 4.5rem 0;
     width: 88%;
   }
 }
 
 .factor__img {
-  margin-top: 72px;
+  margin-top: 7.2rem;
 }
 
 @include sp {
   .factor__img {
-    margin-top: 38px;
+    margin-top: 3.8rem;
   }
 }
 
@@ -31,31 +31,31 @@
   background: url(../img/base/bottom-arrow.svg);
   background-position: 50%;
   background-repeat: no-repeat;
-  font-size: 24px;
-  height: 74px;
-  margin: 58px auto 0;
-  width: 240px;
+  font-size: 2.4rem;
+  height: 7.4rem;
+  margin: 5.8rem auto 0;
+  width: 24rem;
 }
 
 @include sp {
   .factor__downArrow {
     background-size: 100%;
-    font-size: 12px;
-    height: 37px;
-    margin-top: 26px;
-    width: 120px;
+    font-size: 1.2rem;
+    height: 3.7rem;
+    margin-top: 2.6rem;
+    width: 12rem;
   }
 }
 
 .factor__listWrapper {
-  margin: 48px auto 0;
+  margin: 4.8rem auto 0;
   text-align: left;
-  width: 660px;
+  width: 66rem;
 }
 
 @include sp {
   .factor__listWrapper {
-    margin-top: 32px;
+    margin-top: 3.2rem;
     width: 100%;
   }
 }
@@ -67,46 +67,46 @@
 }
 
 .factor__lists > li {
-  font-size: 22px;
-  line-height: 30px;
-  margin: 0 0 23px 54px;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  margin: 0 0 2.3rem 5.4rem;
   position: relative;
 }
 
 .factor__lists > li > span {
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .factor__lists > li :before {
   background: url(../img/checkbox.svg) no-repeat 50%;
-  background-size: 30px;
+  background-size: 3rem;
   content: "";
   display: block;
-  height: 30px;
-  left: -54px;
+  height: 3rem;
+  left: -5.4rem;
   position: absolute;
   top: 0;
-  width: 30px;
+  width: 3rem;
 }
 
 @include sp {
   .factor__lists {
     margin: auto;
-    max-width: 314px;
-    padding-left: 20px;
+    max-width: 31.4rem;
+    padding-left: 2rem;
     width: 95.5%;
   }
 
   .factor__lists > li :before {
-    background-position: center 4px;
-    background-size: 15px;
+    background-position: center 0.4rem;
+    background-size: 1.5rem;
     left: 0;
-    margin-left: -28px;
+    margin-left: -2.8rem;
   }
 
   .factor__lists > li {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.4;
-    margin: 8px 0;
+    margin: 0.8rem 0;
   }
 }

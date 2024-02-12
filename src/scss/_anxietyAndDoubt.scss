@@ -2,8 +2,8 @@
   background: #f5f5f5 url(../img/service/anxiety-and-doubt.png);
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 734px;
-  padding: 80px 0;
+  background-size: 73.4rem;
+  padding: 8rem 0;
   text-align: center;
 }
 
@@ -16,7 +16,7 @@
   screen and (-webkit-min-device-pixel-ratio: 2) {
   .anxietyAndDoubt {
     background-image: url(../img/service/anxiety-and-doubt@2x.png);
-    background-size: 734px;
+    background-size: 73.4rem;
   }
 }
 
@@ -25,8 +25,8 @@
     background: #f5f5f5 url(../img/service/anxiety-and-doubt-mobile.png);
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 316px;
-    padding: 40px 0 0;
+    background-size: 31.6rem;
+    padding: 4rem 0 0;
     width: 100%;
   }
 }
@@ -35,39 +35,39 @@
   only screen and (max-width: 480px) and (min-resolution: 3dppx) {
   .anxietyAndDoubt {
     background-image: url(../img/service/anxiety-and-doubt-mobile@3x.png);
-    background-size: 316px;
+    background-size: 31.6rem;
   }
 }
 
 // speechBalloons
 .speechBalloons {
-  height: 300px;
-  margin: 50px auto 0;
+  height: 30rem;
+  margin: 5rem auto 0;
   position: relative;
-  max-width: 1124px;
+  max-width: 112.4rem;
 
   > div {
     background: #00a0e8;
-    border-radius: 20px;
+    border-radius: 2rem;
     color: #fff;
     display: table;
-    font-size: 22px;
-    height: 138px;
+    font-size: 2.2rem;
+    height: 13.8rem;
     line-height: 1.6;
     position: absolute;
     text-align: center;
-    width: 297px;
+    width: 29.7rem;
 
     > div {
       display: table-cell;
       vertical-align: middle;
-      font-size: 22px;
+      font-size: 2.2rem;
     }
 
     span {
       display: block;
-      font-size: 16px;
-      margin-bottom: 10px;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
     }
   }
 
@@ -80,128 +80,128 @@
     background: url(../img/service/triangle.png) 50% no-repeat;
     bottom: 50%;
     content: "";
-    height: 26px;
+    height: 2.6rem;
     position: absolute;
-    right: -8px;
-    width: 26px;
+    right: -0.8rem;
+    width: 2.6rem;
   }
 
   > div:nth-of-type(2) {
-    left: 248px;
+    left: 24.8rem;
     top: 0;
   }
 
   > div:nth-of-type(2):after {
     background: url(../img/service/triangle.png) 50% no-repeat;
-    bottom: -4px;
+    bottom: -0.4rem;
     content: "";
-    height: 26px;
+    height: 2.6rem;
     left: 50%;
     position: absolute;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    width: 26px;
+    width: 2.6rem;
   }
 
   > div:nth-of-type(3) {
-    right: 248px;
+    right: 24.8rem;
     top: 0;
   }
 
   > div:nth-of-type(3):after {
     background: url(../img/service/triangle.png) 50% no-repeat;
-    bottom: -7px;
+    bottom: -0.7rem;
     content: "";
-    height: 26px;
+    height: 2.6rem;
     position: absolute;
     right: 50%;
     -webkit-transform: rotate(-141deg);
     transform: rotate(-141deg);
-    width: 26px;
+    width: 2.6rem;
   }
 
   > div:nth-of-type(4) {
     bottom: 0;
-    right: 10px;
+    right: 1rem;
   }
 
   > div:nth-of-type(4):after {
     background: url(../img/service/triangle.png) 50% no-repeat;
     bottom: 50%;
     content: "";
-    height: 26px;
-    left: -9px;
+    height: 2.6rem;
+    left: -0.9rem;
     position: absolute;
     -webkit-transform: rotate(270deg);
     transform: rotate(270deg);
-    width: 26px;
+    width: 2.6rem;
   }
 }
 
 @include sp {
   .speechBalloons {
-    height: 308px;
-    margin: 35px auto auto;
+    height: 30.8rem;
+    margin: 3.5rem auto auto;
     width: 93%;
 
     > div {
-      border-radius: 10px;
-      height: 75px;
-      width: 150px;
+      border-radius: 1rem;
+      height: 7.5rem;
+      width: 15rem;
 
       > div {
-        font-size: 12px;
+        font-size: 1.2rem;
       }
 
       span {
-        font-size: 12px;
-        margin-bottom: 6px;
+        font-size: 1.2rem;
+        margin-bottom: 0.6rem;
       }
     }
 
     > div:first-of-type {
-      left: 5px;
-      top: 110px;
+      left: 0.5rem;
+      top: 11rem;
     }
 
     > div:first-of-type:after {
-      background-size: 15px;
-      bottom: -12px;
+      background-size: 1.5rem;
+      bottom: -1.2rem;
       left: 50%;
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
     }
 
     > div:nth-of-type(2) {
-      left: 16px;
+      left: 1.6rem;
       top: 0;
     }
 
     > div:nth-of-type(2):after {
-      background-size: 15px;
-      bottom: -12px;
+      background-size: 1.5rem;
+      bottom: -1.2rem;
       left: 50%;
     }
 
     > div:nth-of-type(3) {
-      right: 16px;
+      right: 1.6rem;
       top: 0;
     }
 
     > div:nth-of-type(3):after {
-      background-size: 15px;
-      bottom: -14px;
+      background-size: 1.5rem;
+      bottom: -1.4rem;
       left: 40%;
     }
 
     > div:nth-of-type(4) {
-      right: 5px;
-      top: 110px;
+      right:0.5rem;
+      top: 11rem;
     }
 
     > div:nth-of-type(4):after {
-      background-size: 15px;
-      bottom: -14px;
+      background-size: 1.5rem;
+      bottom: -1.4rem;
       left: 40%;
       -webkit-transform: rotate(-137deg);
       transform: rotate(-137deg);

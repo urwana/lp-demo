@@ -1,12 +1,12 @@
 // flow
 .flow {
-  padding: 100px 0;
+  padding: 10rem 0;
   text-align: center;
 }
 
 .flow-inner {
-  margin: 72px auto 0;
-  width: 920px;
+  margin: 7.2rem auto 0;
+  width: 92rem;
 }
 
 .flow-title {
@@ -15,11 +15,11 @@
 
 @include sp {
   .flow {
-    padding: 45px 0;
+    padding: 4.5rem 0;
   }
 
   .flow-inner {
-    margin-top: 36px;
+    margin-top: 3.6rem;
     width: 100%;
   }
 

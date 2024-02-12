@@ -1,13 +1,13 @@
 %title {
   background: #000;
   color: #e6cd92;
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 600;
-  line-height: 60px;
+  line-height: 6rem;
 
   @include sp {
-    font-size: 14px;
-    line-height: 35px;
+    font-size: 1.4rem;
+    line-height: 3.5rem;
   }
 }
 
@@ -16,13 +16,13 @@
 }
 
 .imgBoxLeft__lead {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.8;
-  margin-top: 30px;
+  margin-top: 3rem;
 
   @include sp {
-    font-size: 12px;
-    margin-top: 36px;
+    font-size: 1.2rem;
+    margin-top: 3.6rem;
   }
 }
 
@@ -32,9 +32,9 @@
 
 .regulation {
   background: #f5f5f5;
-  padding: 100px 0;
+  padding: 10rem 0;
   text-align: center;
-  min-width: 1124px;
+  min-width: 112.4rem;
 }
 
 .regulation__title {
@@ -45,105 +45,105 @@
   margin: auto;
   overflow: hidden;
   text-align: center;
-  width: 920px;
+  width: 92rem;
 }
 
 .regulation__body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin: 72px auto 0;
-  width: 920px;
+  margin: 7.2rem auto 0;
+  width: 92rem;
 }
 
 .imgBoxLeft {
   background: #fff;
-  height: 584px;
-  width: 440px;
+  height: 58.4rem;
+  width: 44rem;
 }
 
 .baseImage {
   display: inline-block;
   vertical-align: top;
-  height: 100px;
-  width: 136px;
+  height: 10rem;
+  width: 13.6rem;
 }
 
 .baseExplanation {
   display: inline-block;
   vertical-align: top;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 1.8;
-  margin-left: 18px;
+  margin-left: 1.8rem;
 }
 
 .baseLabel {
   background: #e7f3f9;
   display: inline-block;
-  font-size: 18px;
-  padding: 1.5px 12px;
+  font-size: 1.8rem;
+  padding: 1.5px 1.2rem;
 }
 
 .baseText {
-  margin-top: 8px;
+  margin-top: 0.8rem;
 }
 
 .baseTypeLists {
   list-style-type: none;
-  margin-top: 32px;
-  padding: 0 0 40px 15px;
+  margin-top: 3.2rem;
+  padding: 0 0 4rem 1.5rem;
 
   > li {
-    margin-top: 24px;
+    margin-top: 2.4rem;
     text-align: left;
 
     &:first-of-type .baseImage {
       background-image: url(../img/regulation-l1.jpg);
       background-position: 50%;
       background-repeat: no-repeat;
-      background-size: 136px;
+      background-size: 13.6rem;
     }
 
     &:nth-of-type(2) .baseImage {
       background-image: url(../img/regulation-l2.jpg);
       background-position: 50%;
       background-repeat: no-repeat;
-      background-size: 136px;
+      background-size: 13.6rem;
     }
 
     &:nth-of-type(3) .baseImage {
       background-image: url(../img/regulation-l3.jpg);
       background-repeat: center center;
       background-repeat: no-repeat;
-      background-size: 136px;
+      background-size: 13.6rem;
     }
   }
 }
 
 .imgBoxRight {
   background: #fff url(../img/regulation-r.svg) center 70% no-repeat;
-  background-size: 352px;
-  height: 584px;
-  width: 440px;
+  background-size: 35.2rem;
+  height: 58.4rem;
+  width: 44rem;
 }
 
 .regulation__explanation {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600; color:#333333;
   line-height: 1.6;
-  margin-top: 72px;
+  margin-top: 7.2rem;
 
   > span {
     color: #00a0e8;
     display: inline-block;
-    font-size: 32px;
-    margin-top: 15px;
+    font-size: 3.2rem;
+    margin-top: 1.5rem;
   }
 }
 
 @include sp {
   .regulation {
-    padding: 40px 0;
+    padding: 4rem 0;
     min-width: auto;
   }
 
@@ -153,7 +153,7 @@
 
   .regulation__body {
     display: block;
-    margin: 36px auto 0;
+    margin: 3.6rem auto 0;
     width: 100%;
   }
 
@@ -163,32 +163,32 @@
     width: 92%;
 
     .baseExplanation {
-      font-size: 12px;
+      font-size: 1.2rem;
     }
 
     .baseLabel {
-      font-size: 12px;
+      font-size: 1.2rem;
     }
 
     .baseText {
-      margin-left: 5px;
+      margin-left:0.5rem;
     }
   }
 
   .baseTypeLists {
-    margin-top: 25px;
+    margin-top: 2.5rem;
 
     > li {
-      margin-top: 15px;
+      margin-top: 1.5rem;
 
       .baseImage {
-        height: 85px;
-        width: 95.5px;
+        height: 8.5rem;
+        width: 9.6rem;
       }
 
       &:first-of-type .baseImage {
         background-image: url(../img/regulation-l1-mobile.jpg);
-        background-size: 95.5px;
+        background-size: 9.6rem;
       }
     }
   }
@@ -197,18 +197,18 @@
     background: #fff url(../img/regulation-b-mobile.svg) center 60% no-repeat;
     background-size: 88%;
     height: auto;
-    margin: 36px auto 0;
+    margin: 3.6rem auto 0;
     padding-bottom: 108%;
     width: 92%;
   }
 
   .regulation__explanation {
-    font-size: 14px;
-    margin-top: 30px;
+    font-size: 1.4rem;
+    margin-top: 3rem;
 
     > span {
-      font-size: 22px;
-      margin-top: 10px;
+      font-size: 2.2rem;
+      margin-top: 1rem;
     }
   }
 }
@@ -224,7 +224,7 @@
 @include sp {
   .regulation .regulation__body .imgBoxLeft > ul > li:first-of-type .baseImage {
     background-image: url(../img/regulation-l1-mobile.jpg);
-    background-size: 95.5px;
+    background-size: 9.6rem;
   }
 }
 
@@ -256,7 +256,7 @@
     > li:nth-of-type(2)
     .baseImage {
     background-image: url(../img/regulation-l2-mobile.jpg);
-    background-size: 95.5px;
+    background-size: 9.6rem;
   }
 }
 
@@ -293,7 +293,7 @@
     > li:nth-of-type(3)
     .baseImage {
     background-image: url(../img/regulation-l3-mobile.jpg);
-    background-size: 95.5px;
+    background-size: 9.6rem;
   }
 }
 

@@ -1,20 +1,20 @@
 .footer {
   background: url(../img/footer.svg) top no-repeat;
   background-size: cover;
-  font-size: 12px;
-  height: 347px;
-  padding-top: 54px;
+  font-size: 1.2rem;
+  height: 34.7rem;
+  padding-top: 5.4rem;
   text-align: center;
   width: 100%;
 
   > div {
     margin: auto;
     text-align: left;
-    width: 648px;
+    width: 64.8rem;
 
     > h3 {
-      font-size: 14px;
-      margin: 0 0 10px;
+      font-size: 1.4rem;
+      margin: 0 0 1rem;
     }
 
     > ul {
@@ -29,9 +29,9 @@
   > small {
     color: #666;
     display: inline-block;
-    font-size: 16px;
-    margin-bottom: 146px;
-    margin-top: 55px;
+    font-size: 1.6rem;
+    margin-bottom: 14.6rem;
+    margin-top: 5.5rem;
   }
 }
 
@@ -40,18 +40,18 @@
     background: url(../img/footer-mobile.svg) top no-repeat;
     background-size: cover;
     height: auto;
-    padding: 45px 0 0;
+    padding: 4.5rem 0 0;
 
     > div {
-      font-size: 12px;
-      max-width: 328px;
+      font-size: 1.2rem;
+      max-width: 32.8rem;
       width: 87.5%;
     }
 
     > small {
-      font-size: 12px;
-      margin-bottom: 25px;
-      margin-top: 42.5px;
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+      margin-top: 4.3rem;
     }
   }
 }

@@ -1,37 +1,41 @@
 .factor {
   margin: auto;
-  padding: 100px 80px;
+  padding: 10rem 8rem;
   text-align: center;
-  max-width: 1124px;
+  max-width: 112.4rem;
+
+  h2{
+    @include title-h2;
+  }
 }
 
-.factor__title {
+.factor__title{
   @include title-h2;
 }
 
 .factor__img {
-  margin-top: 72px;
+  margin-top: 7.2rem;
 }
 
 .factor__lists {
-  margin: 48px auto 0;
+  margin: 4.8rem auto 0;
   text-align: left;
-  width: 660px;
+  width: 66rem;
 }
 
 @include sp {
   .factor {
     margin: auto;
-    padding: 45px 0;
+    padding: 4.5rem 0;
     width: 88%;
   }
 
   .factor__img {
-    margin-top: 38px;
+    margin-top: 3.8rem;
   }
 
   .factor__lists {
-    margin-top: 32px;
+    margin-top: 3.2rem;
     width: 100%;
   }
 }

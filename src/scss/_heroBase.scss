@@ -1,5 +1,5 @@
 .base__title-h1 {
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 1.7;
   font-weight: 600; color:#333333;
 }
@@ -14,16 +14,16 @@
 .hero__inner {
   margin: auto;
   overflow: hidden;
-  padding-bottom: 25px;
+  padding-bottom: 2.5rem;
   position: relative;
-  width: 980px;
+  width: 98.0rem;
 }
 
 .hero__logo {
   left: 0;
   position: absolute;
-  top: 10px;
-  width: 160px;
+  top: 1rem;
+  width: 16rem;
 }
 
 .hero__eyecatche {
@@ -33,54 +33,54 @@
 }
 
 .hero__title {
-  font-size: 60px;
-  margin-top: 135px;
-  margin-bottom: 40px;
+  font-size: 6rem;
+  margin-top: 13.5rem;
+  margin-bottom: 4rem;
 }
 
 .hero__title__main {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 600; color:#333333;
   line-height: 1;
-  margin-bottom: 48px;
+  margin-bottom: 4.8rem;
 }
 
 .hero__title__sub {
-  font-size: 68px;
+  font-size: 6.8rem;
   font-weight: 400;
   line-height: 1;
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 }
 
 .hero__title__3rd {
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: 600; color:#333333;
   line-height: 1;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 .numberOrPrice {
-  font-size: 120px;
+  font-size: 12rem;
   font-weight: 700;
 
   > span {
-    font-size: 60px;
+    font-size: 6rem;
   }
 }
 
 .tax {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .asterisk {
-  font-size: 14px;
+  font-size: 1.4rem;
   text-align: right;
-  padding-right: 14px;
+  padding-right: 1.4rem;
 }
 
 @include sp {
   .base__title-h1 {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.6;
   }
 
@@ -94,18 +94,18 @@
   .hero__inner {
     width: 88%;
     margin: auto;
-    padding-bottom: 32px;
+    padding-bottom: 3.2rem;
   }
 
   .hero__logo {
-    width: 79px;
-    height: 22px;
-    top: 20px;
+    width: 8rem;
+    height: 2.2rem;
+    top: 2rem;
   }
 
   .hero__eyecatche {
-    width: 154.5px;
-    height: 96.6px;
+    width: 15.5rem;
+    height: 9.6rem;
     right: 0;
 
     > img {
@@ -115,35 +115,35 @@
   }
 
   .hero__title {
-    font-size: 32px;
-    margin-top: 72px;
-    margin-bottom: 32px;
+    font-size: 3.2rem;
+    margin-top: 7.2rem;
+    margin-bottom: 3.2rem;
   }
 
   .hero__title__main {
-    font-size: 20px;
-    margin: 0 0 24px;
+    font-size: 2rem;
+    margin: 0 0 2.4rem;
   }
 
   .hero__title__sub {
-    font-size: 34px;
-    margin-bottom: 24px;
+    font-size: 3.4rem;
+    margin-bottom: 2.4rem;
   }
 
   .hero__title__3rd {
-    font-size: 34px;
+    font-size: 3.4rem;
   }
 
   .numberOrPrice {
-    font-size: 60px;
+    font-size: 6rem;
   }
 
   .tax {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 
   .asterisk {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 }
 
@@ -158,11 +158,11 @@
 
 .comment {
   font-weight: 400;
-  margin-bottom: 3px;
+  margin-bottom: 0.3rem;
 }
 
 @include sp {
   .comment {
-    margin-bottom: 2px;
+    margin-bottom: 0.2rem;
   }
 }

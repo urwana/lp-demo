@@ -1,17 +1,17 @@
 .annotationList {
-  padding-left: 12px;
+  padding-left: 1.2rem;
   text-align: left;
   @include annotation;
 }
 
 .annotationLists > li {
-  padding-left: 12px;
+  padding-left: 1.2rem;
   position: relative;
   @include annotation;
 }
 
 .flow .annotationList {
-  margin-top: 12px;
+  margin-top: 1.2rem;
 }
 
 .annotation-mark-list {
@@ -21,64 +21,64 @@
 }
 
 .annotation-mark-list > li {
-  padding-left: 12px;
+  padding-left: 1.2rem;
   position: relative;
 }
 
 .annotation-mark-list > li:before {
   content: "※";
   display: block;
-  height: 12px;
+  height: 1.2rem;
   left: 0;
   position: absolute;
   top: 0;
-  width: 12px;
+  width: 1.2rem;
 }
 
 .annotation-mark {
-  margin-left: 12px;
+  margin-left: 1.2rem;
   position: relative;
 }
 
 .annotation-mark:before {
   content: "※";
   display: block;
-  height: 12px;
-  left: -12px;
+  height: 1.2rem;
+  left: -1.2rem;
   position: absolute;
   top: 0;
-  width: 12px;
+  width: 1.2rem;
 }
 
 .service .heroInner .annotation,
 .icBase-lp .heroInner .annotation {
-  font-size: 12px;
+  font-size: 1.2rem;
   margin: 0;
-  text-shadow: 0 0 10px #fff;
+  text-shadow: 0 0 1rem #fff;
 }
 
 .factor .annotation {
   color: #666;
 
   > li {
-    font-size: 12px;
+    font-size: 1.2rem;
     position: relative;
   }
 }
 
 @include sp {
   .heroInner .annotation {
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 1.4;
     .factor .annotation > li {
-      font-size: 12px;
+      font-size: 1.2rem;
     }
   }
 }
 
 .resolveAnnotation {
-  font-size: 12px;
-  margin-top: 12px;
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
   padding: 0;
   text-align: left;
 }
@@ -105,8 +105,8 @@
 
 @include sp {
   .resolveAnnotation {
-    font-size: 12px;
-    margin: 10px auto 0;
+    font-size: 1.2rem;
+    margin: 1rem auto 0;
     width: 92%;
   }
 

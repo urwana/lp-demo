@@ -6,16 +6,16 @@
   text-align: center;
   position: relative;
   background-image: url(../img/right-arrow.svg);
-  background-position: center right 30px;
+  background-position: center right 3rem;
   background-repeat: no-repeat;
-  border-radius: 50px;
-  width: 428px;
-  height: 96px;
+  border-radius: 5rem;
+  width: 42.8rem;
+  height: 9.6rem;
   line-height: 1.4;
-  margin: 24px 16px 0;
+  margin: 2.4rem 1.6rem 0;
 
   > span {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 
   &:hover {
@@ -24,19 +24,19 @@
 
   @include sp {
     width: 92%;
-    max-width: 345px;
-    height: 60px;
-    margin: 8px auto 0;
-    background-position: center right 20px;
-    background-size: 8px;
+    max-width: 34.5rem;
+    height: 6rem;
+    margin: 0.8rem auto 0;
+    background-position: center right 2rem;
+    background-size: 0.8rem;
 
     > span {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
 
     &:nth-of-type(2) {
-      margin-bottom: 40px;
-      margin-top: 40px;
+      margin-bottom: 4rem;
+      margin-top: 4rem;
     }
   }
 }
@@ -45,7 +45,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 48px;
+  margin-top: 4.8rem;
 }
 
 .button {
@@ -67,24 +67,24 @@
 @include sp {
   .buttonContainer {
     display: block;
-    margin: 24px auto 0;
+    margin: 2.4rem auto 0;
   }
 
   .buttonBox {
-    margin-top: 24px;
+    margin-top: 2.4rem;
   }
 }
 
 .order .button {
-  margin: 32px auto 0;
-  width: 640px;
+  margin: 3.2rem auto 0;
+  width: 64rem;
 }
 
 @include sp {
   .order .button {
-    height: 60px;
-    margin-top: 38px;
-    max-width: 345px;
+    height: 6rem;
+    margin-top: 3.8rem;
+    max-width: 34.5rem;
     width: 92%;
   }
 }
@@ -94,44 +94,44 @@
   justify-content: center;
   align-items: center;
   background: #ffffff url(../img/arrow-black.svg) 50% no-repeat;
-  background-position: center right 20px;
-  border-radius: 25px;
+  background-position: center right 2rem;
+  border-radius: 2.5rem;
   color: #333;
   font-weight: 600; color:#333333;
-  height: 42px;
-  width: 306px;
-  margin-top: 64px;
+  height: 4.2rem;
+  width: 30.6rem;
+  margin-top: 6.4rem;
 
   > span {
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
 
 @include sp {
   .button-otherProducts {
-    height: 40px;
-    margin: 24px auto 0;
-    width: 291px;
+    height: 4rem;
+    margin: 2.4rem auto 0;
+    width: 29.1rem;
 
     > span {
-      font-size: 13px;
+      font-size: 1.3rem;
     }
   }
 }
 
 // service buttons
 .checkAndRegister {
-  padding: 80px 0;
+  padding: 8rem 0;
   text-align: center;
 }
 
 .checkAndRegister__inner {
   margin: auto;
-  width: 960px;
+  width: 96rem;
 }
 
 .checkAndRegister__lead {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 600;
   color:#333333;
   line-height: 1.7;
@@ -139,7 +139,7 @@
 
 @include sp {
   .checkAndRegister {
-    padding: 38px 0;
+    padding: 3.8rem 0;
   }
 
   .checkAndRegister__inner {
@@ -147,91 +147,91 @@
   }
 
   .checkAndRegister__lead {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.4;
   }
 }
 
 .buttonBox__copyBox {
   display: inline-block;
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: 600; color:#333333;
   line-height: 1.4;
   position: relative;
 }
 
 .priceOff {
-  font-size: 28px;
+  font-size: 2.8rem;
 
   > span {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 
   .comma {
-    font-size: 26px;
+    font-size: 2.6rem;
   }
 }
 
 .termsOfUse {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   position: absolute;
-  right: 30px;
-  top: -14px;
+  right: 3rem;
+  top: -1.4rem;
 }
 
 @include sp {
   .buttonBox__copyBox {
-    font-size: 14px;
+    font-size: 1.4rem;
 
     .priceOff {
-      font-size: 14px;
+      font-size: 1.4rem;
 
       > span {
-        font-size: 12px;
+        font-size: 1.2rem;
       }
 
       .comma {
-        font-size: 13px;
+        font-size: 1.3rem;
       }
     }
 
     .termsOfUse {
-      font-size: 12px;
+      font-size: 1.2rem;
       right: 0;
-      top: -8px;
+      top: -0.8rem;
     }
   }
 }
 
 .order {
-  padding: 80px 0;
+  padding: 8rem 0;
   text-align: center;
 }
 
 .order__inner {
   margin: auto;
-  width: 1124px;
+  width: 112.4rem;
 }
 
 .order__catch {
   font-weight: 700;
   line-height: 1;
-  margin-top: 36px;
-  font-size: 40px;
+  margin-top: 3.6rem;
+  font-size: 4rem;
 }
 
 .order__lead {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 600; color:#333333;
   line-height: 1;
 }
 
 .order__lead2nd {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600; color:#333333;
   line-height: 1;
-  margin-top: 44px;
+  margin-top: 4.4rem;
 
   > div {
     display: inline-block;
@@ -239,13 +239,13 @@
   }
 
   > span {
-    font-size: 26px;
+    font-size: 2.6rem;
   }
 }
 
 @include sp {
   .order {
-    padding: 38px 0;
+    padding: 3.8rem 0;
   }
 
   .order__inner {
@@ -253,20 +253,20 @@
   }
 
   .order__catch {
-    font-size: 23px;
-    margin-top: 25px;
+    font-size: 2.3rem;
+    margin-top: 2.5rem;
   }
 
   .order__lead {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 
   .order__lead2nd {
-    font-size: 12px;
-    margin-top: 25px;
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
 
     > span {
-      font-size: 13px;
+      font-size: 1.3rem;
     }
   }
 }
@@ -276,36 +276,36 @@
   border-bottom: 1px solid #000;
   display: inline-block;
   position: absolute;
-  width: 32px;
-  height: 32px;
+  width: 3.2rem;
+  height: 3.2rem;
 
   @include sp {
-    height: 16px;
-    width: 16px;
+    height: 1.6rem;
+    width: 1.6rem;
   }
 }
 
 .slash-l {
   @extend %slashStyle;
-  bottom: 6px;
-  left: -14px;
+  bottom: 0.6rem;
+  left: -1.4rem;
   transform: rotate(-300deg);
 
   @include sp {
-    bottom: 4px;
+    bottom: 0.4rem;
     transform: rotate(60deg);
   }
 }
 
 .slash-r {
   @extend %slashStyle;
-  bottom: 6px;
-  right: -14px;
+  bottom: 0.6rem;
+  right: -1.4rem;
   -webkit-transform: rotate(-60deg);
   transform: rotate(-60deg);
 
   @include sp {
-    bottom: 4px;
+    bottom: 0.4rem;
     -webkit-transform: rotate(-63deg);
     transform: rotate(-63deg);
   }
@@ -313,19 +313,19 @@
 
 .checkAndRegister .slash-l,
 .checkAndRegister .slash-r {
-  height: 55px;
-  width: 55px;
+  height: 5.5rem;
+  width: 5.5rem;
 }
 
 @include sp {
   .checkAndRegister .slash-r {
-    bottom: 6px;
+    bottom: 0.6rem;
   }
 
   .checkAndRegister .slash-l,
   .checkAndRegister .slash-r {
-    height: 31px;
-    width: 31px;
+    height: 3rem;
+    width: 3rem;
   }
 
   .button-register .slash-l {
@@ -340,20 +340,20 @@
 .floatingButtonContainer {
   position: fixed;
   right: 0;
-  bottom: 100px;
+  bottom: 10rem;
   background-color: rgba(255, 255, 255, 0.4);
-  padding: 40px 8px 8px 8px;
+  padding: 4rem 0.8rem 0.8rem 0.8rem;
   text-align: center;
   z-index: 10;
-  border-radius: 8px;
+  border-radius: 0.8rem;
 }
 
 .floatingButton {
   @extend %buttonBase;
-  width: 372px;
-  height: 80px;
+  width: 37.2rem;
+  height: 8rem;
   background-color: #000000;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.3);
   margin-top: 0;
   display: flex;
   justify-content: left;
@@ -361,62 +361,62 @@
 }
 
 .floatingButton > span {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .floatingButton__lead {
   color: #333;
   display: inline-block;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600;
-  left: 50px;
+  left: 5rem;
   position: absolute;
   text-align: center;
-  top: -37px;
+  top: -3.7rem;
 }
 
 .floatingButton .floatingButton__priceCircle {
   background-color: #fff;
-  border-radius: 36px;
+  border-radius: 3.6rem;
   color: #333;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
-  width: 72px;
-  height: 72px;
+  width: 7.2rem;
+  height: 7.2rem;
   line-height: 1;
-  padding-top: 4px;
+  padding-top: 0.4rem;
   text-align: center;
-  margin-left: 4px;
+  margin-left: 0.4rem;
 
   > span {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 
   .numberOrPrice {
-    font-size: 22px;
+    font-size: 2.2rem;
   }
 }
 
 .floatingButton__label {
-  font-size: 20px;
+  font-size: 2rem;
   color: #e6cd92;
-  margin-left: 16px;
+  margin-left: 1.6rem;
 
   > span {
-    font-size: 26px;
+    font-size: 2.6rem;
   }
 }
 
 @include sp {
   .floatingButtonContainer {
-    bottom: 15px;
+    bottom: 1.5rem;
     left: 0;
-    padding-top: 5px;
+    padding-top: 0.5rem;
   }
 
   .floatingButton__lead {
     color: #fff;
-    font-size: 12px;
+    font-size: 1.2rem;
     left: 0;
     position: relative;
     top: 0;
@@ -424,30 +424,30 @@
 
   .floatingButton__label {
     display: inline-block;
-    font-size: 14px;
-    padding-left: 20px;
+    font-size: 1.4rem;
+    padding-left: 2rem;
     text-align: left;
 
     > span {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   }
 
   .floatingButton__priceCircle {
-    border-radius: 25px;
-    font-size: 12px;
-    height: 50px;
-    left: 5px;
-    top: 5px;
-    width: 50px;
+    border-radius: 2.5rem;
+    font-size: 1.2rem;
+    height: 5rem;
+    left: 0.5rem;
+    top: 0.5rem;
+    width: 5rem;
   }
 
   .numberOrPrice {
-    font-size: 17px;
+    font-size: 1.8rem;
   }
 }
 
 .floatingButtonContainer .slash span {
-  height: 28px;
-  width: 28px;
+  height: 2.8rem;
+  width: 2.8rem;
 }
