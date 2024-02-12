@@ -495,6 +495,10 @@ a {
   align-items: center;
 }
 
+.floatingButton > span {
+  font-size: 18px;
+}
+
 .floatingButton__lead {
   color: #333;
   display: inline-block;
