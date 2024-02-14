@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <% headData = { title : "基盤印刷のサービス概要", css : "service" }; %>
-  <%- include('./parts/_head', { title: 'My Website' }) %>
+  <% const headData = { title : "基盤印刷のサービス概要", css : "service" }; %>
+  <%- include('./parts/_head', { headData: headData }) %>
   <body class="service">
     <%- include('./parts/_heroService', {  }) %>
-    <% buttonData = {
+    <% const buttonData = {
         lead: "高性能、短納期、充実サポート<br />精密基盤印刷ならテクノール！",
         colorDark: true,
         leftButton : {
@@ -28,7 +28,7 @@
     <%- include('./parts/_factor', {  }) %>
     <%- include('./parts/_anxietyAndDoubt', {  }) %>
     <%- include('./parts/_resolution', {  }) %>
-    <% buttonData2 = {
+    <% const buttonData2 = {
       lead: "基盤印刷の不安も疑問も解消したいなら<br />テクノールにおまかせ！",
       colorDark: false,
       leftButton : {
@@ -53,7 +53,7 @@
   <%- include('./parts/_templates', {  }) %>
   <% contentsDark = true; %>
   <%- include('./parts/_flow', { contentsDark : contentsDark }) %>
-  <% buttonData3 = {
+  <% const buttonData3 = {
     lead: "基盤印刷はじめてでも、簡単・安心！<br />テクノールのICチップ印刷",
     colorDark: false,
     leftButton : {

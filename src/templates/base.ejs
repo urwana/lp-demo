@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
-<% headData = { title : "基盤印刷の概要", css : "base" }; %>
-<%- include('./parts/_head', { title: 'My Website' }) %>
+<% const headData = { title : "基盤印刷の概要", css : "base" }; %>
+<%- include('./parts/_head', { headData: 'headData' }) %>
 
 <body class="icBase-lp">
   <%- include('./parts/_heroBase', { title: 'My Website' }) %>
   <%
-      copy = "24時間全国どこからでもOK";
-      copy2 = "３分で完了！カンタン注文";
-      buttonData = {
+      const copy = "24時間全国どこからでもOK";
+      const copy2 = "３分で完了！カンタン注文";
+      const buttonData = {
         link : "https://technore.com/account/register/new",
         buttonLabel : "ICチップの印刷商品・価格を今すぐチェック！",
         termsOfUse : "（利用条件あり）"

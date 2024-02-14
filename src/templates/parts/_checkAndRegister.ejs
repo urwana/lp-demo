@@ -1,3 +1,8 @@
+<% if (typeof buttonData === 'undefined') { buttonData = []; } %>
+<% if (typeof buttonData.leftButton === 'undefined') { buttonData.leftButton = []; } %>
+<% if (typeof buttonData.rightButton === 'undefined') { buttonData.rightButton = []; } %>
+<% if (typeof buttonData.otherProducts === 'undefined') { buttonData.otherProducts = []; } %>
+
 <div class="checkAndRegister <%- buttonData.colorDark ? "contents-dark" : "" %>">
   <div class="checkAndRegister__inner">
     <div class="checkAndRegister__lead">
