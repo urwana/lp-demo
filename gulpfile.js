@@ -10,6 +10,8 @@ import gulpSass from "gulp-sass";
 const sass = gulpSass(dartSass);
 import rename from "gulp-rename";
 import connect from "gulp-connect";
+import babel from "gulp-babel";
+import uglify from "gulp-uglify";
 
 const compileEjs = () => {
   return src("./src/templates/**/*.ejs")
@@ -17,6 +19,13 @@ const compileEjs = () => {
     .pipe(rename({ extname: ".html" }))
     .pipe(dest("./dist/"))
     .pipe(connect.reload());
+};
+
+const compileJs = () => {
+  return src("src/**/*.js")
+    .pipe(babel())
+    .pipe(uglify())
+    .pipe(dest("dist"));
 };
 
 const compileSass = () => {
@@ -46,6 +55,7 @@ const imageCompress = () => {
 const watchFile = () => {
   watch("src/scss/**/*.scss", compileSass);
   watch("src/templates/**/*.ejs", compileEjs);
+  watch("src/js/**/*.js", compileJs);
   watch("src/img/**/*", imageCompress);
 };
 
@@ -60,8 +70,7 @@ const startServer = () => {
 export default series(
   compileEjs,
   compileSass,
+  compileJs,
   imageCompress,
   parallel(startServer, watchFile)
 );
-
-// parallel() 同時に処理を行う
