@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <% const headData = { title : "基盤印刷の概要", css : "base" }; %>
-<%- include('./parts/_head', { headData: 'headData' }) %>
+<%- include('./parts/_head', { headData: headData }) %>
 
 <body class="icBase-lp">
   <%- include('./parts/_heroBase', { title: 'My Website' }) %>
@@ -16,7 +16,7 @@
     %>
   <%- include('./parts/_order', { lead : "ICチップの基盤・精密基盤印刷ならテクノール！", copy : copy, contentsDark : true, buttonData : buttonData }) %>
   <%- include('./parts/_factorBase') %>
-  <%- include('./parts/_order', { lead : "豊富な用紙でICチップを印刷できるテクノール！", copy : copy, contentsDark : true, buttonData : buttonData }) %>
+  <%- include('./parts/_order', { lead : "豊富な基盤でICチップを印刷できるテクノール！", copy : copy, contentsDark : true, buttonData : buttonData }) %>
   <%- include('./parts/_templates') %>
   <%- include('./parts/_flow', { contentsDark : true }) %>
   <%- include('./parts/_order', { lead : "最短明日到着で 仕上がり後も充実サポートのテクノール", copy : copy, contentsDark : false, buttonData : buttonData }) %>

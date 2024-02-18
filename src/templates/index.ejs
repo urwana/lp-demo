@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<% const headData = { title : "基盤印刷のサービス概要", css : "service" }; %>
+<%- include('./parts/_head', { headData: headData }) %>
+
+<body class="service">
+  <%- include('./parts/_heroService', {  }) %>
+  <% const buttonData = {
+        lead: "高性能、短納期、充実サポート<br />精密基盤印刷ならテクノール！",
+        colorDark: true,
+        leftButton : {
+          copy : "最短 480時間で出荷可能！<br />国内送料弊社負担",
+          link : "https://technore.com/print/semiconductor/prices?color=BOTH_SIDE_COLOR&paper=COAT&size=A4&weight=90", 
+          buttonLabel : "最新のIC基盤印刷設備を<br />今すぐ確認！"
+        },
+        rightButton: {
+          copy : "1,000万 〜 1億円 coverage<br />2種損害保険を必ず付与！", 
+          link : "https://technore.com/account/register/new",
+          buttonLabel : "まずは無料で審査登録！",
+          termsOfUse : "（利用条件あり）"
+        },
+        otherProducts : {
+          link : "https://technore.com/semiconductor/",
+          buttonLabel : "その他の基盤を見てみる"
+        }
+      };
+    %>
+  <%- include('./parts/_checkAndRegister', { buttonData : buttonData }) %>
+  <%- include('./parts/_factorBase') %>
+  <%- include('./parts/_anxietyAndDoubt') %>
+  <%- include('./parts/_resolution') %>
+  <% const buttonData3 = {
+        lead: "基盤印刷はじめてでも、簡単・安心！<br />テクノールのICチップ印刷",
+        colorDark: false,
+        leftButton : {
+          copy : "最短 480時間で出荷可能！<br />国内送料弊社負担",
+          link : "https://technore.com/print/semiconductor/prices?color=BOTH_SIDE_COLOR&paper=COAT&size=A4&weight=90",
+          buttonLabel : "最新のIC基盤印刷設備を<br />今すぐ確認！"
+          },
+          rightButton: {
+          copy : "1,000円OFF、1万円OFF<br />2種クーポン必ずプレゼント！",
+          link : "https://technore.com/account/register/new",
+          buttonLabel : "まずは無料で会員登録！",
+          termsOfUse : "（利用条件あり）"
+          },
+          otherProducts : {
+          link : "https://technore.com/semiconductor/",
+          buttonLabel : "その他の基盤を見てみる"
+          }
+          };
+  %>
+  <%- include('./parts/_checkAndRegister', { buttonData : buttonData3 }) %>
+  <%- include('./parts/_regulation') %>
+  <%- include('./parts/_templates') %>
+  <% contentsDark = true; %>
+  <%- include('./parts/_flow', { contentsDark : contentsDark }) %>
+  <%
+    const copy = "24時間全国どこからでもOK";
+    const copy2 = "３分で完了！カンタン注文";
+    const buttonData2 = {
+      link : "https://technore.com/account/register/new",
+      buttonLabel : "ICチップの印刷商品・価格を今すぐチェック！",
+      termsOfUse : "（利用条件あり）"
+    };
+  %>
+  <%- include('./parts/_order', { lead : "豊富な基盤でICチップを印刷できるテクノール！", copy : copy, contentsDark : false, buttonData : buttonData2 }) %>
+  <%- include('./parts/_floatingButton') %>
+  <%- include('./parts/_footer') %>
+</body>
+
+</html>
