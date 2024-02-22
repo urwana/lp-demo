@@ -709,6 +709,7 @@
     &:after {
       background: url(../img/arrow.svg) no-repeat 50%;
       bottom: calc(50% - 1.8rem);
+      background-size: 2.5rem;
       content: "";
       height: 3.5rem;
       position: absolute;

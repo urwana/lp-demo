@@ -480,7 +480,7 @@ a {
 }
 .floatingButtonContainer {
   position: fixed;
-  right: 0;
+  left: 0;
   bottom: 10rem;
   background-color: rgba(255, 255, 255, 0.4);
   padding: 4rem 0.8rem 0.8rem 0.8rem;
@@ -1728,6 +1728,7 @@ a {
 .orderToDelivery .item:after {
   background: url(../img/arrow.svg) no-repeat 50%;
   bottom: calc(50% - 1.8rem);
+  background-size: 2.5rem;
   content: "";
   height: 3.5rem;
   position: absolute;
@@ -2278,6 +2279,45 @@ a {
     padding: 0.5rem 0.7rem;
   }
 }
+.js-scroll-fadein {
+  transition: opacity 1s;
+  visibility: hidden;
+  opacity: 0;
+}
+.js-scroll-fadein.is-fadein {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out; /* opacityの変化を0.5秒かけて行う */
+}
+
+.arrow {
+  position: fixed;
+  right: 12rem;
+  bottom: 12rem;
+  color: #fff;
+  cursor: pointer;
+  background-color: #00a0e8;
+  border-radius: 50%;
+  padding: 2rem;
+}
+.arrow:hover {
+  opacity: 0.8;
+  bottom: 12.5rem;
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+}
+.arrow:before {
+  top: 16px;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-top: solid 3px #fff;
+  border-right: solid 3px #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 13px;
+}
+
 .flow {
   padding: 10rem 0;
   text-align: center;

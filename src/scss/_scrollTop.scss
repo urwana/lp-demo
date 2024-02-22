@@ -1,0 +1,42 @@
+.js-scroll-fadein {
+  transition: opacity 1s;
+  visibility: hidden;
+  opacity: 0;
+
+  &.is-fadein {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .8s ease-in-out; /* opacityの変化を0.5秒かけて行う */
+  }
+}
+
+.arrow{
+  position: fixed;
+  right: 12rem;
+  bottom: 12rem;
+  color: #fff;
+  cursor: pointer;
+  background-color: #00a0e8;
+  border-radius: 50%;
+  padding: 2rem;
+  // transition: all 0.5s ease-in-out;
+
+  &:hover{
+    opacity: .8;
+    bottom: 12.5rem;
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+  }
+
+  &:before {
+    top: 16px;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-top: solid 3px #fff;
+    border-right: solid 3px #fff;
+    transform: rotate(-45deg);
+    position:  absolute;
+    left: 13px;
+  }
+}
