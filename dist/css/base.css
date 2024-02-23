@@ -261,7 +261,7 @@ a {
   border-radius: 2.5rem;
   color: #333;
   font-weight: 600;
-  color: #333333;
+  color: #333;
   height: 4.2rem;
   width: 30.6rem;
   margin-top: 6.4rem;
@@ -293,7 +293,7 @@ a {
 .checkAndRegister__lead {
   font-size: 2.8rem;
   font-weight: 600;
-  color: #333333;
+  color: #333;
   line-height: 1.7;
 }
 
@@ -313,7 +313,7 @@ a {
   display: inline-block;
   font-size: 2.6rem;
   font-weight: 600;
-  color: #333333;
+  color: #333;
   line-height: 1.4;
   position: relative;
 }
@@ -375,14 +375,14 @@ a {
 .order__lead {
   font-size: 2.8rem;
   font-weight: 600;
-  color: #333333;
+  color: #333;
   line-height: 1;
 }
 
 .order__lead2nd {
   font-size: 2.4rem;
   font-weight: 600;
-  color: #333333;
+  color: #333;
   line-height: 1;
   margin-top: 4.4rem;
 }
@@ -587,7 +587,7 @@ a {
   font-size: 2.4rem;
   line-height: 1.7;
   font-weight: 600;
-  color: #333333;
+  color: #333;
 }
 
 .hero {
@@ -627,7 +627,7 @@ a {
 .hero__title__main {
   font-size: 3.2rem;
   font-weight: 600;
-  color: #333333;
+  color: #333;
   line-height: 1;
   margin-bottom: 4.8rem;
 }
@@ -642,7 +642,7 @@ a {
 .hero__title__3rd {
   font-size: 4.8rem;
   font-weight: 600;
-  color: #333333;
+  color: #333;
   line-height: 1;
   margin-bottom: 4rem;
 }
@@ -749,7 +749,7 @@ a {
 .factor__title {
   font-size: 4rem;
   font-weight: 600;
-  color: #333333;
+  color: #333;
   line-height: 1.3;
   margin: 0;
 }
@@ -899,7 +899,7 @@ a {
 .regulation__title {
   font-size: 4rem;
   font-weight: 600;
-  color: #333333;
+  color: #333;
   line-height: 1.3;
   margin: 0;
 }
@@ -1003,7 +1003,7 @@ a {
 .regulation__explanation {
   font-size: 2.4rem;
   font-weight: 600;
-  color: #333333;
+  color: #333;
   line-height: 1.6;
   margin-top: 7.2rem;
 }
@@ -1129,7 +1129,7 @@ a {
 .templates__title {
   font-size: 4rem;
   font-weight: 600;
-  color: #333333;
+  color: #333;
   line-height: 1.3;
   margin: 0;
 }
@@ -1327,7 +1327,7 @@ a {
 .flow-title {
   font-size: 4rem;
   font-weight: 600;
-  color: #333333;
+  color: #333;
   line-height: 1.3;
   margin: 0;
 }

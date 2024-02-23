@@ -51,17 +51,17 @@
 .button {
   @extend %buttonBase;
   background-color: #000000;
-  color: #e6cd92;
+  color: $gold;
 }
 
 .button-register {
   @extend %buttonBase;
-  background-color: #e6cd92;
+  background-color: $gold;
   color: #000;
 }
 
 .button-dark {
-  background-color: #f5f5f5 !important;
+  background-color: $light-grey !important;
 }
 
 @include sp {
@@ -97,7 +97,7 @@
   background-position: center right 2rem;
   border-radius: 2.5rem;
   color: #333;
-  font-weight: 600; color:#333333;
+  font-weight: 600; color:$heading;
   height: 4.2rem;
   width: 30.6rem;
   margin-top: 6.4rem;
@@ -133,7 +133,7 @@
 .checkAndRegister__lead {
   font-size: 2.8rem;
   font-weight: 600;
-  color:#333333;
+  color:$heading;
   line-height: 1.7;
 }
 
@@ -155,7 +155,7 @@
 .buttonBox__copyBox {
   display: inline-block;
   font-size: 2.6rem;
-  font-weight: 600; color:#333333;
+  font-weight: 600; color:$heading;
   line-height: 1.4;
   position: relative;
 }
@@ -223,13 +223,13 @@
 
 .order__lead {
   font-size: 2.8rem;
-  font-weight: 600; color:#333333;
+  font-weight: 600; color:$heading;
   line-height: 1;
 }
 
 .order__lead2nd {
   font-size: 2.4rem;
-  font-weight: 600; color:#333333;
+  font-weight: 600; color:$heading;
   line-height: 1;
   margin-top: 4.4rem;
 
@@ -399,7 +399,7 @@
 
 .floatingButton__label {
   font-size: 2rem;
-  color: #e6cd92;
+  color: $gold;
   margin-left: 1.6rem;
 
   > span {

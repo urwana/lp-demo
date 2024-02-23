@@ -1,6 +1,6 @@
 %title {
   background: #000;
-  color: #e6cd92;
+  color: $gold;
   font-size: 2.8rem;
   font-weight: 600;
   line-height: 6rem;
@@ -31,7 +31,7 @@
 }
 
 .regulation {
-  background: #f5f5f5;
+  background: $light-grey;
   padding: 10rem 0;
   text-align: center;
   min-width: 112.4rem;
@@ -78,7 +78,7 @@
 }
 
 .baseLabel {
-  background: #e7f3f9;
+  background: $light-blue;
   display: inline-block;
   font-size: 1.8rem;
   padding: 1.5px 1.2rem;
@@ -129,12 +129,12 @@
 
 .regulation__explanation {
   font-size: 2.4rem;
-  font-weight: 600; color:#333333;
+  font-weight: 600; color:$heading;
   line-height: 1.6;
   margin-top: 7.2rem;
 
   > span {
-    color: #00a0e8;
+    color: $blue;
     display: inline-block;
     font-size: 3.2rem;
     margin-top: 1.5rem;

@@ -57,7 +57,7 @@
 
 .templates__label {
   background: #000;
-  color: #e6cd92;
+  color: $gold;
   font-size: 1.4rem;
   text-align: center;
   padding: 0.4rem 0;
@@ -116,7 +116,7 @@
 }
 
 .templates__tool {
-  background: #e7f3f9;
+  background: $light-blue;
   border-radius: 2rem;
   margin: 8rem auto 0;
   padding: 3.2rem;
@@ -125,7 +125,7 @@
 }
 
 .templates__title-h3 {
-  color: #00a0e8;
+  color: $blue;
   font-size: 2.6rem;
   margin: 0 0 2.4rem;
 }

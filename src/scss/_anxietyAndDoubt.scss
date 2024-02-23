@@ -1,5 +1,5 @@
 .anxietyAndDoubt {
-  background: #f5f5f5 url(../img/service/anxiety-and-doubt.png);
+  background: $light-grey url(../img/service/anxiety-and-doubt.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 73.4rem;
@@ -22,7 +22,7 @@
 
 @include sp {
   .anxietyAndDoubt {
-    background: #f5f5f5 url(../img/service/anxiety-and-doubt-mobile.png);
+    background: $light-grey url(../img/service/anxiety-and-doubt-mobile.png);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 31.6rem;
@@ -47,7 +47,7 @@
   max-width: 112.4rem;
 
   > div {
-    background: #00a0e8;
+    background: $blue;
     border-radius: 2rem;
     color: #fff;
     display: table;

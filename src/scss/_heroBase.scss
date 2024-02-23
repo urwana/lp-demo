@@ -1,7 +1,7 @@
 .base__title-h1 {
   font-size: 2.4rem;
   line-height: 1.7;
-  font-weight: 600; color:#333333;
+  font-weight: 600; color:$heading;
 }
 
 .hero {
@@ -40,7 +40,7 @@
 
 .hero__title__main {
   font-size: 3.2rem;
-  font-weight: 600; color:#333333;
+  font-weight: 600; color:$heading;
   line-height: 1;
   margin-bottom: 4.8rem;
 }
@@ -54,7 +54,7 @@
 
 .hero__title__3rd {
   font-size: 4.8rem;
-  font-weight: 600; color:#333333;
+  font-weight: 600; color:$heading;
   line-height: 1;
   margin-bottom: 4rem;
 }
