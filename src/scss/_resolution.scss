@@ -120,7 +120,7 @@
   }
 }
 
-.contents-overview {
+.contentsOverview {
   margin-top: 4.3rem;
   display: flex;
   justify-content: left;
@@ -159,7 +159,7 @@
 }
 
 @include sp {
-  .contents-overview {
+  .contentsOverview {
     margin: 3rem auto 0;
     width: 92%;
     display: block;
@@ -287,7 +287,6 @@
 }
 
 // pointCheck
-
 .pointCheck {
   margin-top: 7rem;
   text-align: center;
@@ -341,24 +340,24 @@
 
 .submissionAndCheckMethods {
   margin-top: 10rem;
+}
 
-  .resolution__subTitle--h5 {
-    font-size: 3.2rem;
-    margin: 0 0 2.7rem;
-    text-align: center;
-    font-weight: 600;
-    color: $heading;
-  }
+.resolution__subTitle--h5 {
+  font-size: 3.2rem;
+  margin: 0 0 2.7rem;
+  text-align: center;
+  font-weight: 600;
+  color: $heading;
+}
 
-  .submissionAndCheckMethods_inner {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
+.submissionAndCheckMethods__inner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 @include sp {
-  .submissionAndCheckMethods .submissionAndCheckMethods_inner {
+  .submissionAndCheckMethods .submissionAndCheckMethods__inner {
     display: block;
     margin: auto;
   }
@@ -384,13 +383,10 @@
   @include sp {
     border-radius: 0 0 5px 5px;
     border-width: 3px;
-
-
   }
-
 }
 
-.methodUpperBox {
+%methodUpperBox {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -408,6 +404,11 @@
 .method--operetorCheck,
 .method--speedCheck {
   width: 47rem;
+
+  @include sp {
+    margin: 2.5rem auto 0;
+    width: 91.3%;
+  }
 }
 
 .method__contentsWrap--operetorCheck,
@@ -415,36 +416,39 @@
   @extend %contentsWrap;
   padding: 3.2rem 2.4rem 2.4rem 2.4rem;
 
-  .methodSummary {
-    font-size: 2.4rem;
-    line-height: 1.4;
-    margin-top: 3.2rem;
-    padding-bottom: 2.3rem;
-    text-align: center;
+  @include sp {
+    min-height: auto;
+    padding: 2.8rem 5.5%;
   }
 }
 
-@include sp {
-  .method--operetorCheck,
-  .method--speedCheck {
-    margin: 2.5rem auto 0;
-    width: 91.3%;
+%methodSummary {
+  font-size: 2.4rem;
+  line-height: 1.4;
+  margin-top: 3.2rem;
+  padding-bottom: 2.3rem;
+  text-align: center;
 
-    .contentsWrap {
-      min-height: auto;
-      padding: 2.8rem 5.5%;
-
-      .methodSummary {
-        display: inline-block;
-        font-size: 1.2rem;
-        margin-left: 2.4rem;
-        margin-top: 1rem;
-        padding-bottom: 2.1rem;
-        text-align: left;
-        width: calc(100% - 9.2rem);
-      }
-    }
+  @include sp {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-left: 2.4rem;
+    margin-top: 1rem;
+    padding-bottom: 2.1rem;
+    text-align: left;
+    width: calc(100% - 9.2rem);
   }
+}
+
+.method__upperBox--speedCheck,
+.method__upperBox--operetorCheck {
+  @extend %methodUpperBox;
+  margin-bottom: 2.5rem;
+}
+
+.method__summary--speedCheck,
+.method__summary--operetorCheck {
+  @extend %methodSummary;
 }
 
 .method__title {
@@ -455,15 +459,15 @@
   height: 6.4rem;
   text-align: center;
   width: 100%;
+}
 
-  > span {
-    display: table-cell;
-    font-weight: 600;
-    color: $heading;
-    color: $blue;
-    vertical-align: middle;
-    font-size: inherit;
-  }
+.method__titleAccent {
+  display: table-cell;
+  font-weight: 600;
+  color: $heading;
+  color: $blue;
+  vertical-align: middle;
+  font-size: inherit;
 }
 
 @include sp {
@@ -474,7 +478,7 @@
   }
 }
 
-.submissionMethod {
+.method__submission {
   color: $blue;
   display: inline-block;
   font-size: 2.8rem;
@@ -482,17 +486,15 @@
   margin-left: 2.5rem;
   text-align: left;
   vertical-align: middle;
-}
 
-@include sp {
-  .submissionMethod {
+  @include sp {
     float: left;
     font-size: 1.4rem;
     margin-left: 2.4rem;
   }
 }
 
-.methodDetailList {
+.method__detailList {
   border-top: 2px solid $blue;
   font-size: 2.2rem;
   line-height: 1.6;
@@ -500,23 +502,23 @@
   padding-top: 2.3rem;
 }
 
-.methodDetailList > dt {
+.method__detailList > dt {
   clear: left;
   float: left;
   font-size: inherit;
 }
 
-.methodDetailList > dd {
+.method__detailList > dd {
   font-size: inherit;
 }
 
-.methodDetailList > dt:nth-of-type(4) {
+.method__detailList > dt:nth-of-type(4) {
   clear: none;
   float: none;
 }
 
 @include sp {
-  .methodDetailList {
+  .method__detailList {
     border-width: 1px;
     font-size: 1.3rem;
     padding-top: 1.8rem;
@@ -527,34 +529,39 @@
 .method--dataCheck {
   margin-top: 3rem;
   position: relative;
-
-  .method__contentsWrap--dataCheck {
-    @extend %contentsWrap;
-    padding: 4rem;
-  }
 }
 
-@include sp {
-  .method--dataCheck .method__contentsWrap--dataCheck {
+.method__contentsWrap--dataCheck {
+  @extend %contentsWrap;
+  padding: 4rem;
+
+  @include sp {
     margin: auto;
     padding: 2.6rem 5.5%;
   }
 }
 
-.method--dataCheck .methodUpperBox {
+.method__upperBox--dataCheck {
+  @extend %methodUpperBox;
+}
+
+.method__upperBox--dataCheck {
   display: inline-block;
   margin-bottom: 2.5rem;
   vertical-align: middle;
 
-  .imgWrap {
-    display: block;
-    margin-bottom: 1.8rem;
-    width: 21.9rem;
+  @include sp {
+    margin-bottom: 0;
+    margin-right: 0;
   }
 }
 
-@include sp {
-  .method--dataCheck .methodUpperBox .imgWrap {
+.method__imgWrap--dataCheck {
+  display: block;
+  margin-bottom: 1.8rem;
+  width: 21.9rem;
+
+  @include sp {
     clear: left;
     display: inline-block;
     float: left;
@@ -563,15 +570,13 @@
   }
 }
 
-.method--dataCheck .methodUpperBox .submissionMethod {
+.method__submission--dataCheck {
   display: block;
   margin-left: 0;
   text-align: center;
   width: 21.9rem;
-}
 
-@include sp {
-  .method--dataCheck .methodUpperBox .submissionMethod {
+  @include sp {
     display: inline-block;
     margin-left: 2.4rem;
     text-align: left;
@@ -579,35 +584,28 @@
   }
 }
 
-.method--dataCheck .methodUpperBox .methodSummary {
+.method__summary--dataCheck {
   font-size: 2.4rem;
   margin-left: 25.8rem;
   position: absolute;
   text-align: left;
   top: 12.8rem;
   width: 65.5rem;
-}
 
-@include sp {
-  .method--dataCheck .methodUpperBox {
-    margin-bottom: 0;
-    margin-right: 0;
-
-    .methodSummary {
-      display: inline-block;
-      font-size: 1.2rem;
-      margin-left: 2.4rem;
-      margin-top: 1rem;
-      padding-bottom: 2.1rem;
-      position: relative;
-      text-align: left;
-      top: 0;
-      width: calc(100% - 9.2rem);
-    }
+  @include sp {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-left: 2.4rem;
+    margin-top: 1rem;
+    padding-bottom: 2.1rem;
+    position: relative;
+    text-align: left;
+    top: 0;
+    width: calc(100% - 9.2rem);
   }
 }
 
-.method--dataCheck .methodDetailList {
+.method--dataCheck .method__detailList {
   margin-left: 25.8rem;
   position: absolute;
   top: 22rem;
@@ -619,7 +617,7 @@
     margin: 2.5rem auto 0;
     width: 91.3%;
 
-    .methodDetailList {
+    .method__detailList {
       margin-left: 0;
       position: relative;
       top: 0;
@@ -630,17 +628,35 @@
 
 // payment
 .payment {
-  .contents-overview {
-    > span {
-      width: 68rem;
+  .contentsOverview {
+    // > span {
+    //   width: 68rem;
+    // }
+
+    @include sp {
+            // > span {
+      //   width: 100%;
+      // }
+      .imgBox {
+        margin-right: 3rem;
+      }
+
     }
 
-    .complement {
-      font-size: 1.6rem;
-      margin: 2rem 0 0;
-    }
   }
 }
+
+.payment__complement {
+  font-size: 1.6rem;
+  margin: 2rem 0 0;
+
+  @include sp {
+    font-size: 1.2rem;
+    margin-top: 0;
+
+  }
+}
+
 
 @include sp {
   .payment {
@@ -650,23 +666,25 @@
       width: 63.2%;
     }
 
-    .contents-overview {
-      > span {
-        width: 100%;
-      }
-      .imgBox {
-        margin-right: 3rem;
-      }
+    .contentsOverview {
 
       .complement {
-        font-size: 1.2rem;
-        margin-top: 0;
       }
     }
   }
 }
 
 // orderToDelivery
+.orderToDelivery {
+  // margin-top: 10rem;
+  // text-align: center;
+
+  @include sp {
+    margin: auto;
+    width: 91.3%;
+  }
+}
+
 .resolution__subTitle--h5 {
   font-size: 2.6rem;
   margin: 6rem 0 2.5rem;
@@ -740,46 +758,23 @@
   padding-bottom: 1.1rem;
   text-align: center;
   width: 11rem;
+
+  @include sp {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    width: 6.2rem;
+
+  }
 }
 
 .item__description {
   font-size: 1.8rem;
   line-height: 1.7;
   margin-top: 1.3rem;
-}
 
-@include sp {
-  .orderToDelivery {
-    .orderToDelivery__inner {
-    }
-
-    .resolution__subTitle--h5 {
-    }
-
-    .item {
-      &:after {
-      }
-    }
-  }
-}
-
-@include sp {
-  .orderToDelivery .title {
-    font-size: 1.5rem;
-    padding-bottom: 0.5rem;
-    width: 6.2rem;
-  }
-}
-
-@include sp {
-  .orderToDelivery {
-    margin: auto;
-    width: 91.3%;
-
-    .description {
-      font-size: 1.2rem;
-      margin-top: 0.7rem;
-    }
+  @include sp {
+    font-size: 1.2rem;
+    margin-top: 0.7rem;
   }
 }
 

@@ -19,7 +19,11 @@
   background-color: $blue;
   border-radius: 50%;
   padding: 2rem;
-  // transition: all 0.5s ease-in-out;
+
+  @include sp {
+    right: 3rem;
+    bottom: 4rem;
+    }
 
   &:hover{
     opacity: .8;

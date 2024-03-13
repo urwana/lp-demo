@@ -217,7 +217,7 @@
               <br class="display-mobile" />動作確認ができる！
             </span>
           </h5>
-          <div class="contents-overview">
+          <div class="contentsOverview">
             <div class="imgBox">
               <picture></picture>
               <source media="(max-width: 480px)" srcset="
@@ -280,23 +280,23 @@
           </div>
           <div class="submissionAndCheckMethods">
             <h5 class="resolution__subTitle--h5">選べる<br class="display-mobile" />データチェック方法</h5>
-            <div class="submissionAndCheckMethods_inner">
+            <div class="submissionAndCheckMethods__inner">
               <div class="method--speedCheck">
                 <div class="method__title">
-                  <span>データ確認作業のみの場合</span>
+                  <span class="method__titleAccent">データ確認作業のみの場合</span>
                 </div>
                 <div class="method__contentsWrap--speedCheck">
-                  <div class="methodUpperBox">
+                  <div class="method__upperBox--speedCheck">
                     <img width="98" height="111" src="./img/ai-check.svg?202308241719" alt="Ai(人工知能)チェック入稿" />
-                    <div class="submissionMethod">
+                    <div class="method__submission">
                       Ai(人工知能)<br class="display-desktop" />チェック
                     </div>
                   </div>
-                  <div class="methodSummary">
+                  <div class="method__summary--speedCheck">
                     設計データを Ai (人工知能)と<br class="display-desktop" />
                     インターフェイス上でチェック
                   </div>
-                  <dl class="methodDetailList">
+                  <dl class="method__detailList">
                     <dt>所要時間：</dt>
                     <dd>60〜90分</dd>
                     <dt>料金：</dt>
@@ -315,18 +315,20 @@
                 </div>
               </div>
               <div class="method--operetorCheck">
-                <div class="method__title"><span>ご相談が必要な場合</span></div>
+                <div class="method__title">
+                  <span class="method__titleAccent">ご相談が必要な場合</span>
+                </div>
                 <div class="method__contentsWrap--operetorCheck">
-                  <div class="methodUpperBox">
+                  <div class="method__upperBox--operetorCheck">
                     <img width="82" height="112" src="./img/operetor-check.svg?202308241719" alt="オペレーターチェック入稿" />
-                    <div class="submissionMethod">
+                    <div class="method__submission">
                       オペレーター<br class="display-desktop" />チェック
                     </div>
                   </div>
-                  <div class="methodSummary">
+                  <div class="method__summary--operetorCheck">
                     プロの専門オペレーターが<br class="display-desktop" />設計データを解析・チェック
                   </div>
-                  <dl class="methodDetailList">
+                  <dl class="method__detailList">
                     <dt>所要時間：</dt>
                     <dd>半日〜1日</dd>
                     <dt>料金：</dt>
@@ -343,16 +345,21 @@
             </div>
             <div class="method--dataCheck">
               <div class="method__title">
-                <span>緊急に必要な場合</span>
+                <span class="method__titleAccent">緊急に必要な場合</span>
               </div>
               <div class="method__contentsWrap--dataCheck">
-                <div class="methodUpperBox">
-                  <span class="imgWrap"><img width="112" height="100" src="./img/speed-check.svg?202308241719" alt="データチェック入稿" /></span><span class="submissionMethod">データチェック<br class="display-desktop" />超速版</span>
-                  <div class="methodSummary">
+                <div class="method__upperBox--dataCheck">
+                  <span class="method__imgWrap--dataCheck">
+                    <img width="112" height="100" src="./img/speed-check.svg?202308241719" alt="データチェック入稿" />
+                  </span>
+                  <span class="method__submission--dataCheck">データチェック
+                    <br class="display-desktop" />超速版
+                  </span>
+                  <div class="method__summary--dataCheck">
                     緊急の場合、エンジニアによる最優先チェック対応<br class="display-desktop" />の有料サービスもご用意しています
                   </div>
                 </div>
-                <dl class="methodDetailList">
+                <dl class="method__detailList">
                   <dt>お急ぎ便での所要時間：</dt>
                   <dd>2時間以内</dd>
                   <dt>受付時間：</dt>
@@ -379,13 +386,16 @@
         </div>
       </div>
       <div class="resolution-inner">
-        <h4 class="resolution__subTitle--h4"><span>支払い</span>の不安も</h4>
+        <h4 class="resolution__subTitle--h4">
+          <span class="resolution__titleAccent--h4">支払い</span>
+          の不安も
+        </h4>
         <div class="payment">
-          <h5 class="payContents__subTitle--h5">
+          <h5 class="payment__subTitle--h5">
             テクノールのIC地盤印刷なら
             <span class="dataPay__subtitleAccent">請求書払いに対応！</span>
           </h5>
-          <div class="contents-overview">
+          <div class="contentsOverview">
             <div class="imgBox">
               <picture>
                 <source media="(max-width: 480px)" srcset="
@@ -403,7 +413,7 @@
               <div>
                 <strong>法人/個人事業主専用の後払いのサービス「請求書払い」が可能です。<br />1ヶ月分のご注文金額を一括でお支払い</strong>いただけます。<br />（月末締め翌月末支払い）
               </div>
-              <div class="complement">
+              <div class="payment__complement">
                 他にも銀行振込、コンビニ支払い、クレジットカードをご利用いただけます。
               </div>
             </div>
@@ -457,7 +467,10 @@
       </div>
     </section>
     <div class="separatorBelt">
-      <span class="separatorBelt__triangle"></span><span class="separatorBelt__smallText">はじめての基盤印刷でも</span>注文から納品まで、<br class="display-mobile" />スムーズ＆スピーディー<br class="display-mobile" />に実現！
+      <span class="separatorBelt__triangle"></span>
+      <span class="separatorBelt__smallText">はじめての基盤印刷でも</span>注文から納品まで、
+      <br class="display-mobile" />スムーズ＆スピーディー
+      <br class="display-mobile" />に実現！
     </div>
   
   

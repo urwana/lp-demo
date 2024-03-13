@@ -1291,68 +1291,68 @@ a {
   }
 }
 
-.contents-overview {
+.contentsOverview {
   margin-top: 4.3rem;
   display: flex;
   justify-content: left;
   flex-wrap: nowrap;
 }
-.contents-overview .imgBox {
+.contentsOverview .imgBox {
   display: block;
   margin-right: 4.7rem;
 }
-.contents-overview .textBox {
+.contentsOverview .textBox {
   width: 52.3rem;
 }
-.contents-overview > div {
+.contentsOverview > div {
   display: block;
   line-height: 1.8;
   margin-bottom: 1rem;
 }
-.contents-overview > div > div {
+.contentsOverview > div > div {
   font-size: 2rem;
 }
-.contents-overview .beforePrint {
+.contentsOverview .beforePrint {
   margin-bottom: 1.6rem;
 }
-.contents-overview .beforePrint > strong {
+.contentsOverview .beforePrint > strong {
   padding-top: 4rem;
 }
-.contents-overview strong {
+.contentsOverview strong {
   font-size: 2rem;
 }
 
 @media only screen and (max-width: 768px) {
-  .contents-overview {
+  .contentsOverview {
     margin: 3rem auto 0;
     width: 92%;
     display: block;
   }
-  .contents-overview .imgBox {
+  .contentsOverview .imgBox {
     margin: 0 2.8% 0.5rem 0;
     width: 34%;
     float: left;
   }
-  .contents-overview .textBox {
+  .contentsOverview .textBox {
     width: 100%;
   }
-  .contents-overview > span {
+  .contentsOverview > span {
     font-size: 1.2rem;
     width: 63.2%;
   }
-  .contents-overview > div > div {
+  .contentsOverview > div > div {
     font-size: 1.2rem;
   }
-  .contents-overview > div > div strong {
+  .contentsOverview > div > div strong {
     font-size: 1.2rem;
   }
-  .contents-overview .beforePrint {
+  .contentsOverview .beforePrint {
     font-size: 1.2rem;
   }
-  .contents-overview .beforePrint > strong {
+  .contentsOverview .beforePrint > strong {
     font-size: 1.2rem;
   }
-  .contents-overview .beforePrint + span {
+  .contentsOverview .beforePrint + span {
     width: 100%;
   }
 }
@@ -1504,21 +1504,23 @@ a {
 .submissionAndCheckMethods {
   margin-top: 10rem;
 }
-.submissionAndCheckMethods .resolution__subTitle--h5 {
+
+.resolution__subTitle--h5 {
   font-size: 3.2rem;
   margin: 0 0 2.7rem;
   text-align: center;
   font-weight: 600;
   color: #333;
 }
-.submissionAndCheckMethods .submissionAndCheckMethods_inner {
+
+.submissionAndCheckMethods__inner {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
 
 @media only screen and (max-width: 768px) {
-  .submissionAndCheckMethods .submissionAndCheckMethods_inner {
+  .submissionAndCheckMethods .submissionAndCheckMethods__inner {
     display: block;
     margin: auto;
   }
@@ -1532,7 +1534,7 @@ a {
     margin-bottom: 2rem;
   }
 }
-.method--dataCheck .method__contentsWrap--dataCheck, .method__contentsWrap--operetorCheck,
+.method__contentsWrap--dataCheck, .method__contentsWrap--operetorCheck,
 .method__contentsWrap--speedCheck {
   border-bottom: 6px solid #e7f3f9;
   border-left: 6px solid #e7f3f9;
@@ -1540,21 +1542,23 @@ a {
   border-right: 6px solid #e7f3f9;
 }
 @media only screen and (max-width: 768px) {
-  .method--dataCheck .method__contentsWrap--dataCheck, .method__contentsWrap--operetorCheck,
+  .method__contentsWrap--dataCheck, .method__contentsWrap--operetorCheck,
   .method__contentsWrap--speedCheck {
     border-radius: 0 0 5px 5px;
     border-width: 3px;
   }
 }
 
-.methodUpperBox {
+.method__upperBox--dataCheck, .method__upperBox--speedCheck,
+.method__upperBox--operetorCheck {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media only screen and (max-width: 768px) {
-  .methodUpperBox > img {
+  .method__upperBox--dataCheck > img, .method__upperBox--speedCheck > img,
+  .method__upperBox--operetorCheck > img {
     clear: left;
     float: left;
     width: 6.8rem;
@@ -1565,33 +1569,37 @@ a {
 .method--speedCheck {
   width: 47rem;
 }
-
-.method__contentsWrap--operetorCheck,
-.method__contentsWrap--speedCheck {
-  padding: 3.2rem 2.4rem 2.4rem 2.4rem;
-}
-.method__contentsWrap--operetorCheck .methodSummary,
-.method__contentsWrap--speedCheck .methodSummary {
-  font-size: 2.4rem;
-  line-height: 1.4;
-  margin-top: 3.2rem;
-  padding-bottom: 2.3rem;
-  text-align: center;
-}
-
 @media only screen and (max-width: 768px) {
   .method--operetorCheck,
   .method--speedCheck {
     margin: 2.5rem auto 0;
     width: 91.3%;
   }
-  .method--operetorCheck .contentsWrap,
-  .method--speedCheck .contentsWrap {
+}
+
+.method__contentsWrap--operetorCheck,
+.method__contentsWrap--speedCheck {
+  padding: 3.2rem 2.4rem 2.4rem 2.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .method__contentsWrap--operetorCheck,
+  .method__contentsWrap--speedCheck {
     min-height: auto;
     padding: 2.8rem 5.5%;
   }
-  .method--operetorCheck .contentsWrap .methodSummary,
-  .method--speedCheck .contentsWrap .methodSummary {
+}
+
+.method__summary--speedCheck,
+.method__summary--operetorCheck {
+  font-size: 2.4rem;
+  line-height: 1.4;
+  margin-top: 3.2rem;
+  padding-bottom: 2.3rem;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .method__summary--speedCheck,
+  .method__summary--operetorCheck {
     display: inline-block;
     font-size: 1.2rem;
     margin-left: 2.4rem;
@@ -1601,6 +1609,12 @@ a {
     width: calc(100% - 9.2rem);
   }
 }
+
+.method__upperBox--speedCheck,
+.method__upperBox--operetorCheck {
+  margin-bottom: 2.5rem;
+}
+
 .method__title {
   background: #e7f3f9;
   border-radius: 1rem 1rem 0 0;
@@ -1610,7 +1624,8 @@ a {
   text-align: center;
   width: 100%;
 }
-.method__title > span {
+
+.method__titleAccent {
   display: table-cell;
   font-weight: 600;
   color: #333;
@@ -1626,7 +1641,7 @@ a {
     height: 3.8rem;
   }
 }
-.submissionMethod {
+.method__submission {
   color: #00a0e8;
   display: inline-block;
   font-size: 2.8rem;
@@ -1635,15 +1650,15 @@ a {
   text-align: left;
   vertical-align: middle;
 }
-
 @media only screen and (max-width: 768px) {
-  .submissionMethod {
+  .method__submission {
     float: left;
     font-size: 1.4rem;
     margin-left: 2.4rem;
   }
 }
-.methodDetailList {
+
+.method__detailList {
   border-top: 2px solid #00a0e8;
   font-size: 2.2rem;
   line-height: 1.6;
@@ -1651,23 +1666,23 @@ a {
   padding-top: 2.3rem;
 }
 
-.methodDetailList > dt {
+.method__detailList > dt {
   clear: left;
   float: left;
   font-size: inherit;
 }
 
-.methodDetailList > dd {
+.method__detailList > dd {
   font-size: inherit;
 }
 
-.methodDetailList > dt:nth-of-type(4) {
+.method__detailList > dt:nth-of-type(4) {
   clear: none;
   float: none;
 }
 
 @media only screen and (max-width: 768px) {
-  .methodDetailList {
+  .method__detailList {
     border-width: 1px;
     font-size: 1.3rem;
     padding-top: 1.8rem;
@@ -1677,29 +1692,36 @@ a {
   margin-top: 3rem;
   position: relative;
 }
-.method--dataCheck .method__contentsWrap--dataCheck {
+
+.method__contentsWrap--dataCheck {
   padding: 4rem;
 }
-
 @media only screen and (max-width: 768px) {
-  .method--dataCheck .method__contentsWrap--dataCheck {
+  .method__contentsWrap--dataCheck {
     margin: auto;
     padding: 2.6rem 5.5%;
   }
 }
-.method--dataCheck .methodUpperBox {
+
+.method__upperBox--dataCheck {
   display: inline-block;
   margin-bottom: 2.5rem;
   vertical-align: middle;
 }
-.method--dataCheck .methodUpperBox .imgWrap {
+@media only screen and (max-width: 768px) {
+  .method__upperBox--dataCheck {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+
+.method__imgWrap--dataCheck {
   display: block;
   margin-bottom: 1.8rem;
   width: 21.9rem;
 }
-
 @media only screen and (max-width: 768px) {
-  .method--dataCheck .methodUpperBox .imgWrap {
+  .method__imgWrap--dataCheck {
     clear: left;
     display: inline-block;
     float: left;
@@ -1707,22 +1729,23 @@ a {
     width: 6.8rem;
   }
 }
-.method--dataCheck .methodUpperBox .submissionMethod {
+
+.method__submission--dataCheck {
   display: block;
   margin-left: 0;
   text-align: center;
   width: 21.9rem;
 }
-
 @media only screen and (max-width: 768px) {
-  .method--dataCheck .methodUpperBox .submissionMethod {
+  .method__submission--dataCheck {
     display: inline-block;
     margin-left: 2.4rem;
     text-align: left;
     width: calc(100% - 9.2rem);
   }
 }
-.method--dataCheck .methodUpperBox .methodSummary {
+
+.method__summary--dataCheck {
   font-size: 2.4rem;
   margin-left: 25.8rem;
   position: absolute;
@@ -1730,13 +1753,8 @@ a {
   top: 12.8rem;
   width: 65.5rem;
 }
-
 @media only screen and (max-width: 768px) {
-  .method--dataCheck .methodUpperBox {
-    margin-bottom: 0;
-    margin-right: 0;
-  }
-  .method--dataCheck .methodUpperBox .methodSummary {
+  .method__summary--dataCheck {
     display: inline-block;
     font-size: 1.2rem;
     margin-left: 2.4rem;
@@ -1748,7 +1766,8 @@ a {
     width: calc(100% - 9.2rem);
   }
 }
-.method--dataCheck .methodDetailList {
+
+.method--dataCheck .method__detailList {
   margin-left: 25.8rem;
   position: absolute;
   top: 22rem;
@@ -1760,19 +1779,28 @@ a {
     margin: 2.5rem auto 0;
     width: 91.3%;
   }
-  .method--dataCheck .methodDetailList {
+  .method--dataCheck .method__detailList {
     margin-left: 0;
     position: relative;
     top: 0;
     width: 100%;
   }
 }
-.payment .contents-overview > span {
-  width: 68rem;
+@media only screen and (max-width: 768px) {
+  .payment .contentsOverview .imgBox {
+    margin-right: 3rem;
+  }
 }
-.payment .contents-overview .complement {
+
+.payment__complement {
   font-size: 1.6rem;
   margin: 2rem 0 0;
+}
+@media only screen and (max-width: 768px) {
+  .payment__complement {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1781,17 +1809,14 @@ a {
     padding-top: 0;
     width: 63.2%;
   }
-  .payment .contents-overview > span {
-    width: 100%;
-  }
-  .payment .contents-overview .imgBox {
-    margin-right: 3rem;
-  }
-  .payment .contents-overview .complement {
-    font-size: 1.2rem;
-    margin-top: 0;
+}
+@media only screen and (max-width: 768px) {
+  .orderToDelivery {
+    margin: auto;
+    width: 91.3%;
   }
 }
+
 .resolution__subTitle--h5 {
   font-size: 2.6rem;
   margin: 6rem 0 2.5rem;
@@ -1870,30 +1895,26 @@ a {
   text-align: center;
   width: 11rem;
 }
+@media only screen and (max-width: 768px) {
+  .item__title {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    width: 6.2rem;
+  }
+}
 
 .item__description {
   font-size: 1.8rem;
   line-height: 1.7;
   margin-top: 1.3rem;
 }
-
 @media only screen and (max-width: 768px) {
-  .orderToDelivery .title {
-    font-size: 1.5rem;
-    padding-bottom: 0.5rem;
-    width: 6.2rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .orderToDelivery {
-    margin: auto;
-    width: 91.3%;
-  }
-  .orderToDelivery .description {
+  .item__description {
     font-size: 1.2rem;
     margin-top: 0.7rem;
   }
 }
+
 .separatorBelt {
   background: #00a0e8;
   color: #fff;
@@ -2411,6 +2432,12 @@ a {
   background-color: #00a0e8;
   border-radius: 50%;
   padding: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .arrow {
+    right: 3rem;
+    bottom: 4rem;
+  }
 }
 .arrow:hover {
   opacity: 0.8;
