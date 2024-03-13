@@ -1735,6 +1735,10 @@ a {
   margin-left: 0;
   text-align: center;
   width: 21.9rem;
+  color: #00a0e8;
+  font-weight: 600;
+  font-size: 2.8rem;
+  text-align: left;
 }
 @media only screen and (max-width: 768px) {
   .method__submission--dataCheck {
