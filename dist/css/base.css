@@ -380,7 +380,7 @@ a {
 
 .order__inner {
   margin: auto;
-  width: 112.4rem;
+  width: 100%;
 }
 
 .order__catch {
@@ -768,7 +768,7 @@ a {
   margin: auto;
   padding: 10rem 8rem;
   text-align: center;
-  width: 112.4rem;
+  width: 100%;
 }
 
 .factor__title {
@@ -918,7 +918,7 @@ a {
   background: #f5f5f5;
   padding: 10rem 0;
   text-align: center;
-  min-width: 112.4rem;
+  width: 100%;
 }
 
 .regulation__title {
