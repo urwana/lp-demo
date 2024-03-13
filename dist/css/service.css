@@ -30,7 +30,7 @@ video {
   display: none;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .display-desktop {
     display: none;
   }
@@ -983,7 +983,7 @@ a {
   position: relative;
   max-width: 112.4rem;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .speechBalloonsWrapper {
     height: 30.8rem;
     margin: 3.5rem auto auto;
@@ -1006,7 +1006,7 @@ a {
   align-items: center;
   z-index: 3;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .balloon-4, .balloon-3, .balloon-2, .balloon-1 {
     border-radius: 1rem;
     height: 7.5rem;
@@ -1021,7 +1021,7 @@ a {
   height: 2.6rem;
   z-index: -1;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .balloon-4::after, .balloon-3::after, .balloon-2::after, .balloon-1::after {
     background-size: 1.5rem;
   }
@@ -1031,7 +1031,7 @@ a {
   font-size: 2rem;
   text-align: left;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .balloon__inner {
     font-size: 1.2rem;
   }
@@ -1042,7 +1042,7 @@ a {
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .balloon__text {
     font-size: 1.2rem;
     margin-bottom: 0.6rem;
@@ -1053,7 +1053,7 @@ a {
   bottom: 0;
   left: 1rem;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .balloon-1 {
     left: 12vw;
     top: 11rem;
@@ -1071,7 +1071,7 @@ a {
   bottom: 50%;
   right: -0.8rem;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .balloon-1::after {
     bottom: -1.2rem;
     left: 50%;
@@ -1084,7 +1084,7 @@ a {
   left: 24.8rem;
   top: 0;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .balloon-2 {
     left: 25vw;
     top: 0;
@@ -1104,7 +1104,7 @@ a {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .balloon-2::after {
     bottom: -1.2rem;
     left: 50%;
@@ -1115,7 +1115,7 @@ a {
   right: 24.8rem;
   top: 0;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .balloon-3 {
     right: 25vw;
     top: 0;
@@ -1135,7 +1135,7 @@ a {
   -webkit-transform: rotate(-141deg);
   transform: rotate(-141deg);
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .balloon-3::after {
     bottom: -1.4rem;
     left: 40%;
@@ -1146,7 +1146,7 @@ a {
   bottom: 0;
   right: 1rem;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .balloon-4 {
     right: 12vw;
     top: 11rem;
@@ -1166,7 +1166,7 @@ a {
   -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .balloon-4::after {
     bottom: -1.4rem;
     left: 40%;
@@ -1725,7 +1725,7 @@ a {
   margin-bottom: 2.5rem;
   vertical-align: middle;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .method__upperBox--dataCheck {
     display: grid;
     grid-template-columns: auto auto;
@@ -1743,7 +1743,7 @@ a {
   margin-bottom: 1.8rem;
   width: 21.9rem;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .method__imgWrap--dataCheck {
     grid-column: 1;
   }
@@ -1766,7 +1766,7 @@ a {
   font-size: 2.8rem;
   text-align: left;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .method__submission--dataCheck {
     display: block;
     grid-column: 2;
@@ -1790,7 +1790,7 @@ a {
   top: 12.8rem;
   width: 65.5rem;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .method__summary--dataCheck {
     position: relative;
     text-align: left;
@@ -1818,7 +1818,7 @@ a {
   top: 22rem;
   width: 61.5rem;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .method__detailList--dataCheck {
     position: relative;
     margin-left: 0;
