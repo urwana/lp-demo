@@ -959,152 +959,178 @@ a {
     background-size: 31.6rem;
   }
 }
-.speechBalloons {
+.speechBalloonsWrapper {
   height: 30rem;
   margin: 5rem auto 0;
   position: relative;
   max-width: 112.4rem;
 }
-.speechBalloons > div {
+@media only screen and (max-width: 768px) {
+  .speechBalloonsWrapper {
+    height: 30.8rem;
+    margin: 3.5rem auto auto;
+    width: 93%;
+  }
+}
+
+.balloon-4, .balloon-3, .balloon-2, .balloon-1 {
   background: #00a0e8;
   border-radius: 2rem;
   color: #fff;
-  display: table;
   font-size: 2.2rem;
   height: 13.8rem;
   line-height: 1.6;
   position: absolute;
   text-align: center;
   width: 29.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.speechBalloons > div > div {
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 2.2rem;
-}
-.speechBalloons > div span {
-  display: block;
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-}
-.speechBalloons > div:first-of-type {
-  bottom: 0;
-  left: 0;
-}
-.speechBalloons > div:first-of-type:after {
-  background: url(../img/service/triangle.png) 50% no-repeat;
-  bottom: 50%;
-  content: "";
-  height: 2.6rem;
-  position: absolute;
-  right: -0.8rem;
-  width: 2.6rem;
-}
-.speechBalloons > div:nth-of-type(2) {
-  left: 24.8rem;
-  top: 0;
-}
-.speechBalloons > div:nth-of-type(2):after {
-  background: url(../img/service/triangle.png) 50% no-repeat;
-  bottom: -0.4rem;
-  content: "";
-  height: 2.6rem;
-  left: 50%;
-  position: absolute;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  width: 2.6rem;
-}
-.speechBalloons > div:nth-of-type(3) {
-  right: 24.8rem;
-  top: 0;
-}
-.speechBalloons > div:nth-of-type(3):after {
-  background: url(../img/service/triangle.png) 50% no-repeat;
-  bottom: -0.7rem;
-  content: "";
-  height: 2.6rem;
-  position: absolute;
-  right: 50%;
-  -webkit-transform: rotate(-141deg);
-  transform: rotate(-141deg);
-  width: 2.6rem;
-}
-.speechBalloons > div:nth-of-type(4) {
-  bottom: 0;
-  right: 1rem;
-}
-.speechBalloons > div:nth-of-type(4):after {
-  background: url(../img/service/triangle.png) 50% no-repeat;
-  bottom: 50%;
-  content: "";
-  height: 2.6rem;
-  left: -0.9rem;
-  position: absolute;
-  -webkit-transform: rotate(270deg);
-  transform: rotate(270deg);
-  width: 2.6rem;
-}
-
 @media only screen and (max-width: 768px) {
-  .speechBalloons {
-    height: 30.8rem;
-    margin: 3.5rem auto auto;
-    width: 93%;
-  }
-  .speechBalloons > div {
+  .balloon-4, .balloon-3, .balloon-2, .balloon-1 {
     border-radius: 1rem;
     height: 7.5rem;
     width: 15rem;
   }
-  .speechBalloons > div > div {
+}
+
+.balloon-4::after, .balloon-3::after, .balloon-2::after, .balloon-1::after {
+  content: "";
+  position: absolute;
+  width: 2.6rem;
+  height: 2.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .balloon-4::after, .balloon-3::after, .balloon-2::after, .balloon-1::after {
+    background-size: 1.5rem;
+  }
+}
+
+.balloon__inner {
+  font-size: 2.2rem;
+  text-align: left;
+}
+@media only screen and (max-width: 768px) {
+  .balloon__inner {
     font-size: 1.2rem;
   }
-  .speechBalloons > div span {
+}
+
+.balloon__text {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .balloon__text {
     font-size: 1.2rem;
     margin-bottom: 0.6rem;
   }
-  .speechBalloons > div:first-of-type {
+}
+
+.balloon-1 {
+  bottom: 0;
+  left: 0;
+}
+@media only screen and (max-width: 768px) {
+  .balloon-1 {
     left: 0.5rem;
     top: 11rem;
   }
-  .speechBalloons > div:first-of-type:after {
-    background-size: 1.5rem;
+}
+
+.balloon-1::after {
+  background: url(../img/service/triangle.png) 50% no-repeat;
+  bottom: 50%;
+  right: -0.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .balloon-1::after {
     bottom: -1.2rem;
     left: 50%;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  .speechBalloons > div:nth-of-type(2) {
+}
+
+.balloon-2 {
+  left: 24.8rem;
+  top: 0;
+}
+@media only screen and (max-width: 768px) {
+  .balloon-2 {
     left: 1.6rem;
     top: 0;
   }
-  .speechBalloons > div:nth-of-type(2):after {
-    background-size: 1.5rem;
+}
+
+.balloon-2::after {
+  background: url(../img/service/triangle.png) 50% no-repeat;
+  bottom: -0.4rem;
+  left: 50%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@media only screen and (max-width: 768px) {
+  .balloon-2::after {
     bottom: -1.2rem;
     left: 50%;
   }
-  .speechBalloons > div:nth-of-type(3) {
+}
+
+.balloon-3 {
+  right: 24.8rem;
+  top: 0;
+}
+@media only screen and (max-width: 768px) {
+  .balloon-3 {
     right: 1.6rem;
     top: 0;
   }
-  .speechBalloons > div:nth-of-type(3):after {
-    background-size: 1.5rem;
+}
+
+.balloon-3::after {
+  background: url(../img/service/triangle.png) 50% no-repeat;
+  bottom: -0.7rem;
+  right: 50%;
+  -webkit-transform: rotate(-141deg);
+  transform: rotate(-141deg);
+}
+@media only screen and (max-width: 768px) {
+  .balloon-3::after {
     bottom: -1.4rem;
     left: 40%;
   }
-  .speechBalloons > div:nth-of-type(4) {
+}
+
+.balloon-4 {
+  bottom: 0;
+  right: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .balloon-4 {
     right: 0.5rem;
     top: 11rem;
   }
-  .speechBalloons > div:nth-of-type(4):after {
-    background-size: 1.5rem;
+}
+
+.balloon-4::after {
+  background: url(../img/service/triangle.png) 50% no-repeat;
+  bottom: 50%;
+  left: -0.9rem;
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+@media only screen and (max-width: 768px) {
+  .balloon-4::after {
     bottom: -1.4rem;
     left: 40%;
     -webkit-transform: rotate(-137deg);
     transform: rotate(-137deg);
   }
 }
+
 .resolution {
   background: url(../img/service/triangle-dark.svg) center 3.5rem no-repeat;
   margin: auto;

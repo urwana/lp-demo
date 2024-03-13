@@ -40,171 +40,174 @@
 }
 
 // speechBalloons
-.speechBalloons {
+
+.speechBalloonsWrapper {
   height: 30rem;
   margin: 5rem auto 0;
   position: relative;
   max-width: 112.4rem;
 
-  > div {
-    background: $blue;
-    border-radius: 2rem;
-    color: #fff;
-    display: table;
-    font-size: 2.2rem;
-    height: 13.8rem;
-    line-height: 1.6;
-    position: absolute;
-    text-align: center;
-    width: 29.7rem;
-
-    > div {
-      display: table-cell;
-      vertical-align: middle;
-      font-size: 2.2rem;
-    }
-
-    span {
-      display: block;
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
-    }
-  }
-
-  > div:first-of-type {
-    bottom: 0;
-    left: 0;
-  }
-
-  > div:first-of-type:after {
-    background: url(../img/service/triangle.png) 50% no-repeat;
-    bottom: 50%;
-    content: "";
-    height: 2.6rem;
-    position: absolute;
-    right: -0.8rem;
-    width: 2.6rem;
-  }
-
-  > div:nth-of-type(2) {
-    left: 24.8rem;
-    top: 0;
-  }
-
-  > div:nth-of-type(2):after {
-    background: url(../img/service/triangle.png) 50% no-repeat;
-    bottom: -0.4rem;
-    content: "";
-    height: 2.6rem;
-    left: 50%;
-    position: absolute;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    width: 2.6rem;
-  }
-
-  > div:nth-of-type(3) {
-    right: 24.8rem;
-    top: 0;
-  }
-
-  > div:nth-of-type(3):after {
-    background: url(../img/service/triangle.png) 50% no-repeat;
-    bottom: -0.7rem;
-    content: "";
-    height: 2.6rem;
-    position: absolute;
-    right: 50%;
-    -webkit-transform: rotate(-141deg);
-    transform: rotate(-141deg);
-    width: 2.6rem;
-  }
-
-  > div:nth-of-type(4) {
-    bottom: 0;
-    right: 1rem;
-  }
-
-  > div:nth-of-type(4):after {
-    background: url(../img/service/triangle.png) 50% no-repeat;
-    bottom: 50%;
-    content: "";
-    height: 2.6rem;
-    left: -0.9rem;
-    position: absolute;
-    -webkit-transform: rotate(270deg);
-    transform: rotate(270deg);
-    width: 2.6rem;
-  }
-}
-
-@include sp {
-  .speechBalloons {
+  @include sp {
     height: 30.8rem;
     margin: 3.5rem auto auto;
     width: 93%;
+  }
+}
 
-    > div {
-      border-radius: 1rem;
-      height: 7.5rem;
-      width: 15rem;
+%balloon {
+  background: $blue;
+  border-radius: 2rem;
+  color: #fff;
+  font-size: 2.2rem;
+  height: 13.8rem;
+  line-height: 1.6;
+  position: absolute;
+  text-align: center;
+  width: 29.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-      > div {
-        font-size: 1.2rem;
-      }
+  @include sp {
+    border-radius: 1rem;
+    height: 7.5rem;
+    width: 15rem;
+  }
+}
 
-      span {
-        font-size: 1.2rem;
-        margin-bottom: 0.6rem;
-      }
-    }
+%balloonAfter {
+  content: "";
+  position: absolute;
+  width: 2.6rem;
+  height: 2.6rem;
 
-    > div:first-of-type {
-      left: 0.5rem;
-      top: 11rem;
-    }
+  @include sp {
+    background-size: 1.5rem;
+  }
+}
 
-    > div:first-of-type:after {
-      background-size: 1.5rem;
-      bottom: -1.2rem;
-      left: 50%;
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
-    }
+.balloon__inner {
+  font-size: 2.2rem;
+  text-align: left;
 
-    > div:nth-of-type(2) {
-      left: 1.6rem;
-      top: 0;
-    }
+  @include sp {
+    font-size: 1.2rem;
+  }
+}
 
-    > div:nth-of-type(2):after {
-      background-size: 1.5rem;
-      bottom: -1.2rem;
-      left: 50%;
-    }
+.balloon__text {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
 
-    > div:nth-of-type(3) {
-      right: 1.6rem;
-      top: 0;
-    }
+  @include sp {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+}
 
-    > div:nth-of-type(3):after {
-      background-size: 1.5rem;
-      bottom: -1.4rem;
-      left: 40%;
-    }
+.balloon-1 {
+  @extend %balloon;
+  bottom: 0;
+  left: 0;
 
-    > div:nth-of-type(4) {
-      right:0.5rem;
-      top: 11rem;
-    }
+  @include sp {
+    left: 0.5rem;
+    top: 11rem;
+  }
+}
 
-    > div:nth-of-type(4):after {
-      background-size: 1.5rem;
-      bottom: -1.4rem;
-      left: 40%;
-      -webkit-transform: rotate(-137deg);
-      transform: rotate(-137deg);
-    }
+// 矢印
+.balloon-1::after {
+  @extend %balloonAfter;
+  background: url(../img/service/triangle.png) 50% no-repeat;
+  bottom: 50%;
+  right: -0.8rem;
+
+  @include sp {
+    bottom: -1.2rem;
+    left: 50%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+.balloon-2 {
+  @extend %balloon;
+  left: 24.8rem;
+  top: 0;
+
+  @include sp {
+    left: 1.6rem;
+    top: 0;
+  }
+}
+
+// 矢印
+.balloon-2::after {
+  @extend %balloonAfter;
+  background: url(../img/service/triangle.png) 50% no-repeat;
+  bottom: -0.4rem;
+  left: 50%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+  @include sp {
+    bottom: -1.2rem;
+    left: 50%;
+  }
+}
+
+.balloon-3 {
+  @extend %balloon;
+  right: 24.8rem;
+  top: 0;
+
+  @include sp {
+    right: 1.6rem;
+    top: 0;
+  }
+}
+
+// 矢印
+.balloon-3::after {
+  @extend %balloonAfter;
+  background: url(../img/service/triangle.png) 50% no-repeat;
+  bottom: -0.7rem;
+  right: 50%;
+  -webkit-transform: rotate(-141deg);
+  transform: rotate(-141deg);
+
+  @include sp {
+    bottom: -1.4rem;
+    left: 40%;
+  }
+}
+
+.balloon-4 {
+  @extend %balloon;
+  bottom: 0;
+  right: 1rem;
+
+  @include sp {
+    right: 0.5rem;
+    top: 11rem;
+  }
+}
+
+// 矢印
+.balloon-4::after {
+  @extend %balloonAfter;
+  background: url(../img/service/triangle.png) 50% no-repeat;
+  bottom: 50%;
+  left: -0.9rem;
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+
+  @include sp {
+    bottom: -1.4rem;
+    left: 40%;
+    -webkit-transform: rotate(-137deg);
+    transform: rotate(-137deg);
   }
 }
