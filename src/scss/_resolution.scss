@@ -5,46 +5,83 @@
   padding: 16rem 0 6rem;
   max-width: 112.4rem;
 
-  .resolution__title {
-    font-size: 3.2rem;
-    line-height: 1.6;
-    margin: 0 0 10rem;
-    text-align: center;
-    font-weight: 600; color:$heading;
-
-    > span {
-      color: $blue;
-      font-size: 4rem;
-    }
+  @include sp {
+    background: none;
+    padding: 6.8rem 0 4rem;
+    width: 92%;
   }
+}
 
-  .resolution-inner {
-    border: 1px solid $blue;
-    margin-top: 6rem;
+.resolution__title {
+  font-size: 3.2rem;
+  line-height: 1.6;
+  margin: 0 0 10rem;
+  text-align: center;
+  font-weight: 600;
+  color: $heading;
 
-    .resolution__subTitle--h4 {
-      background: $blue;
-      color: #fff;
-      font-size: 2.2rem;
-      font-weight: 600;
-      line-height: 2.73;
-      margin: 0;
-      text-align: center;
+  @include sp {
+    font-size: 1.6rem;
+    margin: 0 0 3rem;
+  }
+}
 
-      > span {
-        padding-right: 0.5rem;
-        font-size: 3.2rem;
-      }
-    }
+.resolution__titleAccent {
+  color: $blue;
+  font-size: 4rem;
 
-    .resolution__subTitle--h5 {
-      font-size: 2.2rem;
-      text-align: center;
+  @include sp {
+    font-size: 2.1rem;
+  }
+}
 
-      > span {
-        font-size: 3.2rem;
-      }
-    }
+.resolution-inner {
+  border: 1px solid $blue;
+  margin-top: 6rem;
+
+  @include sp {
+    margin-top: 3rem;
+  }
+}
+
+.resolution__subTitle--h4 {
+  background: $blue;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 2.73;
+  margin: 0;
+  text-align: center;
+
+  @include sp {
+    font-size: 1.3rem;
+    line-height: 2.769;
+  }
+}
+
+.resolution__titleAccent--h4 {
+  padding-right: 0.5rem;
+  font-size: 3.2rem;
+
+  @include sp {
+    font-size: 1.8rem;
+  }
+}
+
+.resolution__subTitle--h5 {
+  font-size: 2.2rem;
+  text-align: center;
+
+  @include sp {
+    font-size: 1.3rem;
+  }
+}
+
+.resolution__titleAccent--h5 {
+  font-size: 3.2rem;
+
+  @include sp {
+    font-size: 2.2rem;
   }
 }
 
@@ -52,71 +89,34 @@
 .payContents {
   padding: 5rem 7rem 4.5rem;
 
-  .resolution__subTitle--h5 {
-    font-size: 2.2rem;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-
-    > span {
-      display: block;
-      font-size: 4rem;
-      font-weight: 600; color:$heading;
-      margin-top: 1.4rem;
-    }
+  @include sp {
+    padding: 3rem 0 4rem;
   }
 }
 
-@include sp {
-  .resolution {
-    background: none;
-    padding: 6.8rem 0 4rem;
-    width: 92%;
+.dataContents__subTitle--h5,
+.payContents__subTitle--h5 {
+  font-size: 2.2rem;
+  margin: 0;
+  text-align: center;
+  width: 100%;
 
-    .resolution__title {
-      font-size: 1.6rem;
-      margin: 0 0 3rem;
-
-      > span {
-        font-size: 2.1rem;
-      }
-    }
-
-    .resolution-inner {
-      margin-top: 3rem;
-
-      .resolution__subTitle--h4 {
-        font-size: 1.3rem;
-        line-height: 2.769;
-
-        > span {
-          font-size: 1.8rem;
-        }
-      }
-
-      .resolution__subTitle--h5 {
-        font-size: 1.3rem;
-
-        > span {
-          font-size: 2.2rem;
-        }
-      }
-    }
+  @include sp {
+    font-size: 1.3rem;
   }
+}
 
-  .dataContents,
-  .payContents {
-    padding: 3rem 0 4rem;
+.dataPay__subtitleAccent {
+  display: block;
+  font-size: 4rem;
+  font-weight: 600;
+  color: $heading;
+  margin-top: 1.4rem;
 
-    .resolution__subTitle--h5 {
-      font-size: 1.3rem;
-
-      > span {
-        font-size: 1.8rem;
-        font-weight: 400;
-        line-height: 1.5;
-      }
-    }
+  @include sp {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
   }
 }
 
@@ -205,74 +205,70 @@
   margin-top: 3rem;
   padding: 4.5rem 4.8rem 6.5rem;
 
-  .resolution__subTitle--h5 {
-    font-size: 2.2rem;
-    font-weight: 400;
-    margin: 0;
-    text-align: center;
-
-    > span {
-      border-bottom: 2px solid $blue;
-      color: $blue;
-      display: block;
-      font-size: 3.2rem;
-      font-weight: 600;
-      margin-bottom: 0.6rem;
-      padding-bottom: 0.6rem;
-    }
-  }
-}
-
-@include sp {
-  .confirmImage {
+  @include sp {
     margin-top: 1.8rem;
     padding: 2.2rem 1.5rem;
-
-    .resolution__subTitle--h5 {
-      font-size: 1.2rem;
-
-      > span {
-        font-size: 1.8rem;
-      }
-    }
   }
 }
 
-.confirmImage-inner {
+.confirmImage__subTitle--h5 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+
+  @include sp {
+    font-size: 1.2rem;
+  }
+}
+
+.confirmImage__subTitle--accent {
+  border-bottom: 2px solid $blue;
+  color: $blue;
+  display: block;
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.6rem;
+
+  @include sp {
+    font-size: 1.8rem;
+  }
+}
+
+.confirmImage__inner {
   margin-top: 3rem;
   text-align: center;
 
-  .imgBox {
-    margin-bottom: 2.8rem;
-  }
-}
-
-@include sp {
-  .confirmImage-inner {
+  @include sp {
     margin-top: 2.1rem;
   }
 }
 
-.download {
+.confirmImage__imgBox {
+  margin-bottom: 2.8rem;
+}
+
+.confirmImage__copy {
   font-size: 2.4rem;
-  font-weight: 600; color:$heading;
+  font-weight: 600;
+  color: $heading;
   margin-top: 7.3rem;
   text-align: center;
 
-  > span {
-    color: $blue;
-    font-size: 3.2rem;
+  @include sp {
+    font-size: 1.2rem;
+    margin-top: 3rem;
   }
 }
 
-@include sp {
-  .download {
-    font-size: 1.2rem;
-    margin-top: 3rem;
+.confirmImage__copyAccent {
+  color: $blue;
+  font-size: 3.2rem;
+  padding-right: 1rem;
 
-    > span {
-      font-size: 1.8rem;
-    }
+  @include sp {
+    font-size: 1.8rem;
   }
 }
 
@@ -290,65 +286,56 @@
   }
 }
 
+// pointCheck
+
 .pointCheck {
   margin-top: 7rem;
   text-align: center;
+  font-size: 2.4rem;
 
-  > div {
-    font-size: 2.4rem;
-  }
-}
-
-@include sp {
-  .pointCheck > div {
+  @include sp {
+    margin-top: 3.5rem;
     font-size: 1.2rem;
   }
 }
 
-// pointCheck
+.pointCheck__copy {
+  color: #1394d7;
+  font-size: 3.2rem;
+  margin-bottom: 6rem;
+  margin-top: 9.5rem;
+  position: relative;
 
-.pointCheck {
-  .copy {
-    color: #1394d7;
-    font-size: 3.2rem;
-    margin-bottom: 6rem;
-    margin-top: 9.5rem;
-    position: relative;
-
-    &:before {
-      border: 4rem solid transparent;
-      border-top-color: $blue;
-      content: "";
-      left: calc(50% - 2rem);
-      position: absolute;
-      top: -7rem;
-    }
+  @include sp {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $heading;
+    margin-bottom: 1.8rem;
+    margin-top: 4.8rem;
   }
 }
 
-@include sp {
-  .pointCheck {
-    margin-top: 3.5rem;
+.pointCheck__copy::before {
+  border: 4rem solid transparent;
+  border-top-color: $blue;
+  content: "";
+  left: calc(50% - 2rem);
+  position: absolute;
+  top: -7rem;
 
-    .copy:before {
-      border-color: $blue transparent transparent;
-      border-style: solid;
-      border-width: 1.5rem 2rem;
-      left: calc(50% - 2rem);
-      top: -3rem;
-    }
+  @include sp {
+    border-color: $blue transparent transparent;
+    border-style: solid;
+    border-width: 1.5rem 2rem;
+    left: calc(50% - 2rem);
+    top: -3rem;
+  }
+}
 
-    .copy {
-      font-size: 1.8rem;
-      font-weight: 600; color:$heading;
-      margin-bottom: 1.8rem;
-      margin-top: 4.8rem;
-    }
-
-    > .imgBox {
-      margin: auto;
-      width: 80%;
-    }
+.pointCheck__imgBox {
+  @include sp {
+    margin: auto;
+    width: 80%;
   }
 }
 
@@ -359,7 +346,8 @@
     font-size: 3.2rem;
     margin: 0 0 2.7rem;
     text-align: center;
-    font-weight: 600; color:$heading;
+    font-weight: 600;
+    color: $heading;
   }
 
   .submissionAndCheckMethods_inner {
@@ -414,13 +402,13 @@
   }
 }
 
-.operetorCheck,
-.speedCheck {
+.method--operetorCheck,
+.method--speedCheck {
   width: 47rem;
 }
 
-.operetorCheck .contentsWrap,
-.speedCheck .contentsWrap {
+.method--operetorCheck .contentsWrap,
+.method--speedCheck .contentsWrap {
   padding: 3.2rem 2.4rem 2.4rem 2.4rem;
 
   .methodSummary {
@@ -433,8 +421,8 @@
 }
 
 @include sp {
-  .operetorCheck,
-  .speedCheck {
+  .method--operetorCheck,
+  .method--speedCheck {
     margin: 2.5rem auto 0;
     width: 91.3%;
 
@@ -455,7 +443,7 @@
   }
 }
 
-.methodTitle {
+.method__title {
   background: $light-blue;
   border-radius: 1rem 1rem 0 0;
   display: table;
@@ -466,8 +454,8 @@
 
   > span {
     display: table-cell;
-    font-weight: 600; 
-    color:$heading;
+    font-weight: 600;
+    color: $heading;
     color: $blue;
     vertical-align: middle;
     font-size: inherit;
@@ -475,7 +463,7 @@
 }
 
 @include sp {
-  .methodTitle {
+  .method__title {
     border-radius: 5px 5px 0 0;
     font-size: 1.5rem;
     height: 3.8rem;
@@ -531,7 +519,7 @@
   }
 }
 
-.dataCheck {
+.method--dataCheck {
   margin-top: 3rem;
   position: relative;
 
@@ -541,13 +529,13 @@
 }
 
 @include sp {
-  .dataCheck .contentsWrap {
+  .method--dataCheck .contentsWrap {
     margin: auto;
     padding: 2.6rem 5.5%;
   }
 }
 
-.dataCheck .methodUpperBox {
+.method--dataCheck .methodUpperBox {
   display: inline-block;
   margin-bottom: 2.5rem;
   vertical-align: middle;
@@ -560,7 +548,7 @@
 }
 
 @include sp {
-  .dataCheck .methodUpperBox .imgWrap {
+  .method--dataCheck .methodUpperBox .imgWrap {
     clear: left;
     display: inline-block;
     float: left;
@@ -569,7 +557,7 @@
   }
 }
 
-.dataCheck .methodUpperBox .submissionMethod {
+.method--dataCheck .methodUpperBox .submissionMethod {
   display: block;
   margin-left: 0;
   text-align: center;
@@ -577,7 +565,7 @@
 }
 
 @include sp {
-  .dataCheck .methodUpperBox .submissionMethod {
+  .method--dataCheck .methodUpperBox .submissionMethod {
     display: inline-block;
     margin-left: 2.4rem;
     text-align: left;
@@ -585,7 +573,7 @@
   }
 }
 
-.dataCheck .methodUpperBox .methodSummary {
+.method--dataCheck .methodUpperBox .methodSummary {
   font-size: 2.4rem;
   margin-left: 25.8rem;
   position: absolute;
@@ -595,7 +583,7 @@
 }
 
 @include sp {
-  .dataCheck .methodUpperBox {
+  .method--dataCheck .methodUpperBox {
     margin-bottom: 0;
     margin-right: 0;
 
@@ -613,7 +601,7 @@
   }
 }
 
-.dataCheck .methodDetailList {
+.method--dataCheck .methodDetailList {
   margin-left: 25.8rem;
   position: absolute;
   top: 22rem;
@@ -621,7 +609,7 @@
 }
 
 @include sp {
-  .dataCheck {
+  .method--dataCheck {
     margin: 2.5rem auto 0;
     width: 91.3%;
 
@@ -673,87 +661,99 @@
   }
 }
 
-.orderToDelivery {
-  .title {
-    border-bottom: 2px solid $blue;
+// .orderToDelivery {
+// }
+.resolution__subTitle--h5 {
+  font-size: 2.6rem;
+  margin: 6rem 0 2.5rem;
+  text-align: center;
+
+  @include sp {
     font-size: 2.6rem;
-    font-weight: 600; color:$heading;
-    margin: auto;
-    padding-bottom: 1.1rem;
-    text-align: center;
-    width: 11rem;
+    margin: 3.3rem 0 2rem;
   }
+}
 
-  .resolution__subTitle--h5 {
-    font-size: 2.6rem;
-    margin: 6rem 0 2.5rem;
-    text-align: center;
+.orderToDelivery__inner {
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  @include sp {
+    flex-wrap: wrap;
   }
+}
 
-  .orderToDelivery-inner {
-    display: flex;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+.orderToDelivery__item {
+  background: $light-grey;
+  height: 24.8rem;
+  padding: 3rem 1.8rem;
+  position: relative;
+  width: 21.8rem;
+  z-index: 2;
+
+  @include sp {
+    height: 15.7rem;
+    margin-bottom: 1.5rem;
+    margin-right: 2.6rem;
+    padding: 1.3rem;
+    width: calc(50% - 2.6rem);
   }
+}
 
-  .item {
-    background: $light-grey;
-    height: 24.8rem;
-    padding: 3rem 1.8rem;
-    position: relative;
-    width: 21.8rem;
-    z-index: 2;
+.orderToDelivery__item::after {
+  background: url(../img/arrow.svg) no-repeat 50%;
+  bottom: calc(50% - 1.8rem);
+  background-size: 2.5rem;
+  content: "";
+  height: 3.5rem;
+  position: absolute;
+  right: -3.5rem;
+  width: 3.5rem;
+  z-index: 1;
 
-    &:after {
-      background: url(../img/arrow.svg) no-repeat 50%;
-      bottom: calc(50% - 1.8rem);
-      background-size: 2.5rem;
-      content: "";
-      height: 3.5rem;
-      position: absolute;
-      right: -3.5rem;
-      width: 3.5rem;
-      z-index: 1;
-    }
-
-    &:last-child:after {
-      content: none;
-    }
+  @include sp {
+    background: url(../img/arrow-mobile.svg) no-repeat 50%;
+    background-size: 2.5rem;
+    bottom: calc(50% - 1rem);
+    height: 2rem;
+    right: -2.5rem;
+    width: 2.5rem;
   }
+}
 
-  .description {
-    font-size: 1.8rem;
-    line-height: 1.7;
-    margin-top: 1.3rem;
-  }
+.orderToDelivery__item:last-child:after {
+  content: none;
+}
+
+.item__title {
+  border-bottom: 2px solid $blue;
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: $heading;
+  margin: auto;
+  padding-bottom: 1.1rem;
+  text-align: center;
+  width: 11rem;
+}
+
+.item__description {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  margin-top: 1.3rem;
 }
 
 @include sp {
   .orderToDelivery {
-    .orderToDelivery-inner {
-      flex-wrap: wrap;
+    .orderToDelivery__inner {
     }
 
     .resolution__subTitle--h5 {
-      font-size: 2.6rem;
-      margin: 3.3rem 0 2rem;
     }
 
     .item {
-      height: 15.7rem;
-      margin-bottom: 1.5rem;
-      margin-right: 2.6rem;
-      padding: 1.3rem;
-      width: calc(50% - 2.6rem);
-
       &:after {
-        background: url(../img/arrow-mobile.svg) no-repeat 50%;
-        background-size: 2.5rem;
-        bottom: calc(50% - 1rem);
-        height: 2rem;
-        right: -2.5rem;
-        width: 2.5rem;
       }
     }
   }
@@ -791,36 +791,34 @@
   z-index: 1;
   min-width: 112.4rem;
 
-  > span {
-    display: block;
-    font-size: 3.2rem;
-    margin-bottom: 1.8rem;
-  }
-
-  .triangle {
-    background: #fff;
-    height: 5rem;
-    left: calc(50% - 2.5rem);
-    position: absolute;
-    top: -3rem;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    width: 5rem;
-    z-index: 2;
-  }
-}
-
-@include sp {
-  .separatorBelt {
+  @include sp {
     font-size: 2.2rem;
     line-height: 1.6;
     padding: 4.4rem 0 1.8rem;
     min-width: auto;
     width: 100%;
-
-    > span {
-      font-size: 1.6rem;
-      margin-bottom: 0.4rem;
-    }
   }
+}
+
+.separatorBelt__smallText {
+  display: block;
+  font-size: 3.2rem;
+  margin-bottom: 1.8rem;
+
+  @include sp {
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+.separatorBelt__triangle {
+  background: #fff;
+  height: 5rem;
+  left: calc(50% - 2.5rem);
+  position: absolute;
+  top: -3rem;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 5rem;
+  z-index: 2;
 }
