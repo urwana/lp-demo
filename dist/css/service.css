@@ -965,7 +965,7 @@ a {
   position: relative;
   max-width: 112.4rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .speechBalloonsWrapper {
     height: 30.8rem;
     margin: 3.5rem auto auto;
@@ -988,7 +988,7 @@ a {
   align-items: center;
   z-index: 3;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .balloon-4, .balloon-3, .balloon-2, .balloon-1 {
     border-radius: 1rem;
     height: 7.5rem;
@@ -1003,7 +1003,7 @@ a {
   height: 2.6rem;
   z-index: -1;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .balloon-4::after, .balloon-3::after, .balloon-2::after, .balloon-1::after {
     background-size: 1.5rem;
   }
@@ -1013,7 +1013,7 @@ a {
   font-size: 2rem;
   text-align: left;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .balloon__inner {
     font-size: 1.2rem;
   }
@@ -1024,7 +1024,7 @@ a {
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .balloon__text {
     font-size: 1.2rem;
     margin-bottom: 0.6rem;
@@ -1035,9 +1035,15 @@ a {
   bottom: 0;
   left: 1rem;
 }
+@media only screen and (max-width: 1024px) {
+  .balloon-1 {
+    left: 12vw;
+    top: 11rem;
+  }
+}
 @media only screen and (max-width: 768px) {
   .balloon-1 {
-    left: 0.5rem;
+    left: 2.7vw;
     top: 11rem;
   }
 }
@@ -1047,7 +1053,7 @@ a {
   bottom: 50%;
   right: -0.8rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .balloon-1::after {
     bottom: -1.2rem;
     left: 50%;
@@ -1060,9 +1066,15 @@ a {
   left: 24.8rem;
   top: 0;
 }
+@media only screen and (max-width: 1024px) {
+  .balloon-2 {
+    left: 25vw;
+    top: 0;
+  }
+}
 @media only screen and (max-width: 768px) {
   .balloon-2 {
-    left: 1.6rem;
+    left: 4.2vw;
     top: 0;
   }
 }
@@ -1074,7 +1086,7 @@ a {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .balloon-2::after {
     bottom: -1.2rem;
     left: 50%;
@@ -1085,9 +1097,15 @@ a {
   right: 24.8rem;
   top: 0;
 }
+@media only screen and (max-width: 1024px) {
+  .balloon-3 {
+    right: 25vw;
+    top: 0;
+  }
+}
 @media only screen and (max-width: 768px) {
   .balloon-3 {
-    right: 1.6rem;
+    right: 4.2vw;
     top: 0;
   }
 }
@@ -1099,7 +1117,7 @@ a {
   -webkit-transform: rotate(-141deg);
   transform: rotate(-141deg);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .balloon-3::after {
     bottom: -1.4rem;
     left: 40%;
@@ -1110,9 +1128,15 @@ a {
   bottom: 0;
   right: 1rem;
 }
+@media only screen and (max-width: 1024px) {
+  .balloon-4 {
+    right: 12vw;
+    top: 11rem;
+  }
+}
 @media only screen and (max-width: 768px) {
   .balloon-4 {
-    right: 0.5rem;
+    right: 2.7vw;
     top: 11rem;
   }
 }
@@ -1124,7 +1148,7 @@ a {
   -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .balloon-4::after {
     bottom: -1.4rem;
     left: 40%;

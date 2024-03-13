@@ -47,7 +47,7 @@
   position: relative;
   max-width: 112.4rem;
 
-  @include sp {
+  @include tb {
     height: 30.8rem;
     margin: 3.5rem auto auto;
     width: 93%;
@@ -70,7 +70,7 @@
   align-items: center;
   z-index: 3;
 
-  @include sp {
+  @include tb {
     border-radius: 1rem;
     height: 7.5rem;
     width: 15rem;
@@ -84,7 +84,7 @@
   height: 2.6rem;
   z-index: -1;
 
-  @include sp {
+  @include tb {
     background-size: 1.5rem;
   }
 }
@@ -93,7 +93,7 @@
   font-size: 2rem;
   text-align: left;
 
-  @include sp {
+  @include tb {
     font-size: 1.2rem;
   }
 }
@@ -103,7 +103,7 @@
   font-size: 1.6rem;
   margin-bottom: 1rem;
 
-  @include sp {
+  @include tb {
     font-size: 1.2rem;
     margin-bottom: 0.6rem;
   }
@@ -114,8 +114,13 @@
   bottom: 0;
   left: 1rem;
 
+  @include tb {
+    left: 12vw;
+    top: 11rem;
+  }
+
   @include sp {
-    left: 0.5rem;
+    left: 2.7vw;
     top: 11rem;
   }
 }
@@ -127,7 +132,7 @@
   bottom: 50%;
   right: -0.8rem;
 
-  @include sp {
+  @include tb {
     bottom: -1.2rem;
     left: 50%;
     -webkit-transform: rotate(45deg);
@@ -140,8 +145,12 @@
   left: 24.8rem;
   top: 0;
 
+  @include tb {
+    left: 25vw;
+    top: 0;
+  }
   @include sp {
-    left: 1.6rem;
+    left: 4.2vw;
     top: 0;
   }
 }
@@ -155,7 +164,7 @@
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 
-  @include sp {
+  @include tb {
     bottom: -1.2rem;
     left: 50%;
   }
@@ -166,8 +175,13 @@
   right: 24.8rem;
   top: 0;
 
+  @include tb {
+    right: 25vw;
+    top: 0;
+  }
+
   @include sp {
-    right: 1.6rem;
+    right: 4.2vw;
     top: 0;
   }
 }
@@ -181,7 +195,7 @@
   -webkit-transform: rotate(-141deg);
   transform: rotate(-141deg);
 
-  @include sp {
+  @include tb {
     bottom: -1.4rem;
     left: 40%;
   }
@@ -192,8 +206,13 @@
   bottom: 0;
   right: 1rem;
 
+  @include tb {
+    right: 12vw;
+    top: 11rem;
+  }
+
   @include sp {
-    right: 0.5rem;
+    right: 2.7vw;
     top: 11rem;
   }
 }
@@ -207,7 +226,7 @@
   -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
 
-  @include sp {
+  @include tb {
     bottom: -1.4rem;
     left: 40%;
     -webkit-transform: rotate(-137deg);
