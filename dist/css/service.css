@@ -1658,39 +1658,45 @@ a {
   }
 }
 
-.method__detailList {
+.method__detailList, .method__detailList--dataCheck {
   border-top: 2px solid #00a0e8;
   font-size: 2.2rem;
   line-height: 1.6;
   margin: 0;
   padding-top: 2.3rem;
 }
-
-.method__detailList > dt {
-  clear: left;
-  float: left;
-  font-size: inherit;
-}
-
-.method__detailList > dd {
-  font-size: inherit;
-}
-
-.method__detailList > dt:nth-of-type(4) {
-  clear: none;
-  float: none;
-}
-
 @media only screen and (max-width: 768px) {
-  .method__detailList {
+  .method__detailList, .method__detailList--dataCheck {
     border-width: 1px;
     font-size: 1.3rem;
     padding-top: 1.8rem;
   }
 }
+
+.method__detailList > dt, .method__detailList--dataCheck > dt {
+  clear: left;
+  float: left;
+  font-size: inherit;
+}
+
+.method__detailList > dd, .method__detailList--dataCheck > dd {
+  font-size: inherit;
+}
+
+.method__detailList > dt:nth-of-type(4), .method__detailList--dataCheck > dt:nth-of-type(4) {
+  clear: none;
+  float: none;
+}
+
 .method--dataCheck {
   margin-top: 3rem;
   position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .method--dataCheck {
+    margin: 2.5rem auto 0;
+    width: 91.3%;
+  }
 }
 
 .method__contentsWrap--dataCheck {
@@ -1740,9 +1746,13 @@ a {
   font-size: 2.8rem;
   text-align: left;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .method__submission--dataCheck {
     display: inline-block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .method__submission--dataCheck {
     margin-left: 2.4rem;
     text-align: left;
     width: calc(100% - 9.2rem);
@@ -1771,25 +1781,21 @@ a {
   }
 }
 
-.method--dataCheck .method__detailList {
+.method__detailList--dataCheck {
   margin-left: 25.8rem;
   position: absolute;
   top: 22rem;
   width: 61.5rem;
 }
-
 @media only screen and (max-width: 768px) {
-  .method--dataCheck {
-    margin: 2.5rem auto 0;
-    width: 91.3%;
-  }
-  .method--dataCheck .method__detailList {
+  .method__detailList--dataCheck {
     margin-left: 0;
     position: relative;
     top: 0;
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .payment .contentsOverview .imgBox {
     margin-right: 3rem;

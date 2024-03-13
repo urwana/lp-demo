@@ -500,6 +500,12 @@
   line-height: 1.6;
   margin: 0;
   padding-top: 2.3rem;
+
+  @include sp {
+    border-width: 1px;
+    font-size: 1.3rem;
+    padding-top: 1.8rem;
+  }
 }
 
 .method__detailList > dt {
@@ -517,18 +523,15 @@
   float: none;
 }
 
-@include sp {
-  .method__detailList {
-    border-width: 1px;
-    font-size: 1.3rem;
-    padding-top: 1.8rem;
-  }
-}
-
 // datacheck
 .method--dataCheck {
   margin-top: 3rem;
   position: relative;
+
+  @include sp {
+    margin: 2.5rem auto 0;
+    width: 91.3%;
+  }
 }
 
 .method__contentsWrap--dataCheck {
@@ -580,8 +583,11 @@
   font-size: 2.8rem;
   text-align: left;
 
-  @include sp {
+  @include tb {
     display: inline-block;
+  }
+
+  @include sp {
     margin-left: 2.4rem;
     text-align: left;
     width: calc(100% - 9.2rem);
@@ -609,24 +615,18 @@
   }
 }
 
-.method--dataCheck .method__detailList {
+.method__detailList--dataCheck {
+  @extend .method__detailList;
   margin-left: 25.8rem;
   position: absolute;
   top: 22rem;
   width: 61.5rem;
-}
 
-@include sp {
-  .method--dataCheck {
-    margin: 2.5rem auto 0;
-    width: 91.3%;
-
-    .method__detailList {
-      margin-left: 0;
-      position: relative;
-      top: 0;
-      width: 100%;
-    }
+  @include sp {
+    margin-left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
   }
 }
 
@@ -638,15 +638,13 @@
     // }
 
     @include sp {
-            // > span {
+      // > span {
       //   width: 100%;
       // }
       .imgBox {
         margin-right: 3rem;
       }
-
     }
-
   }
 }
 
@@ -657,10 +655,8 @@
   @include sp {
     font-size: 1.2rem;
     margin-top: 0;
-
   }
 }
-
 
 @include sp {
   .payment {
@@ -668,12 +664,6 @@
       line-height: 2;
       padding-top: 0;
       width: 63.2%;
-    }
-
-    .contentsOverview {
-
-      .complement {
-      }
     }
   }
 }
@@ -767,7 +757,6 @@
     font-size: 1.5rem;
     padding-bottom: 0.5rem;
     width: 6.2rem;
-
   }
 }
 
