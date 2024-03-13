@@ -982,10 +982,11 @@ a {
   line-height: 1.6;
   position: absolute;
   text-align: center;
-  width: 29.7rem;
+  width: 26rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 3;
 }
 @media only screen and (max-width: 768px) {
   .balloon-4, .balloon-3, .balloon-2, .balloon-1 {
@@ -1000,6 +1001,7 @@ a {
   position: absolute;
   width: 2.6rem;
   height: 2.6rem;
+  z-index: -1;
 }
 @media only screen and (max-width: 768px) {
   .balloon-4::after, .balloon-3::after, .balloon-2::after, .balloon-1::after {
@@ -1008,7 +1010,7 @@ a {
 }
 
 .balloon__inner {
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-align: left;
 }
 @media only screen and (max-width: 768px) {
@@ -1031,7 +1033,7 @@ a {
 
 .balloon-1 {
   bottom: 0;
-  left: 0;
+  left: 1rem;
 }
 @media only screen and (max-width: 768px) {
   .balloon-1 {
