@@ -25,12 +25,34 @@ video {
   display: block;
 }
 
+.display-tablet {
+  display: none;
+}
+
 .display-mobile {
   display: none;
 }
 
+@include tb {
+  .display-desktop {
+    display: none;
+  }
+
+  .display-tablet {
+    display: block;
+  }
+
+  .display-mobile {
+    display: none;
+  }
+}
+
 @include sp {
   .display-desktop {
+    display: none;
+  }
+
+  .display-tablet {
     display: none;
   }
 

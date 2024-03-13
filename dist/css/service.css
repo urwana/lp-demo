@@ -22,12 +22,30 @@ video {
   display: block;
 }
 
+.display-tablet {
+  display: none;
+}
+
 .display-mobile {
   display: none;
 }
 
+@media only screen and (max-width: 1024px) {
+  .display-desktop {
+    display: none;
+  }
+  .display-tablet {
+    display: block;
+  }
+  .display-mobile {
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px) {
   .display-desktop {
+    display: none;
+  }
+  .display-tablet {
     display: none;
   }
   .display-mobile {
@@ -1560,7 +1578,6 @@ a {
   .method__upperBox--dataCheck > img, .method__upperBox--speedCheck > img,
   .method__upperBox--operetorCheck > img {
     clear: left;
-    float: left;
     width: 6.8rem;
   }
 }
@@ -1652,7 +1669,6 @@ a {
 }
 @media only screen and (max-width: 768px) {
   .method__submission {
-    float: left;
     font-size: 1.4rem;
     margin-left: 2.4rem;
   }
@@ -1673,19 +1689,14 @@ a {
   }
 }
 
-.method__detailList > dt, .method__detailList--dataCheck > dt {
-  clear: left;
-  float: left;
+.detailList__dataWrapper {
+  display: flex;
+  justify-content: flex-start;
   font-size: inherit;
 }
 
 .method__detailList > dd, .method__detailList--dataCheck > dd {
   font-size: inherit;
-}
-
-.method__detailList > dt:nth-of-type(4), .method__detailList--dataCheck > dt:nth-of-type(4) {
-  clear: none;
-  float: none;
 }
 
 .method--dataCheck {
@@ -1714,6 +1725,12 @@ a {
   margin-bottom: 2.5rem;
   vertical-align: middle;
 }
+@media only screen and (max-width: 1024px) {
+  .method__upperBox--dataCheck {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
 @media only screen and (max-width: 768px) {
   .method__upperBox--dataCheck {
     margin-bottom: 0;
@@ -1726,11 +1743,14 @@ a {
   margin-bottom: 1.8rem;
   width: 21.9rem;
 }
+@media only screen and (max-width: 1024px) {
+  .method__imgWrap--dataCheck {
+    grid-column: 1;
+  }
+}
 @media only screen and (max-width: 768px) {
   .method__imgWrap--dataCheck {
-    clear: left;
     display: inline-block;
-    float: left;
     padding-top: 1rem;
     width: 6.8rem;
   }
@@ -1748,7 +1768,9 @@ a {
 }
 @media only screen and (max-width: 1024px) {
   .method__submission--dataCheck {
-    display: inline-block;
+    display: block;
+    grid-column: 2;
+    grid-row: span 2;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1756,6 +1778,7 @@ a {
     margin-left: 2.4rem;
     text-align: left;
     width: calc(100% - 9.2rem);
+    font-size: 1.4rem;
   }
 }
 
@@ -1767,16 +1790,24 @@ a {
   top: 12.8rem;
   width: 65.5rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .method__summary--dataCheck {
-    display: inline-block;
-    font-size: 1.2rem;
-    margin-left: 2.4rem;
-    margin-top: 1rem;
-    padding-bottom: 2.1rem;
     position: relative;
     text-align: left;
+    margin-left: 0;
     top: 0;
+    grid-column: 2;
+    grid-row: span 2;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .method__summary--dataCheck {
+    margin-left: 2.4rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding-bottom: 2.1rem;
     width: calc(100% - 9.2rem);
   }
 }
@@ -1787,11 +1818,15 @@ a {
   top: 22rem;
   width: 61.5rem;
 }
+@media only screen and (max-width: 1024px) {
+  .method__detailList--dataCheck {
+    position: relative;
+    margin-left: 0;
+    top: 0;
+  }
+}
 @media only screen and (max-width: 768px) {
   .method__detailList--dataCheck {
-    margin-left: 0;
-    position: relative;
-    top: 0;
     width: 100%;
   }
 }

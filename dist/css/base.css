@@ -22,12 +22,30 @@ video {
   display: block;
 }
 
+.display-tablet {
+  display: none;
+}
+
 .display-mobile {
   display: none;
 }
 
+@media only screen and (max-width: 1024px) {
+  .display-desktop {
+    display: none;
+  }
+  .display-tablet {
+    display: block;
+  }
+  .display-mobile {
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px) {
   .display-desktop {
+    display: none;
+  }
+  .display-tablet {
     display: none;
   }
   .display-mobile {

@@ -167,6 +167,7 @@
     .imgBox {
       margin: 0 2.8% 0.5rem 0;
       width: 34%;
+      // 文字で画像を囲む
       float: left;
     }
 
@@ -395,7 +396,6 @@
   @include sp {
     > img {
       clear: left;
-      float: left;
       width: 6.8rem;
     }
   }
@@ -488,7 +488,6 @@
   vertical-align: middle;
 
   @include sp {
-    float: left;
     font-size: 1.4rem;
     margin-left: 2.4rem;
   }
@@ -508,19 +507,17 @@
   }
 }
 
-.method__detailList > dt {
-  clear: left;
-  float: left;
+// .method__detailList > dt {
+// }
+ .detailList__dataWrapper{
+  display: flex;
+  justify-content: flex-start;
   font-size: inherit;
-}
+ }
+
 
 .method__detailList > dd {
   font-size: inherit;
-}
-
-.method__detailList > dt:nth-of-type(4) {
-  clear: none;
-  float: none;
 }
 
 // datacheck
@@ -546,12 +543,14 @@
 
 .method__upperBox--dataCheck {
   @extend %methodUpperBox;
-}
-
-.method__upperBox--dataCheck {
   display: inline-block;
   margin-bottom: 2.5rem;
   vertical-align: middle;
+
+  @include tb {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 
   @include sp {
     margin-bottom: 0;
@@ -564,10 +563,12 @@
   margin-bottom: 1.8rem;
   width: 21.9rem;
 
+  @include tb {
+    grid-column: 1;
+  }
+
   @include sp {
-    clear: left;
     display: inline-block;
-    float: left;
     padding-top: 1rem;
     width: 6.8rem;
   }
@@ -584,13 +585,16 @@
   text-align: left;
 
   @include tb {
-    display: inline-block;
+    display: block;
+    grid-column: 2;
+    grid-row: span 2;
   }
 
   @include sp {
     margin-left: 2.4rem;
     text-align: left;
     width: calc(100% - 9.2rem);
+    font-size: 1.4rem;
   }
 }
 
@@ -602,15 +606,22 @@
   top: 12.8rem;
   width: 65.5rem;
 
-  @include sp {
-    display: inline-block;
-    font-size: 1.2rem;
-    margin-left: 2.4rem;
-    margin-top: 1rem;
-    padding-bottom: 2.1rem;
+  @include tb {
     position: relative;
     text-align: left;
+    margin-left: 0;
     top: 0;
+    grid-column: 2;
+    grid-row: span 2;
+    width: 100%;
+  }
+
+  @include sp {
+    margin-left: 2.4rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding-bottom: 2.1rem;
     width: calc(100% - 9.2rem);
   }
 }
@@ -622,10 +633,13 @@
   top: 22rem;
   width: 61.5rem;
 
-  @include sp {
-    margin-left: 0;
+  @include tb {
     position: relative;
+    margin-left: 0;
     top: 0;
+  }
+
+  @include sp {
     width: 100%;
   }
 }
