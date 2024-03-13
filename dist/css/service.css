@@ -1252,18 +1252,18 @@ a {
 }
 
 .dataContents,
-.payContents {
+.payment {
   padding: 5rem 7rem 4.5rem;
 }
 @media only screen and (max-width: 768px) {
   .dataContents,
-  .payContents {
+  .payment {
     padding: 3rem 0 4rem;
   }
 }
 
 .dataContents__subTitle--h5,
-.payContents__subTitle--h5 {
+.payment__subTitle--h5 {
   font-size: 2.2rem;
   margin: 0;
   text-align: center;
@@ -1271,7 +1271,7 @@ a {
 }
 @media only screen and (max-width: 768px) {
   .dataContents__subTitle--h5,
-  .payContents__subTitle--h5 {
+  .payment__subTitle--h5 {
     font-size: 1.3rem;
   }
 }
@@ -1532,41 +1532,46 @@ a {
     margin-bottom: 2rem;
   }
 }
-.contentsWrap {
+.method--dataCheck .method__contentsWrap--dataCheck, .method__contentsWrap--operetorCheck,
+.method__contentsWrap--speedCheck {
   border-bottom: 6px solid #e7f3f9;
   border-left: 6px solid #e7f3f9;
   border-radius: 0 0 1rem 1rem;
   border-right: 6px solid #e7f3f9;
 }
-.contentsWrap .methodUpperBox {
+@media only screen and (max-width: 768px) {
+  .method--dataCheck .method__contentsWrap--dataCheck, .method__contentsWrap--operetorCheck,
+  .method__contentsWrap--speedCheck {
+    border-radius: 0 0 5px 5px;
+    border-width: 3px;
+  }
+}
+
+.methodUpperBox {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 @media only screen and (max-width: 768px) {
-  .contentsWrap {
-    border-radius: 0 0 5px 5px;
-    border-width: 3px;
-  }
-  .contentsWrap .methodUpperBox > img {
+  .methodUpperBox > img {
     clear: left;
     float: left;
     width: 6.8rem;
   }
 }
+
 .method--operetorCheck,
 .method--speedCheck {
   width: 47rem;
 }
 
-.method--operetorCheck .contentsWrap,
-.method--speedCheck .contentsWrap {
+.method__contentsWrap--operetorCheck,
+.method__contentsWrap--speedCheck {
   padding: 3.2rem 2.4rem 2.4rem 2.4rem;
 }
-.method--operetorCheck .contentsWrap .methodSummary,
-.method--speedCheck .contentsWrap .methodSummary {
+.method__contentsWrap--operetorCheck .methodSummary,
+.method__contentsWrap--speedCheck .methodSummary {
   font-size: 2.4rem;
   line-height: 1.4;
   margin-top: 3.2rem;
@@ -1672,12 +1677,12 @@ a {
   margin-top: 3rem;
   position: relative;
 }
-.method--dataCheck .contentsWrap {
+.method--dataCheck .method__contentsWrap--dataCheck {
   padding: 4rem;
 }
 
 @media only screen and (max-width: 768px) {
-  .method--dataCheck .contentsWrap {
+  .method--dataCheck .method__contentsWrap--dataCheck {
     margin: auto;
     padding: 2.6rem 5.5%;
   }
@@ -1762,27 +1767,27 @@ a {
     width: 100%;
   }
 }
-.payContents .contents-overview > span {
+.payment .contents-overview > span {
   width: 68rem;
 }
-.payContents .contents-overview .complement {
+.payment .contents-overview .complement {
   font-size: 1.6rem;
   margin: 2rem 0 0;
 }
 
 @media only screen and (max-width: 768px) {
-  .payContents > span:first-of-type {
+  .payment > span:first-of-type {
     line-height: 2;
     padding-top: 0;
     width: 63.2%;
   }
-  .payContents .contents-overview > span {
+  .payment .contents-overview > span {
     width: 100%;
   }
-  .payContents .contents-overview .imgBox {
+  .payment .contents-overview .imgBox {
     margin-right: 3rem;
   }
-  .payContents .contents-overview .complement {
+  .payment .contents-overview .complement {
     font-size: 1.2rem;
     margin-top: 0;
   }
