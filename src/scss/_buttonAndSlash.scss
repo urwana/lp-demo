@@ -346,6 +346,14 @@
   text-align: center;
   z-index: 10;
   border-radius: 0.8rem;
+  visibility: hidden;
+  opacity: 0;
+
+  &.is-fadein {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .8s ease-in-out; /* opacityの変化を0.5秒かけて行う */
+  }
 }
 
 .floatingButton {

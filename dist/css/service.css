@@ -505,6 +505,13 @@ a {
   text-align: center;
   z-index: 10;
   border-radius: 0.8rem;
+  visibility: hidden;
+  opacity: 0;
+}
+.floatingButtonContainer.is-fadein {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out; /* opacityの変化を0.5秒かけて行う */
 }
 
 .floatingButton {
@@ -2490,7 +2497,7 @@ a {
 .js-scroll-fadein.is-fadein {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.8s ease-in-out; /* opacityの変化を0.5秒かけて行う */
+  transition: opacity 0.8s ease-in-out;
 }
 
 .arrow {

@@ -6,7 +6,7 @@
   &.is-fadein {
     visibility: visible;
     opacity: 1;
-    transition: opacity .8s ease-in-out; /* opacityの変化を0.5秒かけて行う */
+    transition: opacity .8s ease-in-out;
   }
 }
 

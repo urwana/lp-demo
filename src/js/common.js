@@ -30,12 +30,9 @@ timeLine
     ".js_annotationLists",
     { autoAlpha: 0 },
     { autoAlpha: 1, duration: 0.1 }
-  )
-  .add(() => {
-    console.log("gsap test");
-  });
+  );
 
-const templateImages = document.querySelectorAll(".templates__imgBox img");
+const templateImages = document.querySelectorAll(".js_image");
 templateImages.forEach((image) => {
   image.addEventListener("mouseenter", () => {
     gsap.fromTo(
@@ -54,7 +51,10 @@ templateImages.forEach((image) => {
 });
 
 const arrow = document.querySelector(".js-scroll-fadein");
+const belt = document.querySelector(".js_separatorBelt");
+const floatingButton = document.querySelector(".js_floatingButton");
 const bodyHeight = document.body.scrollHeight;
+const beltHeight = belt.offsetTop;
 const visiblePosition = (bodyHeight / 3) * 0.8;
 
 const getScrolled = () => {
@@ -65,6 +65,9 @@ window.onscroll = () => {
   getScrolled() > visiblePosition
     ? arrow.classList.add("is-fadein")
     : arrow.classList.remove("is-fadein");
+  getScrolled() > beltHeight
+    ? floatingButton.classList.add("is-fadein")
+    : floatingButton.classList.remove("is-fadein");
 };
 
 const scrollToTop = () => {
@@ -77,3 +80,14 @@ const scrollToTop = () => {
 arrow.onclick = function() {
   scrollToTop();
 };
+
+const buttons = document.querySelectorAll(".js_button");
+
+buttons.forEach((button) => {
+  button.addEventListener("mouseenter", () => {
+    gsap.to(button, { scale: 1.05, autoAlpha: 0.5, duration: 0.2 });
+  });
+  button.addEventListener("mouseleave", () => {
+    gsap.to(button, { scale: 1, autoAlpha: 1, duration: 0.2 });
+  });
+});
