@@ -4,6 +4,12 @@
   }
 }
 
+@mixin tb {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
 @mixin title-h2 {
   font-size: 4rem;
   font-weight: 600;
