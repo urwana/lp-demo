@@ -19,6 +19,7 @@
   background-color: $blue;
   border-radius: 50%;
   padding: 2rem;
+  z-index: 10;
 
   @include sp {
     right: 3rem;
