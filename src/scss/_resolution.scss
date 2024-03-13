@@ -5,7 +5,7 @@
   padding: 16rem 0 6rem;
   max-width: 112.4rem;
 
-  > h3 {
+  .resolution__title {
     font-size: 3.2rem;
     line-height: 1.6;
     margin: 0 0 10rem;
@@ -22,7 +22,7 @@
     border: 1px solid $blue;
     margin-top: 6rem;
 
-    > h4 {
+    .resolution__subTitle--h4 {
       background: $blue;
       color: #fff;
       font-size: 2.2rem;
@@ -32,11 +32,12 @@
       text-align: center;
 
       > span {
+        padding-right: 0.5rem;
         font-size: 3.2rem;
       }
     }
 
-    > h5 {
+    .resolution__subTitle--h5 {
       font-size: 2.2rem;
       text-align: center;
 
@@ -51,7 +52,7 @@
 .payContents {
   padding: 5rem 7rem 4.5rem;
 
-  > h5 {
+  .resolution__subTitle--h5 {
     font-size: 2.2rem;
     margin: 0;
     text-align: center;
@@ -72,7 +73,7 @@
     padding: 6.8rem 0 4rem;
     width: 92%;
 
-    > h3 {
+    .resolution__title {
       font-size: 1.6rem;
       margin: 0 0 3rem;
 
@@ -84,7 +85,7 @@
     .resolution-inner {
       margin-top: 3rem;
 
-      > h4 {
+      .resolution__subTitle--h4 {
         font-size: 1.3rem;
         line-height: 2.769;
 
@@ -93,7 +94,7 @@
         }
       }
 
-      > h5 {
+      .resolution__subTitle--h5 {
         font-size: 1.3rem;
 
         > span {
@@ -107,7 +108,7 @@
   .payContents {
     padding: 3rem 0 4rem;
 
-    > h5 {
+    .resolution__subTitle--h5 {
       font-size: 1.3rem;
 
       > span {
@@ -204,7 +205,7 @@
   margin-top: 3rem;
   padding: 4.5rem 4.8rem 6.5rem;
 
-  > h5 {
+  .resolution__subTitle--h5 {
     font-size: 2.2rem;
     font-weight: 400;
     margin: 0;
@@ -227,7 +228,7 @@
     margin-top: 1.8rem;
     padding: 2.2rem 1.5rem;
 
-    > h5 {
+    .resolution__subTitle--h5 {
       font-size: 1.2rem;
 
       > span {
@@ -354,7 +355,7 @@
 .submissionAndCheckMethods {
   margin-top: 10rem;
 
-  > h5 {
+  .resolution__subTitle--h5 {
     font-size: 3.2rem;
     margin: 0 0 2.7rem;
     text-align: center;
@@ -379,7 +380,7 @@
   .submissionAndCheckMethods {
     margin-top: 5rem;
 
-    > h5 {
+    .resolution__subTitle--h5 {
       font-size: 1.6rem;
       margin-bottom: 2rem;
     }
@@ -683,7 +684,7 @@
     width: 11rem;
   }
 
-  > h5 {
+  .resolution__subTitle--h5 {
     font-size: 2.6rem;
     margin: 6rem 0 2.5rem;
     text-align: center;
@@ -734,7 +735,7 @@
       flex-wrap: wrap;
     }
 
-    > h5 {
+    .resolution__subTitle--h5 {
       font-size: 2.6rem;
       margin: 3.3rem 0 2rem;
     }

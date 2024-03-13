@@ -1163,7 +1163,7 @@ a {
   padding: 16rem 0 6rem;
   max-width: 112.4rem;
 }
-.resolution > h3 {
+.resolution .resolution__title {
   font-size: 3.2rem;
   line-height: 1.6;
   margin: 0 0 10rem;
@@ -1171,7 +1171,7 @@ a {
   font-weight: 600;
   color: #333;
 }
-.resolution > h3 > span {
+.resolution .resolution__title > span {
   color: #00a0e8;
   font-size: 4rem;
 }
@@ -1179,7 +1179,7 @@ a {
   border: 1px solid #00a0e8;
   margin-top: 6rem;
 }
-.resolution .resolution-inner > h4 {
+.resolution .resolution-inner .resolution__subTitle--h4 {
   background: #00a0e8;
   color: #fff;
   font-size: 2.2rem;
@@ -1188,14 +1188,15 @@ a {
   margin: 0;
   text-align: center;
 }
-.resolution .resolution-inner > h4 > span {
+.resolution .resolution-inner .resolution__subTitle--h4 > span {
+  padding-right: 0.5rem;
   font-size: 3.2rem;
 }
-.resolution .resolution-inner > h5 {
+.resolution .resolution-inner .resolution__subTitle--h5 {
   font-size: 2.2rem;
   text-align: center;
 }
-.resolution .resolution-inner > h5 > span {
+.resolution .resolution-inner .resolution__subTitle--h5 > span {
   font-size: 3.2rem;
 }
 
@@ -1203,15 +1204,15 @@ a {
 .payContents {
   padding: 5rem 7rem 4.5rem;
 }
-.dataContents > h5,
-.payContents > h5 {
+.dataContents .resolution__subTitle--h5,
+.payContents .resolution__subTitle--h5 {
   font-size: 2.2rem;
   margin: 0;
   text-align: center;
   width: 100%;
 }
-.dataContents > h5 > span,
-.payContents > h5 > span {
+.dataContents .resolution__subTitle--h5 > span,
+.payContents .resolution__subTitle--h5 > span {
   display: block;
   font-size: 4rem;
   font-weight: 600;
@@ -1225,39 +1226,39 @@ a {
     padding: 6.8rem 0 4rem;
     width: 92%;
   }
-  .resolution > h3 {
+  .resolution .resolution__title {
     font-size: 1.6rem;
     margin: 0 0 3rem;
   }
-  .resolution > h3 > span {
+  .resolution .resolution__title > span {
     font-size: 2.1rem;
   }
   .resolution .resolution-inner {
     margin-top: 3rem;
   }
-  .resolution .resolution-inner > h4 {
+  .resolution .resolution-inner .resolution__subTitle--h4 {
     font-size: 1.3rem;
     line-height: 2.769;
   }
-  .resolution .resolution-inner > h4 > span {
+  .resolution .resolution-inner .resolution__subTitle--h4 > span {
     font-size: 1.8rem;
   }
-  .resolution .resolution-inner > h5 {
+  .resolution .resolution-inner .resolution__subTitle--h5 {
     font-size: 1.3rem;
   }
-  .resolution .resolution-inner > h5 > span {
+  .resolution .resolution-inner .resolution__subTitle--h5 > span {
     font-size: 2.2rem;
   }
   .dataContents,
   .payContents {
     padding: 3rem 0 4rem;
   }
-  .dataContents > h5,
-  .payContents > h5 {
+  .dataContents .resolution__subTitle--h5,
+  .payContents .resolution__subTitle--h5 {
     font-size: 1.3rem;
   }
-  .dataContents > h5 > span,
-  .payContents > h5 > span {
+  .dataContents .resolution__subTitle--h5 > span,
+  .payContents .resolution__subTitle--h5 > span {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.5;
@@ -1333,13 +1334,13 @@ a {
   margin-top: 3rem;
   padding: 4.5rem 4.8rem 6.5rem;
 }
-.confirmImage > h5 {
+.confirmImage .resolution__subTitle--h5 {
   font-size: 2.2rem;
   font-weight: 400;
   margin: 0;
   text-align: center;
 }
-.confirmImage > h5 > span {
+.confirmImage .resolution__subTitle--h5 > span {
   border-bottom: 2px solid #00a0e8;
   color: #00a0e8;
   display: block;
@@ -1354,10 +1355,10 @@ a {
     margin-top: 1.8rem;
     padding: 2.2rem 1.5rem;
   }
-  .confirmImage > h5 {
+  .confirmImage .resolution__subTitle--h5 {
     font-size: 1.2rem;
   }
-  .confirmImage > h5 > span {
+  .confirmImage .resolution__subTitle--h5 > span {
     font-size: 1.8rem;
   }
 }
@@ -1463,7 +1464,7 @@ a {
 .submissionAndCheckMethods {
   margin-top: 10rem;
 }
-.submissionAndCheckMethods > h5 {
+.submissionAndCheckMethods .resolution__subTitle--h5 {
   font-size: 3.2rem;
   margin: 0 0 2.7rem;
   text-align: center;
@@ -1486,7 +1487,7 @@ a {
   .submissionAndCheckMethods {
     margin-top: 5rem;
   }
-  .submissionAndCheckMethods > h5 {
+  .submissionAndCheckMethods .resolution__subTitle--h5 {
     font-size: 1.6rem;
     margin-bottom: 2rem;
   }
@@ -1756,7 +1757,7 @@ a {
   text-align: center;
   width: 11rem;
 }
-.orderToDelivery > h5 {
+.orderToDelivery .resolution__subTitle--h5 {
   font-size: 2.6rem;
   margin: 6rem 0 2.5rem;
   text-align: center;
@@ -1799,7 +1800,7 @@ a {
   .orderToDelivery .orderToDelivery-inner {
     flex-wrap: wrap;
   }
-  .orderToDelivery > h5 {
+  .orderToDelivery .resolution__subTitle--h5 {
     font-size: 2.6rem;
     margin: 3.3rem 0 2rem;
   }
