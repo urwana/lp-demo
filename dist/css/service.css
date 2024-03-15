@@ -209,7 +209,7 @@ a {
 .floatingButton:hover, .button-register:hover, .button:hover {
   opacity: 0.6;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 961px) {
   .floatingButton, .button-register, .button {
     width: 92%;
     max-width: 34.5rem;
@@ -233,6 +233,12 @@ a {
   justify-content: center;
   margin-top: 4.8rem;
 }
+@media only screen and (max-width: 961px) {
+  .buttonContainer {
+    display: block;
+    margin: 2.4rem auto 0;
+  }
+}
 
 .button {
   background-color: #000000;
@@ -248,21 +254,18 @@ a {
   background-color: #f5f5f5 !important;
 }
 
-@media only screen and (max-width: 768px) {
-  .buttonContainer {
-    display: block;
-    margin: 2.4rem auto 0;
-  }
+@media only screen and (max-width: 961px) {
   .buttonBox {
     margin-top: 2.4rem;
   }
 }
+
 .order .button {
   margin: 3.2rem auto 0;
   width: 64rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 961px) {
   .order .button {
     height: 6rem;
     margin-top: 3.8rem;
@@ -270,6 +273,7 @@ a {
     width: 92%;
   }
 }
+
 .button-otherProducts {
   display: flex;
   justify-content: center;
@@ -284,28 +288,41 @@ a {
   width: 30.6rem;
   margin-top: 6.4rem;
 }
-.button-otherProducts > span {
-  font-size: 2rem;
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 961px) {
   .button-otherProducts {
     height: 4rem;
     margin: 2.4rem auto 0;
     width: 29.1rem;
   }
-  .button-otherProducts > span {
+}
+
+.button-otherProduct > span {
+  font-size: 2rem;
+}
+@media only screen and (max-width: 961px) {
+  .button-otherProduct > span {
     font-size: 1.3rem;
   }
 }
+
 .checkAndRegister {
   padding: 8rem 0;
   text-align: center;
+}
+@media only screen and (max-width: 961px) {
+  .checkAndRegister {
+    padding: 3.8rem 0;
+  }
 }
 
 .checkAndRegister__inner {
   margin: auto;
   width: 96rem;
+}
+@media only screen and (max-width: 961px) {
+  .checkAndRegister__inner {
+    width: 100%;
+  }
 }
 
 .checkAndRegister__lead {
@@ -314,19 +331,13 @@ a {
   color: #333;
   line-height: 1.7;
 }
-
-@media only screen and (max-width: 768px) {
-  .checkAndRegister {
-    padding: 3.8rem 0;
-  }
-  .checkAndRegister__inner {
-    width: 100%;
-  }
+@media only screen and (max-width: 961px) {
   .checkAndRegister__lead {
     font-size: 1.4rem;
     line-height: 1.4;
   }
 }
+
 .buttonBox__copyBox {
   display: inline-block;
   font-size: 2.6rem;
@@ -334,6 +345,11 @@ a {
   color: #333;
   line-height: 1.4;
   position: relative;
+}
+@media only screen and (max-width: 961px) {
+  .buttonBox__copyBox {
+    font-size: 1.4rem;
+  }
 }
 
 .priceOff {
@@ -353,11 +369,15 @@ a {
   right: 3rem;
   top: -1.4rem;
 }
-
-@media only screen and (max-width: 768px) {
-  .buttonBox__copyBox {
-    font-size: 1.4rem;
+@media only screen and (max-width: 961px) {
+  .termsOfUse {
+    font-size: 1.2rem;
+    right: 0;
+    top: -0.8rem;
   }
+}
+
+@media only screen and (max-width: 961px) {
   .buttonBox__copyBox .priceOff {
     font-size: 1.4rem;
   }
@@ -366,11 +386,6 @@ a {
   }
   .buttonBox__copyBox .priceOff .comma {
     font-size: 1.3rem;
-  }
-  .buttonBox__copyBox .termsOfUse {
-    font-size: 1.2rem;
-    right: 0;
-    top: -0.8rem;
   }
 }
 .order {
@@ -412,7 +427,7 @@ a {
   font-size: 2.6rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 961px) {
   .order {
     padding: 3.8rem 0;
   }
@@ -441,7 +456,7 @@ a {
   width: 3.2rem;
   height: 3.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 961px) {
   .slash-r, .slash-l {
     height: 1.6rem;
     width: 1.6rem;
@@ -453,7 +468,7 @@ a {
   left: -1.4rem;
   transform: rotate(-300deg);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 961px) {
   .slash-l {
     bottom: 0.4rem;
     transform: rotate(60deg);
@@ -466,7 +481,7 @@ a {
   -webkit-transform: rotate(-60deg);
   transform: rotate(-60deg);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 961px) {
   .slash-r {
     bottom: 0.4rem;
     -webkit-transform: rotate(-63deg);
@@ -480,7 +495,7 @@ a {
   width: 5.5rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 961px) {
   .checkAndRegister .slash-r {
     bottom: 0.6rem;
   }
@@ -569,7 +584,7 @@ a {
   font-size: 2.6rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 961px) {
   .floatingButtonContainer {
     bottom: 1.5rem;
     left: 0;

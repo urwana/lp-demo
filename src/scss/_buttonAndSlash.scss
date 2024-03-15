@@ -22,7 +22,7 @@
     opacity: 0.6;
   }
 
-  @include sp {
+  @include mb {
     width: 92%;
     max-width: 34.5rem;
     height: 6rem;
@@ -46,6 +46,11 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 4.8rem;
+
+  @include mb {
+    display: block;
+    margin: 2.4rem auto 0;
+  }
 }
 
 .button {
@@ -64,13 +69,8 @@
   background-color: $light-grey !important;
 }
 
-@include sp {
-  .buttonContainer {
-    display: block;
-    margin: 2.4rem auto 0;
-  }
-
-  .buttonBox {
+.buttonBox {
+  @include mb {
     margin-top: 2.4rem;
   }
 }
@@ -80,8 +80,8 @@
   width: 64rem;
 }
 
-@include sp {
-  .order .button {
+.order .button {
+  @include mb {
     height: 6rem;
     margin-top: 3.8rem;
     max-width: 34.5rem;
@@ -97,56 +97,54 @@
   background-position: center right 2rem;
   border-radius: 2.5rem;
   color: #333;
-  font-weight: 600; color:$heading;
+  font-weight: 600;
+  color: $heading;
   height: 4.2rem;
   width: 30.6rem;
   margin-top: 6.4rem;
 
-  > span {
-    font-size: 2rem;
-  }
-}
-
-@include sp {
-  .button-otherProducts {
+  @include mb {
     height: 4rem;
     margin: 2.4rem auto 0;
     width: 29.1rem;
-
-    > span {
-      font-size: 1.3rem;
-    }
   }
 }
+
+.button-otherProduct > span {
+  font-size: 2rem;
+
+  @include mb {
+    font-size: 1.3rem;
+  }
+}
+
 
 // service buttons
 .checkAndRegister {
   padding: 8rem 0;
   text-align: center;
+
+  @include mb {
+    padding: 3.8rem 0;
+  }
 }
 
 .checkAndRegister__inner {
   margin: auto;
   width: 96rem;
+
+  @include mb {
+    width: 100%;
+  }
 }
 
 .checkAndRegister__lead {
   font-size: 2.8rem;
   font-weight: 600;
-  color:$heading;
+  color: $heading;
   line-height: 1.7;
-}
 
-@include sp {
-  .checkAndRegister {
-    padding: 3.8rem 0;
-  }
-
-  .checkAndRegister__inner {
-    width: 100%;
-  }
-
-  .checkAndRegister__lead {
+  @include mb {
     font-size: 1.4rem;
     line-height: 1.4;
   }
@@ -155,9 +153,14 @@
 .buttonBox__copyBox {
   display: inline-block;
   font-size: 2.6rem;
-  font-weight: 600; color:$heading;
+  font-weight: 600;
+  color: $heading;
   line-height: 1.4;
   position: relative;
+
+  @include mb {
+    font-size: 1.4rem;
+  }
 }
 
 .priceOff {
@@ -178,12 +181,16 @@
   position: absolute;
   right: 3rem;
   top: -1.4rem;
+
+  @include mb {
+    font-size: 1.2rem;
+    right: 0;
+    top: -0.8rem;
+  }
 }
 
-@include sp {
+@include mb {
   .buttonBox__copyBox {
-    font-size: 1.4rem;
-
     .priceOff {
       font-size: 1.4rem;
 
@@ -194,12 +201,6 @@
       .comma {
         font-size: 1.3rem;
       }
-    }
-
-    .termsOfUse {
-      font-size: 1.2rem;
-      right: 0;
-      top: -0.8rem;
     }
   }
 }
@@ -223,13 +224,15 @@
 
 .order__lead {
   font-size: 2.8rem;
-  font-weight: 600; color:$heading;
+  font-weight: 600;
+  color: $heading;
   line-height: 1;
 }
 
 .order__lead2nd {
   font-size: 2.4rem;
-  font-weight: 600; color:$heading;
+  font-weight: 600;
+  color: $heading;
   line-height: 1;
   margin-top: 4.4rem;
 
@@ -243,7 +246,7 @@
   }
 }
 
-@include sp {
+@include mb {
   .order {
     padding: 3.8rem 0;
   }
@@ -279,7 +282,7 @@
   width: 3.2rem;
   height: 3.2rem;
 
-  @include sp {
+  @include mb {
     height: 1.6rem;
     width: 1.6rem;
   }
@@ -291,7 +294,7 @@
   left: -1.4rem;
   transform: rotate(-300deg);
 
-  @include sp {
+  @include mb {
     bottom: 0.4rem;
     transform: rotate(60deg);
   }
@@ -304,7 +307,7 @@
   -webkit-transform: rotate(-60deg);
   transform: rotate(-60deg);
 
-  @include sp {
+  @include mb {
     bottom: 0.4rem;
     -webkit-transform: rotate(-63deg);
     transform: rotate(-63deg);
@@ -317,7 +320,7 @@
   width: 5.5rem;
 }
 
-@include sp {
+@include mb {
   .checkAndRegister .slash-r {
     bottom: 0.6rem;
   }
@@ -352,7 +355,7 @@
   &.is-fadein {
     visibility: visible;
     opacity: 1;
-    transition: opacity .8s ease-in-out; /* opacityの変化を0.5秒かけて行う */
+    transition: opacity 0.8s ease-in-out; /* opacityの変化を0.5秒かけて行う */
   }
 }
 
@@ -415,7 +418,7 @@
   }
 }
 
-@include sp {
+@include mb {
   .floatingButtonContainer {
     bottom: 1.5rem;
     left: 0;
