@@ -92,10 +92,6 @@
 }
 
 .order .button {
-  @include mb{
-    
-  }
-
   @include sp {
     height: 6rem;
     margin-top: 3.8rem;
@@ -104,7 +100,7 @@
   }
 }
 
-.button-otherProducts {
+%button-otherProducts{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,16 +108,10 @@
   background-position: center right 2rem;
   border-radius: 2.5rem;
   color: #333;
-  font-weight: 600;
   color: $heading;
   height: 4.2rem;
   width: 30.6rem;
   margin-top: 6.4rem;
-
-  @include mb{
-    
-  }
-
 
   @include sp {
     height: 4rem;
@@ -130,29 +120,31 @@
   }
 }
 
-.button-otherProduct > span {
+.button-otherProducts {
+  @extend %button-otherProducts;
+  background: #ffffff url(../img/arrow-black.svg) 50% no-repeat;
+  background-position: center right 2rem;
+}
+
+.button-otherProducts > span,
+.button-otherProductsbutton-dark > span {
   font-size: 2rem;
-
-  @include mb{
-    
-  }
-
 
   @include sp {
     font-size: 1.3rem;
   }
 }
 
+.button-otherProductsbutton-dark {
+  @extend %button-otherProducts;
+  background: #f5f5f5 url(../img/arrow-black.svg) 50% no-repeat;
+  background-position: center right 2rem;
+}
 
 // service buttons
 .checkAndRegister {
   padding: 8rem 0;
   text-align: center;
-
-  @include mb{
-    
-  }
-
 
   @include sp {
     padding: 3.8rem 0;
@@ -164,11 +156,6 @@
   width: 96rem;
 
   @include mb{
-    
-  }
-
-
-  @include sp {
     width: 100%;
   }
 }

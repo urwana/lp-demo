@@ -3,15 +3,28 @@
   width: 100%;
   background: url(../img/hero-lp.jpg) bottom no-repeat;
   background-size: cover;
+
+  @include sp {
+    height: auto;
+    width: 100%;
+    background: url(../img/hero-lp-sp.jpg) bottom no-repeat;
+    background-size: cover;
+  }
 }
 
 .hero__inner {
-  margin: auto;
+  margin-inline: auto;
   overflow: hidden;
   padding-bottom: 2.5rem;
   position: relative;
-  width: 100%;
+  width: 97%;
   max-width: 112.4rem;
+
+  @include sp {
+    margin: auto;
+    padding-bottom: 3rem;
+    width: 88%;
+  }
 }
 
 .mainTitle__logo {
@@ -19,98 +32,108 @@
   position: absolute;
   top: 1rem;
   width: 16rem;
+
+  @include sp {
+    top: 2rem;
+    width: 8rem;
+    height: 2.2rem;
+  }
 }
 
 .hero__eyecatche {
   position: absolute;
   right: 0;
   top: 0;
+
+  @include tb{
+    right: -2rem;
+  }
+
+  @include mb {
+    right: -10rem;
+  }
+
+  @include sp {
+    height: 9.6rem;
+    right: 0;
+    width: 15.5rem;
+  }
+}
+
+.hero__eyecatche > img {
+
+  @include mb {
+    width: 70%;
+    height: auto;
+  }
+
+  @include sp {
+    width: 100%;
+  }
 }
 
 .mainTitle__text {
   font-size: 1.2rem;
   text-align: left;
   margin-top: 0.8rem;
+
+  @include sp {
+    font-size: 0.7rem;
+    margin-top: 0.6rem;
+  }
 }
 
 .hero__title {
   font-size: 6rem;
   margin-top: 12.8rem;
+
+  @include mb {
+    margin-top: 16rem;
+    background-color: rgba(255,255,255,.5);
+    padding: 2rem;
+  };
+
+  @include sp {
+    font-size: 3.2rem;
+    margin-top: 8.4rem;
+    background-color: transparent;
+    padding: 0;
+  }
 }
 
 .hero__title__main {
   font-size: 4rem;
-  font-weight: 600; color:$heading;
+  font-weight: 600;
+  color: $heading;
   line-height: 1;
   margin: 0 0 4rem;
+
+  @include sp {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin: 0 0 1.2rem;
+  }
 }
 
 .hero__title__sub {
   font-size: 7.2rem;
-  font-weight: 600; color:$heading;
+  font-weight: 600;
+  color: $heading;
   line-height: 1;
   margin-bottom: 3.2rem;
+
+  @include sp {
+    font-size: 3.4rem;
+    margin-bottom: 1.2rem;
+  }
 }
 
 .hero__title__3rd {
   font-size: 4rem;
   font-weight: 400;
   line-height: 1;
-}
 
-@include sp {
-  .hero {
-    height: auto;
-    width: 100%;
-    background: url(../img/hero-lp-sp.jpg) bottom no-repeat;
-    background-size: cover;
-  }
-
-  .hero__inner {
-    margin: auto;
-    padding-bottom: 3rem;
-    width: 88%;
-  }
-
-  .mainTitle__logo {
-    top: 2rem;
-    width: 8rem;
-    height: 2.2rem;
-  }
-
-  .hero__eyecatche {
-    height: 9.6rem;
-    right: 0;
-    width: 15.5rem;
-
-    > img {
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  .mainTitle__text {
-    font-size: 0.7rem;
-    margin-top: 0.6rem;
-  }
-
-  .hero__title {
-    font-size: 3.2rem;
-    margin-top: 8.4rem;
-  }
-
-  .hero__title__main {
-    font-size: 2rem;
-    line-height: 1.4;
-    margin: 0 0 1.2rem;
-  }
-
-  .hero__title__sub {
-    font-size: 3.4rem;
-    margin-bottom: 1.2rem;
-  }
-
-  .hero__title__3rd {
+  @include sp {
     font-size: 2rem;
   }
 }
@@ -122,6 +145,12 @@
   margin-top: 4.8rem;
   margin-bottom: 3.2rem;
   width: 30rem;
+
+  @include sp {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    width: 19rem;
+  }
 }
 
 .priceCircle {
@@ -136,6 +165,12 @@
   justify-content: center;
   align-items: center;
   font-size: 2.2rem;
+
+  @include sp {
+    font-size: 1.3rem;
+    height: 9rem;
+    width: 9rem;
+  }
 }
 
 .priceCircle__inner {
@@ -146,10 +181,19 @@
   margin-bottom: 0.4rem;
   font-size: 2.2rem;
   line-height: 1.1;
+
+  @include sp {
+    font-size: 1.2rem;
+  }
 }
 
 .unitBox {
   display: inline-block;
+
+  @include sp {
+    font-size: 1.4rem;
+
+  }
 }
 
 .tax {
@@ -157,6 +201,11 @@
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
   text-align: right;
+
+  @include sp {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
 }
 
 .unit {
@@ -166,6 +215,10 @@
 .price {
   font-size: 4rem;
   line-height: 1.1;
+
+  @include sp {
+    font-size: 2.2rem;
+  }
 }
 
 .asterisk {
@@ -174,41 +227,10 @@
   text-align: right;
   margin-top: 0.4rem;
   padding-right: 1.6rem;
-}
 
-@include sp {
-  .hero__priceCircle {
-    margin-top: 3.5rem;
-    margin-bottom: 3.5rem;
-    width: 19rem;
-  }
-
-  .priceCircle {
-    font-size: 1.3rem;
-    height: 9rem;
-    width: 9rem;
-
-    .priceCircle__title {
-      font-size: 1.2rem;
-    }
-
-    .unitBox {
-      font-size: 1.4rem;
-    }
-
-    .price {
-      font-size: 2.2rem;
-    }
-
-    .tax {
-      font-size: 0.8rem;
-      font-weight: 600;
-    }
-
-    .asterisk {
-      margin-top: 0.4rem;
-      font-size: 0.6rem;
-      font-weight: 600;
-    }
+  @include sp {
+    margin-top: 0.4rem;
+    font-size: 0.6rem;
+    font-weight: 600;
   }
 }

@@ -284,7 +284,7 @@ a {
   }
 }
 
-.button-otherProducts {
+.button-otherProductsbutton-dark, .button-otherProducts {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,27 +292,38 @@ a {
   background-position: center right 2rem;
   border-radius: 2.5rem;
   color: #333;
-  font-weight: 600;
   color: #333;
   height: 4.2rem;
   width: 30.6rem;
   margin-top: 6.4rem;
 }
 @media only screen and (max-width: 768px) {
-  .button-otherProducts {
+  .button-otherProductsbutton-dark, .button-otherProducts {
     height: 4rem;
     margin: 2.4rem auto 0;
     width: 29.1rem;
   }
 }
 
-.button-otherProduct > span {
+.button-otherProducts {
+  background: #ffffff url(../img/arrow-black.svg) 50% no-repeat;
+  background-position: center right 2rem;
+}
+
+.button-otherProducts > span,
+.button-otherProductsbutton-dark > span {
   font-size: 2rem;
 }
 @media only screen and (max-width: 768px) {
-  .button-otherProduct > span {
+  .button-otherProducts > span,
+  .button-otherProductsbutton-dark > span {
     font-size: 1.3rem;
   }
+}
+
+.button-otherProductsbutton-dark {
+  background: #f5f5f5 url(../img/arrow-black.svg) 50% no-repeat;
+  background-position: center right 2rem;
 }
 
 .checkAndRegister {
@@ -329,7 +340,7 @@ a {
   margin: auto;
   width: 96rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 961px) {
   .checkAndRegister__inner {
     width: 100%;
   }
@@ -1056,6 +1067,14 @@ a {
   }
 }
 
+@media only screen and (max-width: 961px) {
+  .imgBoxLeft__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .baseImage {
   display: inline-block;
   vertical-align: top;
@@ -1115,6 +1134,7 @@ a {
 @media only screen and (max-width: 768px) {
   .baseTypeLists > li {
     margin-top: 1.5rem;
+    display: flex;
   }
   .baseTypeLists > li .baseImage {
     height: 8.5rem;
@@ -1161,10 +1181,10 @@ a {
 @media only screen and (max-width: 768px) {
   .imgBoxRight {
     background: #fff url(../img/regulation-b-mobile.svg) center 60% no-repeat;
-    background-size: 88%;
+    background-size: 32rem;
     height: auto;
     margin: 3.6rem auto 0;
-    padding-bottom: 108%;
+    padding-bottom: 45rem;
   }
 }
 
@@ -1312,7 +1332,7 @@ a {
 @media only screen and (max-width: 961px) {
   .templates__lists {
     width: 92%;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 2rem;
     margin-inline: auto;
     margin-top: 3.2rem;
@@ -1325,7 +1345,7 @@ a {
 @media only screen and (max-width: 768px) {
   .templates__item {
     margin: 0 0 2rem;
-    width: 48%;
+    width: 46.5%;
   }
 }
 
@@ -1485,7 +1505,8 @@ a {
 }
 @media only screen and (max-width: 961px) {
   .flow-inner {
-    width: 100%;
+    width: 97%;
+    margin-inline: auto;
   }
 }
 @media only screen and (max-width: 768px) {

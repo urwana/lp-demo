@@ -13,7 +13,8 @@
   width: 92rem;
 
   @include mb {
-    width: 100%;
+    width: 97%;
+    margin-inline: auto;
   }
 
   @include sp {

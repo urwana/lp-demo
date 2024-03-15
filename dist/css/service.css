@@ -284,7 +284,7 @@ a {
   }
 }
 
-.button-otherProducts {
+.button-otherProductsbutton-dark, .button-otherProducts {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,27 +292,38 @@ a {
   background-position: center right 2rem;
   border-radius: 2.5rem;
   color: #333;
-  font-weight: 600;
   color: #333;
   height: 4.2rem;
   width: 30.6rem;
   margin-top: 6.4rem;
 }
 @media only screen and (max-width: 768px) {
-  .button-otherProducts {
+  .button-otherProductsbutton-dark, .button-otherProducts {
     height: 4rem;
     margin: 2.4rem auto 0;
     width: 29.1rem;
   }
 }
 
-.button-otherProduct > span {
+.button-otherProducts {
+  background: #ffffff url(../img/arrow-black.svg) 50% no-repeat;
+  background-position: center right 2rem;
+}
+
+.button-otherProducts > span,
+.button-otherProductsbutton-dark > span {
   font-size: 2rem;
 }
 @media only screen and (max-width: 768px) {
-  .button-otherProduct > span {
+  .button-otherProducts > span,
+  .button-otherProductsbutton-dark > span {
     font-size: 1.3rem;
   }
+}
+
+.button-otherProductsbutton-dark {
+  background: #f5f5f5 url(../img/arrow-black.svg) 50% no-repeat;
+  background-position: center right 2rem;
 }
 
 .checkAndRegister {
@@ -329,7 +340,7 @@ a {
   margin: auto;
   width: 96rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 961px) {
   .checkAndRegister__inner {
     width: 100%;
   }
@@ -672,14 +683,29 @@ a {
   background: url(../img/hero-lp.jpg) bottom no-repeat;
   background-size: cover;
 }
+@media only screen and (max-width: 768px) {
+  .hero {
+    height: auto;
+    width: 100%;
+    background: url(../img/hero-lp-sp.jpg) bottom no-repeat;
+    background-size: cover;
+  }
+}
 
 .hero__inner {
-  margin: auto;
+  margin-inline: auto;
   overflow: hidden;
   padding-bottom: 2.5rem;
   position: relative;
-  width: 100%;
+  width: 97%;
   max-width: 112.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .hero__inner {
+    margin: auto;
+    padding-bottom: 3rem;
+    width: 88%;
+  }
 }
 
 .mainTitle__logo {
@@ -688,11 +714,47 @@ a {
   top: 1rem;
   width: 16rem;
 }
+@media only screen and (max-width: 768px) {
+  .mainTitle__logo {
+    top: 2rem;
+    width: 8rem;
+    height: 2.2rem;
+  }
+}
 
 .hero__eyecatche {
   position: absolute;
   right: 0;
   top: 0;
+}
+@media only screen and (max-width: 1100px) {
+  .hero__eyecatche {
+    right: -2rem;
+  }
+}
+@media only screen and (max-width: 961px) {
+  .hero__eyecatche {
+    right: -10rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero__eyecatche {
+    height: 9.6rem;
+    right: 0;
+    width: 15.5rem;
+  }
+}
+
+@media only screen and (max-width: 961px) {
+  .hero__eyecatche > img {
+    width: 70%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero__eyecatche > img {
+    width: 100%;
+  }
 }
 
 .mainTitle__text {
@@ -700,10 +762,31 @@ a {
   text-align: left;
   margin-top: 0.8rem;
 }
+@media only screen and (max-width: 768px) {
+  .mainTitle__text {
+    font-size: 0.7rem;
+    margin-top: 0.6rem;
+  }
+}
 
 .hero__title {
   font-size: 6rem;
   margin-top: 12.8rem;
+}
+@media only screen and (max-width: 961px) {
+  .hero__title {
+    margin-top: 16rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero__title {
+    font-size: 3.2rem;
+    margin-top: 8.4rem;
+    background-color: transparent;
+    padding: 0;
+  }
 }
 
 .hero__title__main {
@@ -713,6 +796,13 @@ a {
   line-height: 1;
   margin: 0 0 4rem;
 }
+@media only screen and (max-width: 768px) {
+  .hero__title__main {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin: 0 0 1.2rem;
+  }
+}
 
 .hero__title__sub {
   font-size: 7.2rem;
@@ -721,60 +811,24 @@ a {
   line-height: 1;
   margin-bottom: 3.2rem;
 }
+@media only screen and (max-width: 768px) {
+  .hero__title__sub {
+    font-size: 3.4rem;
+    margin-bottom: 1.2rem;
+  }
+}
 
 .hero__title__3rd {
   font-size: 4rem;
   font-weight: 400;
   line-height: 1;
 }
-
 @media only screen and (max-width: 768px) {
-  .hero {
-    height: auto;
-    width: 100%;
-    background: url(../img/hero-lp-sp.jpg) bottom no-repeat;
-    background-size: cover;
-  }
-  .hero__inner {
-    margin: auto;
-    padding-bottom: 3rem;
-    width: 88%;
-  }
-  .mainTitle__logo {
-    top: 2rem;
-    width: 8rem;
-    height: 2.2rem;
-  }
-  .hero__eyecatche {
-    height: 9.6rem;
-    right: 0;
-    width: 15.5rem;
-  }
-  .hero__eyecatche > img {
-    width: 100%;
-    height: auto;
-  }
-  .mainTitle__text {
-    font-size: 0.7rem;
-    margin-top: 0.6rem;
-  }
-  .hero__title {
-    font-size: 3.2rem;
-    margin-top: 8.4rem;
-  }
-  .hero__title__main {
-    font-size: 2rem;
-    line-height: 1.4;
-    margin: 0 0 1.2rem;
-  }
-  .hero__title__sub {
-    font-size: 3.4rem;
-    margin-bottom: 1.2rem;
-  }
   .hero__title__3rd {
     font-size: 2rem;
   }
 }
+
 .hero__priceCircle {
   display: flex;
   flex-wrap: nowrap;
@@ -782,6 +836,13 @@ a {
   margin-top: 4.8rem;
   margin-bottom: 3.2rem;
   width: 30rem;
+}
+@media only screen and (max-width: 768px) {
+  .hero__priceCircle {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    width: 19rem;
+  }
 }
 
 .priceCircle {
@@ -797,6 +858,13 @@ a {
   align-items: center;
   font-size: 2.2rem;
 }
+@media only screen and (max-width: 768px) {
+  .priceCircle {
+    font-size: 1.3rem;
+    height: 9rem;
+    width: 9rem;
+  }
+}
 
 .priceCircle__inner {
   display: block;
@@ -807,9 +875,19 @@ a {
   font-size: 2.2rem;
   line-height: 1.1;
 }
+@media only screen and (max-width: 768px) {
+  .priceCircle__title {
+    font-size: 1.2rem;
+  }
+}
 
 .unitBox {
   display: inline-block;
+}
+@media only screen and (max-width: 768px) {
+  .unitBox {
+    font-size: 1.4rem;
+  }
 }
 
 .tax {
@@ -817,6 +895,12 @@ a {
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
   text-align: right;
+}
+@media only screen and (max-width: 768px) {
+  .tax {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
 }
 
 .unit {
@@ -827,6 +911,11 @@ a {
   font-size: 4rem;
   line-height: 1.1;
 }
+@media only screen and (max-width: 768px) {
+  .price {
+    font-size: 2.2rem;
+  }
+}
 
 .asterisk {
   display: block;
@@ -835,37 +924,14 @@ a {
   margin-top: 0.4rem;
   padding-right: 1.6rem;
 }
-
 @media only screen and (max-width: 768px) {
-  .hero__priceCircle {
-    margin-top: 3.5rem;
-    margin-bottom: 3.5rem;
-    width: 19rem;
-  }
-  .priceCircle {
-    font-size: 1.3rem;
-    height: 9rem;
-    width: 9rem;
-  }
-  .priceCircle .priceCircle__title {
-    font-size: 1.2rem;
-  }
-  .priceCircle .unitBox {
-    font-size: 1.4rem;
-  }
-  .priceCircle .price {
-    font-size: 2.2rem;
-  }
-  .priceCircle .tax {
-    font-size: 0.8rem;
-    font-weight: 600;
-  }
-  .priceCircle .asterisk {
+  .asterisk {
     margin-top: 0.4rem;
     font-size: 0.6rem;
     font-weight: 600;
   }
 }
+
 .factor {
   margin: auto;
   padding: 10rem 8rem;
@@ -1856,7 +1922,7 @@ a {
   .method__submission--dataCheck {
     margin-left: 2.4rem;
     text-align: left;
-    width: calc(100% - 9.2rem);
+    width: calc(100% - 2.4rem);
     font-size: 1.4rem;
   }
 }
@@ -2208,6 +2274,14 @@ a {
   }
 }
 
+@media only screen and (max-width: 961px) {
+  .imgBoxLeft__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .baseImage {
   display: inline-block;
   vertical-align: top;
@@ -2267,6 +2341,7 @@ a {
 @media only screen and (max-width: 768px) {
   .baseTypeLists > li {
     margin-top: 1.5rem;
+    display: flex;
   }
   .baseTypeLists > li .baseImage {
     height: 8.5rem;
@@ -2313,10 +2388,10 @@ a {
 @media only screen and (max-width: 768px) {
   .imgBoxRight {
     background: #fff url(../img/regulation-b-mobile.svg) center 60% no-repeat;
-    background-size: 88%;
+    background-size: 32rem;
     height: auto;
     margin: 3.6rem auto 0;
-    padding-bottom: 108%;
+    padding-bottom: 45rem;
   }
 }
 
@@ -2464,7 +2539,7 @@ a {
 @media only screen and (max-width: 961px) {
   .templates__lists {
     width: 92%;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 2rem;
     margin-inline: auto;
     margin-top: 3.2rem;
@@ -2477,7 +2552,7 @@ a {
 @media only screen and (max-width: 768px) {
   .templates__item {
     margin: 0 0 2rem;
-    width: 48%;
+    width: 46.5%;
   }
 }
 
@@ -2683,7 +2758,8 @@ a {
 }
 @media only screen and (max-width: 961px) {
   .flow-inner {
-    width: 100%;
+    width: 97%;
+    margin-inline: auto;
   }
 }
 @media only screen and (max-width: 768px) {

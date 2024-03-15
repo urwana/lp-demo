@@ -92,6 +92,14 @@
   }
 }
 
+.imgBoxLeft__body{
+  @include mb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .baseImage {
   display: inline-block;
   vertical-align: top;
@@ -146,6 +154,7 @@
 
   @include sp {
     margin-top: 1.5rem;
+    display: flex;
 
     .baseImage {
       height: 8.5rem;
@@ -193,11 +202,12 @@
 
   @include sp {
     background: #fff url(../img/regulation-b-mobile.svg) center 60% no-repeat;
-    background-size: 88%;
+    //background-size: 75%;
+    // background-size: 80%;
+    background-size: 32rem;
     height: auto;
     margin: 3.6rem auto 0;
-    padding-bottom: 108%;
-    //width: 92%;
+    padding-bottom: 45rem;
   }
 }
 
