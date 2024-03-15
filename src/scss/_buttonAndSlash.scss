@@ -23,7 +23,6 @@
   }
 
   @include sp {
-    // width: 92%;
     max-width: 34.5rem;
     height: 6rem;
     margin: 0.8rem auto 0;
@@ -51,11 +50,9 @@
   @include mb{
     flex-direction: column;
     margin-inline: auto;
-    //margin-top: 2.4rem;
   }
 
   @include sp {
-    //display: block;
     margin-top: 2.4rem;
   }
 }
@@ -166,11 +163,6 @@
   color: $heading;
   line-height: 1.7;
 
-  @include mb{
-    
-  }
-
-
   @include sp {
     font-size: 1.4rem;
     line-height: 1.4;
@@ -184,11 +176,6 @@
   color: $heading;
   line-height: 1.4;
   position: relative;
-
-  @include mb{
-    
-  }
-
 
   @include sp {
     font-size: 1.4rem;
@@ -226,11 +213,6 @@
   position: absolute;
   right: 3rem;
   top: -1.4rem;
-
-  @include mb{
-    
-  }
-
 
   @include sp {
     font-size: 1.2rem;
@@ -387,7 +369,7 @@
   &.is-fadein {
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.8s ease-in-out; /* opacityの変化を0.5秒かけて行う */
+    transition: opacity 0.8s ease-in-out;
   }
 
   @include sp {
@@ -452,9 +434,7 @@
     left: 0.5rem;
     top: 0.5rem;
     width: 5rem;
-
   }
-
 }
 
 .floatingButton__priceCircle > span {
@@ -480,7 +460,6 @@
     padding-left: 2rem;
     text-align: left;
   }
-
 }
 
 .floatingButton__label > span {

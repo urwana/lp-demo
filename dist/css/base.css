@@ -567,7 +567,7 @@ a {
 .floatingButtonContainer.is-fadein {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.8s ease-in-out; /* opacityの変化を0.5秒かけて行う */
+  transition: opacity 0.8s ease-in-out;
 }
 @media only screen and (max-width: 768px) {
   .floatingButtonContainer {
@@ -902,17 +902,25 @@ a {
   text-align: left;
   width: 66rem;
 }
-
 @media only screen and (max-width: 768px) {
   .factor__listWrapper {
     margin-top: 3.2rem;
     width: 100%;
   }
 }
+
 .factor__lists {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
+}
+@media only screen and (max-width: 768px) {
+  .factor__lists {
+    margin: auto;
+    max-width: 31.4rem;
+    padding-left: 2rem;
+    width: 95.5%;
+  }
 }
 
 .factor__lists > li {
@@ -920,6 +928,13 @@ a {
   line-height: 3rem;
   margin: 0 0 2.3rem 5.4rem;
   position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .factor__lists > li {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin: 0.8rem 0;
+  }
 }
 
 .factor__lists > li > span {
@@ -937,26 +952,15 @@ a {
   top: 0;
   width: 3rem;
 }
-
 @media only screen and (max-width: 768px) {
-  .factor__lists {
-    margin: auto;
-    max-width: 31.4rem;
-    padding-left: 2rem;
-    width: 95.5%;
-  }
   .factor__lists > li :before {
     background-position: center 0.4rem;
     background-size: 1.5rem;
     left: 0;
     margin-left: -2.8rem;
   }
-  .factor__lists > li {
-    font-size: 1.4rem;
-    line-height: 1.4;
-    margin: 0.8rem 0;
-  }
 }
+
 .imgBoxRight__title, .imgBoxLeft__title {
   background: #000;
   color: #e6cd92;

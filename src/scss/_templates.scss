@@ -30,7 +30,6 @@
     font-size: 1.3rem;
     line-height: 2;
     margin-top: 1.2rem;
-
   }
 }
 
@@ -60,9 +59,7 @@
   @include sp {
     margin: 0 0 2rem;
     width: 46.5%;
-
   }
-
 }
 
 .templates__item a {
@@ -72,7 +69,6 @@
   @include sp {
     font-size: 1.2rem;
     text-align: left;
-
   }
 }
 
@@ -86,9 +82,7 @@
     height: auto;
     padding: 7.7% 0;
     width: 100%;
-
   }
-
 }
 
 .templates__imgBox img {
@@ -98,7 +92,6 @@
   @include sp {
     max-height: 85%;
     max-width: 58%;
-
   }
 }
 
@@ -174,7 +167,6 @@
     text-align: left;
     justify-content: left;
   }
-
 }
 
 .templates__applications > dt {

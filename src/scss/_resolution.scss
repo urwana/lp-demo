@@ -511,8 +511,6 @@
   }
 }
 
-// .method__detailList > dt {
-// }
 .detailList__dataWrapper {
   display: flex;
   justify-content: flex-start;
@@ -656,14 +654,8 @@
 // payment
 .payment {
   .contentsOverview {
-    // > span {
-    //   width: 68rem;
-    // }
 
     @include sp {
-      // > span {
-      //   width: 100%;
-      // }
       .imgBox {
         margin-right: 3rem;
       }
@@ -693,8 +685,6 @@
 
 // orderToDelivery
 .orderToDelivery {
-  // margin-top: 10rem;
-  // text-align: center;
 
   @include sp {
     margin: auto;
@@ -727,7 +717,6 @@
 
 .orderToDelivery__item {
   background: $light-grey;
-  // height: 24.8rem;
   padding: 3rem 1.8rem;
   position: relative;
   width: 21.8rem;
@@ -742,7 +731,6 @@
 
   @include sp {
     margin-right: 2.6rem;
-    //height: 15.7rem;
   }
 }
 

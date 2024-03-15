@@ -51,10 +51,8 @@
   margin: 4.8rem auto 0;
   text-align: left;
   width: 66rem;
-}
 
-@include sp {
-  .factor__listWrapper {
+  @include sp {
     margin-top: 3.2rem;
     width: 100%;
   }
@@ -64,6 +62,13 @@
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
+
+  @include sp {
+    margin: auto;
+    max-width: 31.4rem;
+    padding-left: 2rem;
+    width: 95.5%;
+  }
 }
 
 .factor__lists > li {
@@ -71,6 +76,12 @@
   line-height: 3rem;
   margin: 0 0 2.3rem 5.4rem;
   position: relative;
+
+  @include sp {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin: 0.8rem 0;
+  }
 }
 
 .factor__lists > li > span {
@@ -87,26 +98,11 @@
   position: absolute;
   top: 0;
   width: 3rem;
-}
 
-@include sp {
-  .factor__lists {
-    margin: auto;
-    max-width: 31.4rem;
-    padding-left: 2rem;
-    width: 95.5%;
-  }
-
-  .factor__lists > li :before {
+  @include sp {
     background-position: center 0.4rem;
     background-size: 1.5rem;
     left: 0;
     margin-left: -2.8rem;
-  }
-
-  .factor__lists > li {
-    font-size: 1.4rem;
-    line-height: 1.4;
-    margin: 0.8rem 0;
   }
 }

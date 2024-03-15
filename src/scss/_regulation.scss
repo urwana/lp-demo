@@ -73,7 +73,6 @@
   }
 
   @include sp {
-    //display: block;
     margin: 3.6rem auto 0;
     margin-top: 3.6rem;
     width: 100%;
@@ -202,8 +201,6 @@
 
   @include sp {
     background: #fff url(../img/regulation-b-mobile.svg) center 60% no-repeat;
-    //background-size: 75%;
-    // background-size: 80%;
     background-size: 32rem;
     height: auto;
     margin: 3.6rem auto 0;
