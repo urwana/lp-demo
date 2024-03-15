@@ -35,6 +35,11 @@
   padding: 10rem 0;
   text-align: center;
   width: 100%;
+
+  @include sp {
+    padding: 4rem 0;
+    min-width: auto;
+  }
 }
 
 .regulation__title {
@@ -46,6 +51,10 @@
   overflow: hidden;
   text-align: center;
   width: 92rem;
+
+  @include sp {
+    width: 100%;
+  }
 }
 
 .regulation__body {
@@ -54,12 +63,33 @@
   justify-content: space-between;
   margin: 7.2rem auto 0;
   width: 92rem;
+
+  @include mb {
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.6rem;
+  }
+
+  @include sp {
+    //display: block;
+    margin: 3.6rem auto 0;
+    margin-top: 3.6rem;
+    width: 100%;
+  }
 }
 
 .imgBoxLeft {
   background: #fff;
   height: 58.4rem;
   width: 44rem;
+
+  @include mb {
+    height: auto;
+    margin: auto;
+    width: 92%;
+  }
 }
 
 .baseImage {
@@ -75,6 +105,10 @@
   font-size: 1.4rem;
   line-height: 1.8;
   margin-left: 1.8rem;
+
+  @include sp {
+    font-size: 1.2rem;
+  }
 }
 
 .baseLabel {
@@ -82,10 +116,18 @@
   display: inline-block;
   font-size: 1.8rem;
   padding: 1.5px 1.2rem;
+
+  @include sp {
+    font-size: 1.2rem;
+  }
 }
 
 .baseText {
   margin-top: 0.8rem;
+
+  @include sp {
+    margin-left: 0.5rem;
+  }
 }
 
 .baseTypeLists {
@@ -93,30 +135,48 @@
   margin-top: 3.2rem;
   padding: 0 0 4rem 1.5rem;
 
-  > li {
-    margin-top: 2.4rem;
-    text-align: left;
+  @include sp {
+    margin-top: 2.5rem;
+  }
+}
 
-    &:first-of-type .baseImage {
-      background-image: url(../img/regulation-l1.jpg);
-      background-position: 50%;
-      background-repeat: no-repeat;
-      background-size: 13.6rem;
-    }
+.baseTypeLists > li {
+  margin-top: 2.4rem;
+  text-align: left;
 
-    &:nth-of-type(2) .baseImage {
-      background-image: url(../img/regulation-l2.jpg);
-      background-position: 50%;
-      background-repeat: no-repeat;
-      background-size: 13.6rem;
-    }
+  @include sp {
+    margin-top: 1.5rem;
 
-    &:nth-of-type(3) .baseImage {
-      background-image: url(../img/regulation-l3.jpg);
-      background-repeat: center center;
-      background-repeat: no-repeat;
-      background-size: 13.6rem;
+    .baseImage {
+      height: 8.5rem;
+      width: 9.6rem;
     }
+  }
+
+  &:first-of-type .baseImage {
+    background-image: url(../img/regulation-l1.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 13.6rem;
+
+    @include sp {
+        background-image: url(../img/regulation-l1-mobile.jpg);
+        background-size: 9.6rem;
+    }
+  }
+
+  &:nth-of-type(2) .baseImage {
+    background-image: url(../img/regulation-l2.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 13.6rem;
+  }
+
+  &:nth-of-type(3) .baseImage {
+    background-image: url(../img/regulation-l3.jpg);
+    background-repeat: center center;
+    background-repeat: no-repeat;
+    background-size: 13.6rem;
   }
 }
 
@@ -125,93 +185,47 @@
   background-size: 35.2rem;
   height: 58.4rem;
   width: 44rem;
-}
 
-.regulation__explanation {
-  font-size: 2.4rem;
-  font-weight: 600; color:$heading;
-  line-height: 1.6;
-  margin-top: 7.2rem;
-
-  > span {
-    color: $blue;
-    display: inline-block;
-    font-size: 3.2rem;
-    margin-top: 1.5rem;
-  }
-}
-
-@include sp {
-  .regulation {
-    padding: 4rem 0;
-    min-width: auto;
-  }
-
-  .regulation__inner {
-    width: 100%;
-  }
-
-  .regulation__body {
-    display: block;
-    margin: 3.6rem auto 0;
-    width: 100%;
-  }
-
-  .imgBoxLeft {
-    height: auto;
-    margin: auto;
+  @include mb {
+    margin-top: 5.6rem;
     width: 92%;
-
-    .baseExplanation {
-      font-size: 1.2rem;
-    }
-
-    .baseLabel {
-      font-size: 1.2rem;
-    }
-
-    .baseText {
-      margin-left:0.5rem;
-    }
   }
 
-  .baseTypeLists {
-    margin-top: 2.5rem;
-
-    > li {
-      margin-top: 1.5rem;
-
-      .baseImage {
-        height: 8.5rem;
-        width: 9.6rem;
-      }
-
-      &:first-of-type .baseImage {
-        background-image: url(../img/regulation-l1-mobile.jpg);
-        background-size: 9.6rem;
-      }
-    }
-  }
-
-  .imgBoxRight {
+  @include sp {
     background: #fff url(../img/regulation-b-mobile.svg) center 60% no-repeat;
     background-size: 88%;
     height: auto;
     margin: 3.6rem auto 0;
     padding-bottom: 108%;
-    width: 92%;
-  }
-
-  .regulation__explanation {
-    font-size: 1.4rem;
-    margin-top: 3rem;
-
-    > span {
-      font-size: 2.2rem;
-      margin-top: 1rem;
-    }
+    //width: 92%;
   }
 }
+
+.regulation__explanation {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: $heading;
+  line-height: 1.6;
+  margin-top: 7.2rem;
+
+  @include sp {
+    font-size: 1.4rem;
+    margin-top: 3rem;
+  }
+}
+
+.regulation__explanation  > span {
+  color: $blue;
+  display: inline-block;
+  font-size: 3.2rem;
+  margin-top: 1.5rem;
+
+  @include sp {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+  }
+}
+
 
 @media (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),

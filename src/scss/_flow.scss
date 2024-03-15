@@ -2,28 +2,31 @@
 .flow {
   padding: 10rem 0;
   text-align: center;
+
+  @include sp {
+    padding: 4.5rem 0;
+  }
 }
 
 .flow-inner {
   margin: 7.2rem auto 0;
   width: 92rem;
+
+  @include mb {
+    width: 100%;
+  }
+
+  @include sp {
+    margin-top: 3.6rem;
+  }
 }
 
 .flow-title {
   @include title-h2;
 }
 
-@include sp {
-  .flow {
-    padding: 4.5rem 0;
-  }
-
-  .flow-inner {
-    margin-top: 3.6rem;
-    width: 100%;
-  }
-
-  .flow-image {
+.flow-image {
+  @include sp {
     height: auto;
     margin: 0 auto;
     width: 92%;

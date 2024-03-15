@@ -22,8 +22,8 @@
     opacity: 0.6;
   }
 
-  @include mb {
-    width: 92%;
+  @include sp {
+    // width: 92%;
     max-width: 34.5rem;
     height: 6rem;
     margin: 0.8rem auto 0;
@@ -45,11 +45,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   margin-top: 4.8rem;
 
-  @include mb {
-    display: block;
-    margin: 2.4rem auto 0;
+  @include mb{
+    flex-direction: column;
+    margin-inline: auto;
+    //margin-top: 2.4rem;
+  }
+
+  @include sp {
+    //display: block;
+    margin-top: 2.4rem;
   }
 }
 
@@ -69,8 +76,12 @@
   background-color: $light-grey !important;
 }
 
-.buttonBox {
-  @include mb {
+.buttonBox:not(:first-child) {
+  @include mb{
+    margin-top: 5.6rem;
+  }
+
+  @include sp {
     margin-top: 2.4rem;
   }
 }
@@ -81,7 +92,11 @@
 }
 
 .order .button {
-  @include mb {
+  @include mb{
+    
+  }
+
+  @include sp {
     height: 6rem;
     margin-top: 3.8rem;
     max-width: 34.5rem;
@@ -103,7 +118,12 @@
   width: 30.6rem;
   margin-top: 6.4rem;
 
-  @include mb {
+  @include mb{
+    
+  }
+
+
+  @include sp {
     height: 4rem;
     margin: 2.4rem auto 0;
     width: 29.1rem;
@@ -113,7 +133,12 @@
 .button-otherProduct > span {
   font-size: 2rem;
 
-  @include mb {
+  @include mb{
+    
+  }
+
+
+  @include sp {
     font-size: 1.3rem;
   }
 }
@@ -124,7 +149,12 @@
   padding: 8rem 0;
   text-align: center;
 
-  @include mb {
+  @include mb{
+    
+  }
+
+
+  @include sp {
     padding: 3.8rem 0;
   }
 }
@@ -133,7 +163,12 @@
   margin: auto;
   width: 96rem;
 
-  @include mb {
+  @include mb{
+    
+  }
+
+
+  @include sp {
     width: 100%;
   }
 }
@@ -144,7 +179,12 @@
   color: $heading;
   line-height: 1.7;
 
-  @include mb {
+  @include mb{
+    
+  }
+
+
+  @include sp {
     font-size: 1.4rem;
     line-height: 1.4;
   }
@@ -158,7 +198,12 @@
   line-height: 1.4;
   position: relative;
 
-  @include mb {
+  @include mb{
+    
+  }
+
+
+  @include sp {
     font-size: 1.4rem;
   }
 }
@@ -166,14 +211,27 @@
 .priceOff {
   font-size: 2.8rem;
 
-  > span {
-    font-size: 2.4rem;
-  }
-
-  .comma {
-    font-size: 2.6rem;
+  @include sp {
+    font-size: 1.4rem;
   }
 }
+
+.priceOff > span {
+  font-size: 2.4rem;
+
+  @include sp {
+    font-size: 1.2rem;
+  }
+}
+
+.priceOff .comma {
+  font-size: 2.6rem;
+
+  @include sp {
+    font-size: 1.3rem;
+  }
+}
+
 
 .termsOfUse {
   font-size: 1.6rem;
@@ -182,37 +240,34 @@
   right: 3rem;
   top: -1.4rem;
 
-  @include mb {
+  @include mb{
+    
+  }
+
+
+  @include sp {
     font-size: 1.2rem;
     right: 0;
     top: -0.8rem;
   }
 }
 
-@include mb {
-  .buttonBox__copyBox {
-    .priceOff {
-      font-size: 1.4rem;
-
-      > span {
-        font-size: 1.2rem;
-      }
-
-      .comma {
-        font-size: 1.3rem;
-      }
-    }
-  }
-}
-
 .order {
   padding: 8rem 0;
   text-align: center;
+
+  @include sp {
+    padding: 3.8rem 0;
+  }
 }
 
 .order__inner {
   margin: auto;
   width: 100%;
+
+  @include sp {
+    width: 100%;
+  }
 }
 
 .order__catch {
@@ -220,6 +275,11 @@
   line-height: 1;
   margin-top: 3.6rem;
   font-size: 4rem;
+
+  @include sp {
+    font-size: 2.3rem;
+    margin-top: 2.5rem;
+  }
 }
 
 .order__lead {
@@ -227,6 +287,10 @@
   font-weight: 600;
   color: $heading;
   line-height: 1;
+
+  @include sp {
+    font-size: 1.4rem;
+  }
 }
 
 .order__lead2nd {
@@ -236,41 +300,23 @@
   line-height: 1;
   margin-top: 4.4rem;
 
-  > div {
-    display: inline-block;
-    position: relative;
-  }
-
-  > span {
-    font-size: 2.6rem;
-  }
-}
-
-@include mb {
-  .order {
-    padding: 3.8rem 0;
-  }
-
-  .order__inner {
-    width: 100%;
-  }
-
-  .order__catch {
-    font-size: 2.3rem;
-    margin-top: 2.5rem;
-  }
-
-  .order__lead {
-    font-size: 1.4rem;
-  }
-
-  .order__lead2nd {
+  @include sp {
     font-size: 1.2rem;
     margin-top: 2.5rem;
+  }
 
-    > span {
-      font-size: 1.3rem;
-    }
+}
+
+.order__lead2nd > div {
+  display: inline-block;
+  position: relative;
+}
+
+.order__lead2nd > span {
+  font-size: 2.6rem;
+
+  @include sp {
+    font-size: 1.3rem;
   }
 }
 
@@ -282,7 +328,7 @@
   width: 3.2rem;
   height: 3.2rem;
 
-  @include mb {
+  @include sp {
     height: 1.6rem;
     width: 1.6rem;
   }
@@ -294,7 +340,7 @@
   left: -1.4rem;
   transform: rotate(-300deg);
 
-  @include mb {
+  @include sp {
     bottom: 0.4rem;
     transform: rotate(60deg);
   }
@@ -307,7 +353,7 @@
   -webkit-transform: rotate(-60deg);
   transform: rotate(-60deg);
 
-  @include mb {
+  @include sp {
     bottom: 0.4rem;
     -webkit-transform: rotate(-63deg);
     transform: rotate(-63deg);
@@ -318,17 +364,16 @@
 .checkAndRegister .slash-r {
   height: 5.5rem;
   width: 5.5rem;
-}
 
-@include mb {
-  .checkAndRegister .slash-r {
-    bottom: 0.6rem;
-  }
-
-  .checkAndRegister .slash-l,
-  .checkAndRegister .slash-r {
+  @include sp {
     height: 3rem;
     width: 3rem;
+  }
+}
+
+@include sp {
+  .checkAndRegister .slash-r {
+    bottom: 0.6rem;
   }
 
   .button-register .slash-l {
@@ -357,6 +402,12 @@
     opacity: 1;
     transition: opacity 0.8s ease-in-out; /* opacityの変化を0.5秒かけて行う */
   }
+
+  @include sp {
+    bottom: 1.5rem;
+    left: 0;
+    padding-top: 0.5rem;
+  }
 }
 
 .floatingButton {
@@ -384,9 +435,17 @@
   position: absolute;
   text-align: center;
   top: -3.7rem;
+
+  @include sp {
+    color: #fff;
+    font-size: 1.2rem;
+    left: 0;
+    position: relative;
+    top: 0;
+  }
 }
 
-.floatingButton .floatingButton__priceCircle {
+.floatingButton__priceCircle {
   background-color: #fff;
   border-radius: 3.6rem;
   color: #333;
@@ -399,12 +458,27 @@
   text-align: center;
   margin-left: 0.4rem;
 
-  > span {
-    font-size: 1.8rem;
+  @include sp {
+    border-radius: 2.5rem;
+    font-size: 1.2rem;
+    height: 5rem;
+    left: 0.5rem;
+    top: 0.5rem;
+    width: 5rem;
+
   }
 
-  .numberOrPrice {
-    font-size: 2.2rem;
+}
+
+.floatingButton__priceCircle > span {
+  font-size: 1.8rem;
+}
+
+.floatingButton__priceCircle .numberOrPrice {
+  font-size: 2.2rem;
+
+  @include sp {
+    font-size: 1.8rem;
   }
 }
 
@@ -413,48 +487,20 @@
   color: $gold;
   margin-left: 1.6rem;
 
-  > span {
-    font-size: 2.6rem;
-  }
-}
-
-@include mb {
-  .floatingButtonContainer {
-    bottom: 1.5rem;
-    left: 0;
-    padding-top: 0.5rem;
-  }
-
-  .floatingButton__lead {
-    color: #fff;
-    font-size: 1.2rem;
-    left: 0;
-    position: relative;
-    top: 0;
-  }
-
-  .floatingButton__label {
+  @include sp {
     display: inline-block;
     font-size: 1.4rem;
     padding-left: 2rem;
     text-align: left;
-
-    > span {
-      font-size: 1.4rem;
-    }
   }
 
-  .floatingButton__priceCircle {
-    border-radius: 2.5rem;
-    font-size: 1.2rem;
-    height: 5rem;
-    left: 0.5rem;
-    top: 0.5rem;
-    width: 5rem;
-  }
+}
 
-  .numberOrPrice {
-    font-size: 1.8rem;
+.floatingButton__label > span {
+  font-size: 2.6rem;
+
+  @include sp {
+    font-size: 1.4rem;
   }
 }
 
